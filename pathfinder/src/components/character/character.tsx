@@ -1,16 +1,6 @@
 import React from "react";
 import zotha from "../../data/zotha.json";
-
-interface Spell {
-  level: string;
-  name: string;
-}
-
-interface Spells {
-  dc: string;
-  slotted: Spell[];
-  slotsPerDay: string;
-}
+import { Spell } from "../../interfaces/spells";
 
 export const Character: React.FC = () => {
   return (
@@ -34,20 +24,12 @@ function renderByKey(key: string, value: any) {
   }
 }
 
-function renderSpells(value: Spells[]) {
-  return value.map((spells) => {
+function renderSpells(value: Spell[]) {
+  return value.map((spell) => {
     return (
       <>
-        <h4>{spells.dc}</h4>
-        <h4>{spells.slotsPerDay}</h4>
-        {spells?.slotted?.map((spell) => {
-          return (
-            <>
-              <h4>{spell.level}</h4>
-              <div>{spell.name}</div>
-            </>
-          );
-        })}
+        <h4>{spell.level}</h4>
+        <h3>{spell.name}</h3>
       </>
     );
   });

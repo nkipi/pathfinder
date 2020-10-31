@@ -1,348 +1,327 @@
 {
-    "_id": "5be044da74b0fa0004673b4e",
-    "user": {
-        "provider": "google",
-        "id": "103231124371234228217",
-        "displayName": "Nilda Kipi",
-        "name": {
-            "familyName": "Kipi",
-            "givenName": "Nilda"
-        },
-        "emails": [
-            {
-                "value": "nildak15@gmail.com",
-                "type": "account"
-            }
-        ],
-        "photos": [
-            {
-                "value": "https://lh5.googleusercontent.com/-86jIezDNFfg/AAAAAAAAAAI/AAAAAAAANbA/iaSFQ3LuiPQ/photo.jpg?sz=50"
-            }
-        ],
-        "gender": "other"
+    "general": {
+        "name": "Zotha",
+        "class": "Oracle",
+        "level": 8,
+        "race": "Half-orc",
+        "alignment": "Neutral"
     },
-    "spells": [
-        {
-            "totalKnown": "8",
-            "dc": "15",
-            "totalPerDay": "",
-            "slotted": [
-                {
-                    "level": 0,
-                    "prepared": 0,
-                    "cast": 0,
-                    "name": "Detect Magic",
-                    "school": "Divination",
-                    "subschool": ""
-                },
-                {
-                    "level": 0,
-                    "prepared": 0,
-                    "cast": 0,
-                    "name": "Detect Poison",
-                    "school": "Divination",
-                    "subschool": ""
-                },
-                {
-                    "level": 0,
-                    "prepared": 0,
-                    "cast": 0,
-                    "name": "Light",
-                    "school": "Evocation",
-                    "subschool": ""
-                },
-                {
-                    "level": 0,
-                    "prepared": 0,
-                    "cast": 0,
-                    "name": "Spark",
-                    "school": "Evocation",
-                    "subschool": ""
-                },
-                {
-                    "level": 0,
-                    "prepared": 0,
-                    "cast": 0,
-                    "name": "Guidance",
-                    "school": "Divination",
-                    "subschool": ""
-                },
-                {
-                    "level": 0,
-                    "prepared": 0,
-                    "cast": 0,
-                    "name": "Resistance",
-                    "school": "Abjuration",
-                    "subschool": ""
-                },
-                {
-                    "level": 0,
-                    "prepared": 0,
-                    "cast": 0,
-                    "name": "Enhanced Diplomacy",
-                    "notes": "Range touch\nTarget creature touched\nDuration 1 minute or until discharged\nSaving Throw Will negates (harmless); Spell Resistance yes (harmless)\n\nYou imbue the subject with divine diplomacy skills. The creature gets a +2 competence bonus on a single Diplomacy or Intimidate check. It must choose to use the bonus before making the roll to which it applies.",
-                    "school": "Divination"
-                }
-            ]
-        },
-        {
-            "totalKnown": "7",
-            "dc": "16",
-            "totalPerDay": "8",
-            "bonusSpells": "",
-            "slotted": [
-                {
-                    "level": 1,
-                    "prepared": 0,
-                    "cast": 0,
-                    "name": "Unseen Servant",
-                    "school": "Conjuration",
-                    "subschool": "Creation"
-                },
-                {
-                    "level": 1,
-                    "prepared": 0,
-                    "cast": 0,
-                    "name": "Unbreakable Heart",
-                    "school": "Enchantment",
-                    "subschool": "Compulsion"
-                },
-                {
-                    "level": 1,
-                    "prepared": 0,
-                    "cast": 0,
-                    "name": "Stone Shield",
-                    "school": "Conjuration",
-                    "subschool": "Creation"
-                },
-                {
-                    "level": 1,
-                    "prepared": 0,
-                    "cast": 0,
-                    "name": "Cure Light Wounds",
-                    "school": "Conjuration",
-                    "subschool": "Healing"
-                },
-                {
-                    "level": 1,
-                    "prepared": 0,
-                    "cast": 0,
-                    "name": "Sanctuary",
-                    "school": "Abjuration",
-                    "subschool": ""
-                },
-                {
-                    "level": 1,
-                    "prepared": 0,
-                    "cast": 0,
-                    "name": "Shield Of Faith",
-                    "school": "Abjuration",
-                    "subschool": ""
-                },
-                {
-                    "level": 1,
-                    "prepared": 0,
-                    "cast": 0,
-                    "name": "Inflict Light Wounds",
-                    "school": "Necromancy",
-                    "subschool": ""
-                }
-            ]
-        },
-        {
-            "totalKnown": "5",
-            "dc": "17",
-            "totalPerDay": "7",
-            "bonusSpells": "",
-            "slotted": [
-                {
-                    "level": 2,
-                    "prepared": 0,
-                    "cast": 0,
-                    "name": "Cure Moderate Wounds",
-                    "school": "Conjuration",
-                    "subschool": "Healing"
-                },
-                {
-                    "level": 2,
-                    "prepared": 0,
-                    "cast": 0,
-                    "name": "Spiritual Weapon",
-                    "school": "Evocation",
-                    "subschool": ""
-                },
-                {
-                    "level": 2,
-                    "prepared": 0,
-                    "cast": 0,
-                    "name": "Boneshaker",
-                    "school": "Necromancy",
-                    "subschool": ""
-                },
-                {
-                    "level": 2,
-                    "prepared": 0,
-                    "cast": 0,
-                    "name": "Restoration, Lesser",
-                    "school": "Conjuration",
-                    "subschool": "Healing"
-                },
-                {
-                    "level": 2,
-                    "prepared": 0,
-                    "cast": 0,
-                    "name": "Defending Bone",
-                    "school": "Necromancy",
-                    "subschool": ""
-                }
-            ]
-        },
-        {
-            "totalKnown": "5",
-            "dc": "18",
-            "totalPerDay": "6",
-            "bonusSpells": "",
-            "slotted": [
-                {
-                    "level": 3,
-                    "prepared": 0,
-                    "cast": 0,
-                    "name": "Heroism",
-                    "school": "Enchantment",
-                    "subschool": "Compulsion"
-                },
-                {
-                    "level": 3,
-                    "prepared": 0,
-                    "cast": 0,
-                    "name": "Cure Serious Wounds",
-                    "school": "Conjuration",
-                    "subschool": "Healing"
-                },
-                {
-                    "level": 3,
-                    "prepared": 0,
-                    "cast": 0,
-                    "name": "Animate Dead",
-                    "school": "Necromancy",
-                    "subschool": ""
-                },
-                {
-                    "level": 3,
-                    "prepared": 0,
-                    "cast": 0,
-                    "name": "Remove Curse",
-                    "school": "Abjuration",
-                    "subschool": ""
-                },
-                {
-                    "level": 3,
-                    "prepared": 0,
-                    "cast": 0,
-                    "name": "Remove Blindness/Deafness",
-                    "school": "Conjuration",
-                    "subschool": "Healing"
-                }
-            ]
-        },
-        {
-            "totalKnown": "3",
-            "dc": "19",
-            "totalPerDay": "4",
-            "slotted": [
-                {
-                    "level": 4,
-                    "prepared": 0,
-                    "cast": 0,
-                    "name": "Cure Critical Wounds",
-                    "school": "Conjuration",
-                    "subschool": "Healing"
-                },
-                {
-                    "level": 4,
-                    "prepared": 0,
-                    "cast": 0,
-                    "name": "Spiritual Ally",
-                    "school": "Evocation",
-                    "subschool": ""
-                },
-                {
-                    "level": 4,
-                    "prepared": 0,
-                    "cast": 0,
-                    "name": "Wall Of Bone",
-                    "school": "Necromancy",
-                    "subschool": ""
-                }
-            ]
-        },
-        {},
-        {},
-        {},
-        {},
-        {}
-    ],
-    "name": "Zotha",
-    "modified": "2020-10-28T15:27:45.618Z",
-    "alignment": "Neutral",
-    "level": "8",
-    "age": "19",
-    "gender": "F",
-    "homeland": "Varisia",
-    "race": "Half-orc",
-    "size": "M",
-    "eyes": "Silver",
-    "hair": "Silver",
-    "abilities": {
-        "str": "12",
-        "dex": "14",
-        "con": "14",
-        "int": "12",
-        "wis": "10",
-        "cha": "20"
-    },
-    "ac": {
+    "combat": {
+        "ac": "18",
         "armorBonus": "4",
         "shieldBonus": "2",
-        "total": "18",
         "touch": "12",
         "flatFooted": "16",
-        "items": []
+        "hp": "49",
+        "init": "2",
+        "bab": "6",
+        "speed": "30",
+        "cmb": "7",
+        "cmd": "19"
     },
-    "hp": {
-        "total": "50"
-    },
-    "saves": {
-        "fort": {
+    "saves": [
+        {
+            "name": "fort",
             "base": "2",
             "magicModifier": "1",
             "total": "5"
         },
-        "reflex": {
+        {
+            "name": "reflex",
             "base": "2",
             "magicModifier": "1",
             "total": "5"
         },
-        "will": {
+        {
+            "name": "will",
             "base": "6",
             "magicModifier": "1",
             "miscModifier": "1",
             "total": "8"
         }
-    },
-    "bab": "6",
-    "cmd": {
-        "total": "19"
-    },
-    "cmb": {
-        "total": "7"
-    },
-    "speed": {
-        "base": "30"
-    },
-    "initiative": {
-        "total": "2"
-    },
+    ],
+    "spellInfo": [
+        {
+            "level": "0",
+            "slots": "8",
+            "known": "9",
+            "dc": "15"
+        },
+        {
+            "level": "1",
+            "slots": "8",
+            "known": "7",
+            "dc": "16"
+        },
+        {
+            "level": "2",
+            "slots": "7",
+            "known": "5",
+            "dc": "17"
+        },
+        {
+            "level": "3",
+            "slots": "6",
+            "known": "5",
+            "dc": "18"
+        },
+        {
+            "level": "4",
+            "slots": "4",
+            "known": "3",
+            "dc": "19"
+        }
+    ],
+    "spells": [
+        {
+            "level": "0",
+            "name": "Detect Magic",
+            "school": "Divination",
+            "description": "",
+            "link": "",
+            "status": ""
+        },
+        {
+            "level": "0",
+            "name": "Detect Poison",
+            "school": "Divination",
+            "description": "",
+            "link": "",
+            "status": ""
+        },
+        {
+            "level": "0",
+            "name": "Light",
+            "school": "Evocation",
+            "description": "",
+            "link": "",
+            "status": ""
+        },
+        {
+            "level": "0",
+            "name": "Spark",
+            "school": "Evocation",
+            "description": "",
+            "link": "",
+            "status": ""
+        },
+        {
+            "level": "0",
+            "name": "Guidance",
+            "school": "Divination",
+            "description": "",
+            "link": "",
+            "status": ""
+        },
+        {
+            "level": "0",
+            "name": "Resistance",
+            "school": "Abjuration",
+            "description": "",
+            "link": "",
+            "status": ""
+        },
+        {
+            "level": "0",
+            "name": "Enhanced Diplomacy",
+            "school": "Divination",
+            "description": "Range touch\nTarget creature touched\nDuration 1 minute or until discharged\nSaving Throw Will negates (harmless); Spell Resistance yes (harmless)\n\nYou imbue the subject with divine diplomacy skills. The creature gets a +2 competence bonus on a single Diplomacy or Intimidate check. It must choose to use the bonus before making the roll to which it applies."
+        },
+        {
+            "level": "1",
+            "name": "Unseen Servant",
+            "school": "Conjuration",
+            "description": "",
+            "link": "",
+            "status": ""
+        },
+        {
+            "level": "1",
+            "name": "Liberating Command",
+            "school": "Transmutation",
+            "description": "",
+            "link": "",
+            "status": ""
+        },
+        {
+            "level": "1",
+            "name": "Stone Shield",
+            "school": "Conjuration",
+            "description": "",
+            "link": "",
+            "status": ""
+        },
+        {
+            "level": "1",
+            "name": "Cure Light Wounds",
+            "school": "Conjuration",
+            "description": "",
+            "link": "",
+            "status": ""
+        },
+        {
+            "level": "1",
+            "name": "Sanctuary",
+            "school": "Abjuration",
+            "description": "",
+            "link": "",
+            "status": ""
+        },
+        {
+            "level": "1",
+            "name": "Shield Of Faith",
+            "school": "Abjuration",
+            "description": "",
+            "link": "",
+            "status": ""
+        },
+        {
+            "level": "1",
+            "name": "Inflict Light Wounds",
+            "school": "Necromancy",
+            "description": "",
+            "link": "",
+            "status": ""
+        },
+        {
+            "level": "2",
+            "name": "Cure Moderate Wounds",
+            "school": "Conjuration",
+            "description": "",
+            "link": "",
+            "status": ""
+        },
+        {
+            "level": "2",
+            "name": "Spiritual Weapon",
+            "school": "Evocation",
+            "description": "",
+            "link": "",
+            "status": ""
+        },
+        {
+            "level": "2",
+            "name": "Boneshaker",
+            "school": "Necromancy",
+            "description": "",
+            "link": "",
+            "status": ""
+        },
+        {
+            "level": "2",
+            "name": "Restoration, Lesser",
+            "school": "Conjuration",
+            "description": "",
+            "link": "",
+            "status": ""
+        },
+        {
+            "level": "2",
+            "name": "Defending Bone",
+            "school": "Necromancy",
+            "description": "",
+            "link": "",
+            "status": ""
+        },
+        {
+            "level": "3",
+            "name": "Heroism",
+            "school": "Enchantment",
+            "description": "",
+            "link": "",
+            "status": ""
+        },
+        {
+            "level": "3",
+            "name": "Cure Serious Wounds",
+            "school": "Conjuration",
+            "description": "",
+            "link": "",
+            "status": ""
+        },
+        {
+            "level": "3",
+            "name": "Animate Dead",
+            "school": "Necromancy",
+            "description": "",
+            "link": "",
+            "status": ""
+        },
+        {
+            "level": "3",
+            "name": "Remove Curse",
+            "school": "Abjuration",
+            "description": "",
+            "link": "",
+            "status": ""
+        },
+        {
+            "level": "3",
+            "name": "Remove Blindness/Deafness",
+            "school": "Conjuration",
+            "description": "",
+            "link": "",
+            "status": ""
+        },
+        {
+            "level": "4",
+            "name": "Cure Critical Wounds",
+            "school": "Conjuration",
+            "description": "",
+            "link": "",
+            "status": ""
+        },
+        {
+            "level": "4",
+            "name": "Spiritual Ally",
+            "school": "Evocation",
+            "description": "",
+            "link": "",
+            "status": ""
+        },
+        {
+            "level": "4",
+            "name": "Wall Of Bone",
+            "school": "Necromancy",
+            "description": "",
+            "link": "",
+            "status": ""
+        }
+    ],
+    "abilities": [
+        {
+            "name": "str",
+            "points": "12",
+            "mod": "1"
+        },
+        {
+            "name": "dex",
+            "points": "14",
+            "mod": "2"
+        },
+        {
+            "con": "14",
+            "name": "con",
+            "points": "14",
+            "mod": "2"
+        },
+        {
+            "name": "int",
+            "points": "12",
+            "mod": "1"
+        },
+        {
+            "wis": "10",
+            "name": "wis",
+            "points": "10",
+            "mod": "0"
+        },
+        {
+            "name": "cha",
+            "points": "20",
+            "mod": "5"
+        }
+    ],
     "melee": [
         {
             "weapon": "Earth Breaker \"The Destroyer\"",
@@ -386,7 +365,6 @@
             "ammunition": "Ranged"
         }
     ],
-    "conditionalOffenseModifiers": "(+1)",
     "skills": {
         "craft1": {
             "classSkill": true,
@@ -550,7 +528,7 @@
             "total": "1"
         }
     },
-    "languages": "Common, Orc, (Abyssal, Ignan in combat)",
+    "languages": ["Common", "Orc", "(Abyssal, Ignan in combat)"],
     "specialAbilities": [
         {
             "name": "Orc Ferocity",
@@ -574,10 +552,11 @@
         {
             "name": "Brute",
             "type": "Background",
+            "link": "",
             "notes": "You gain a +1 trait bonus on Intimidate checks, and Intimidate is always a class skill for you."
         }
     ],
-    "gear": [
+    "equipment": [
         {
             "type": "",
             "name": "Rope"
@@ -588,6 +567,7 @@
             "subschool": "Healing",
             "type": "Wand",
             "quantity": "24",
+            "link": "",
             "notes": ""
         },
         {
@@ -596,30 +576,35 @@
             "school": "Conjuration",
             "subschool": "Creation",
             "quantity": "1",
+            "link": "",
             "notes": "Range 20 ft.\nEffect cloud spreads in 20-ft. radius from you, 20 ft. high\nDuration 1 min./level (D)\nSaving Throw none; Spell Resistance no\n\nA misty vapor arises around you. It is stationary. The vapor obscures all sight, including darkvision, beyond 5 feet. A creature 5 feet away has concealment (attacks have a 20% miss chance). Creatures farther away have total concealment (50% miss chance, and the attacker cannot use sight to locate the target).\n\nA moderate wind (11+ mph), such as from a gust of wind spell, disperses the fog in 4 rounds. A strong wind (21+ mph) disperses the fog in 1 round. A fireball, flame strike, or similar spell burns away the fog in the explosive or fiery spell’s area. A wall of fire burns away the fog in the area into which it deals damage."
         },
         {
             "name": "Hat of Disguise",
             "type": "Magical",
             "quantity": "1",
+            "link": "",
             "notes": "Range personal\nTarget you\nDuration 10 min./level (D)\n\nThis apparently normal hat allows its wearer to alter her appearance as with a disguise self spell. As part of the disguise, the hat can be changed to appear as a comb, ribbon, headband, cap, coif, hood, helmet, or other headwear.\n\n------------------------------------------\n\nYou make yourself – including clothing, armor, weapons, and equipment – look different. You can seem 1 foot shorter or taller, thin, fat, or in between. You cannot change your creature type (although you can appear as another subtype). Otherwise, the extent of the apparent change is up to you. You could add or obscure a minor feature or look like an entirely different person or gender.\n\nThe spell does not provide the abilities or mannerisms of the chosen form, nor does it alter the perceived tactile (touch) or audible (sound) properties of you or your equipment. If you use this spell to create a disguise, you get a +10 bonus on the Disguise check. A creature that interacts with the glamer gets a Will save to recognize it as an illusion."
         },
         {
             "notes": "The medallion gives the wearer increased resistance to many forms of danger and allows him or her to draw temporary life force from it. If placed on a dead body, a sihedron medallion will keep the body from decomposing.\n\nFree action: False Life, 1d10 + 5 for 5 hours\n+1 on all saving throws",
             "quantity": "1",
             "name": "Sihedron medallion",
+            "link": "",
             "type": "Magical"
         },
         {
             "name": "Mithral chain shirt",
             "type": "Armor",
             "quantity": "1",
+            "link": "",
             "notes": "HP/inch 30; Hardness 15; Cost Weapons or armors fashioned from mithral are always masterwork items as well; the masterwork cost is included in the prices given below.\n\nMithral is a very rare silvery, glistening metal that is lighter than steel but just as hard.\n\nWhen worked like steel, it becomes a wonderful material from which to create armor, and is occasionally used for other items as well. Most mithral armors are one category lighter than normal for purposes of movement and other limitations. Heavy armors are treated as medium, and medium armors are treated as light, but light armors are still treated as light. This decrease does not apply to proficiency in wearing the armor. \n\n...\n\nSpell failure chances for armors and shields made from mithral are decreased by 10%, maximum Dexterity bonuses are increased by 2, and armor check penalties are decreased by 3 (to a minimum of 0)."
         },
         {
             "name": "+1 Buckler",
             "type": "Shield",
             "quantity": "1",
+            "link": "",
             "notes": "This small metal shield is worn strapped to your forearm. You can use a bow or crossbow without penalty while carrying it. You can also use your shield arm to wield a weapon (whether you are using an offhand weapon or using your off hand to help wield a two-handed weapon), but you take a –1 penalty on attack rolls while doing so. This penalty stacks with those that may apply for fighting with your off hand and for fighting with two weapons. In any case, if you use a weapon in your off hand, you lose the buckler’s Armor Class bonus until your next turn. You can cast a spell with somatic components using your shield arm, but you lose the buckler’s Armor Class bonus until your next turn. You can’t make a shield bash with a buckler."
         },
         {
@@ -627,37 +612,35 @@
             "name": "Cure Moderate Wounds",
             "school": "Conjuration",
             "subschool": "Healing",
+            "link": "",
             "quantity": "3"
         }
     ],
     "feats": [
         {
             "name": "Harrowed",
+            "link": "",
             "notes": "You get a +1 bonus on all Will saves made to resist enchantment effects. Once per day, you may draw a card from a Harrow deck you own. At any one time for the rest of that day, you may apply a +2 bonus on any d20 roll modified by the card’s suit. For example, if you drew a card from the suit of Dexterity, you could apply this +2 bonus on an Initiative check, a Reflex save, a Dexterity-based skill check, or a ranged attack roll. You may assign this +2 bonus after you make the roll, but you must do so before you know whether the roll was a success or not."
         }
     ],
     "spellLikes": [
         {
-            "prepared": 0,
-            "cast": 0,
             "name": "Ancestral Weapon (Su)",
+            "link": "",
             "notes": "You can summon a simple or martial weapon from your family’s history that is appropriate for your current size. You are considered proficient with this weapon. At 3rd level, the weapon is considered masterwork. At 7th level, 15th level, and 19th level, the weapon gains a cumulative +1 enhancement bonus. At 11th level, the weapon gains the ghost touch weapon property. You can use this ability for a number of minutes per day equal to your oracle level. This duration does not need to be consecutive, but it must be used in 1-minute increments. The weapon disappears after 1 round if it leaves your grasp.",
             "level": 6
         },
         {
-            "prepared": 0,
-            "cast": 0,
             "name": "Blood of Heroes (Su)",
+            "link": "",
             "level": 6,
             "notes": "As a move action, you can call upon your ancestors to grant you extra bravery in battle. You gain a +1 morale bonus on attack rolls, damage rolls, and Will saves against fear for a number of rounds equal to your Charisma bonus. At 7th level, this bonus increases to +2, and at 14th level this bonus increases to +3. You can use this ability once per day, plus one additional time per day at 5th level, and every five levels thereafter."
         },
         {
-            "prepared": 0,
-            "cast": 0,
             "name": "Voice of the Grave (Su)",
+            "link": "",
             "level": 6,
             "notes": "You can speak with the dead, as per the spell, for a number of rounds per day equal to your oracle level. These rounds do not need to be consecutive. At 5th level, and every five levels thereafter, the dead creature you question takes a cumulative –2 penalty on its Will save to resist this effect."
         }
-    ],
-    "spellsSpeciality": "Divination"
+    ]
 }

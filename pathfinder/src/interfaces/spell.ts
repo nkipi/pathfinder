@@ -1,3 +1,5 @@
+import { Base } from "./base";
+
 export interface SpellInfo {
     level: string;
     slots: string;
@@ -5,11 +7,8 @@ export interface SpellInfo {
     dc: string;
 }
 
-export interface Spell {
-    name: string;
+export interface Spell extends Base {
     level: string;
-    description: string;
-    link: string;
     school: string;
-    status: string;
+    status?: string;
 }

@@ -1,15 +1,15 @@
 {
-    "general": {
+    "character": {
         "name": "Zotha",
-        "class": "Oracle",
-        "level": 8,
+        "characterClass": "Oracle",
+        "level": "8",
         "race": "Half-orc",
         "alignment": "Neutral"
     },
     "combat": {
         "ac": "18",
-        "armorBonus": "4",
-        "shieldBonus": "2",
+        "armor": "4",
+        "shield": "2",
         "touch": "12",
         "flatFooted": "16",
         "hp": "49",
@@ -24,20 +24,23 @@
             "name": "fort",
             "base": "2",
             "magicModifier": "1",
-            "total": "5"
+            "total": "5",
+            "ability": "con"
         },
         {
             "name": "reflex",
             "base": "2",
             "magicModifier": "1",
-            "total": "5"
+            "total": "5",
+            "ability": "dex"
         },
         {
             "name": "will",
             "base": "6",
             "magicModifier": "1",
             "miscModifier": "1",
-            "total": "8"
+            "total": "8",
+            "ability": "char"
         }
     ],
     "spellInfo": [
@@ -77,7 +80,7 @@
             "level": "0",
             "name": "Detect Magic",
             "school": "Divination",
-            "description": "",
+            "notes": "",
             "link": "",
             "status": ""
         },
@@ -85,7 +88,7 @@
             "level": "0",
             "name": "Detect Poison",
             "school": "Divination",
-            "description": "",
+            "notes": "",
             "link": "",
             "status": ""
         },
@@ -93,7 +96,7 @@
             "level": "0",
             "name": "Light",
             "school": "Evocation",
-            "description": "",
+            "notes": "",
             "link": "",
             "status": ""
         },
@@ -101,7 +104,7 @@
             "level": "0",
             "name": "Spark",
             "school": "Evocation",
-            "description": "",
+            "notes": "",
             "link": "",
             "status": ""
         },
@@ -109,7 +112,7 @@
             "level": "0",
             "name": "Guidance",
             "school": "Divination",
-            "description": "",
+            "notes": "",
             "link": "",
             "status": ""
         },
@@ -117,7 +120,7 @@
             "level": "0",
             "name": "Resistance",
             "school": "Abjuration",
-            "description": "",
+            "notes": "",
             "link": "",
             "status": ""
         },
@@ -125,13 +128,14 @@
             "level": "0",
             "name": "Enhanced Diplomacy",
             "school": "Divination",
-            "description": "Range touch\nTarget creature touched\nDuration 1 minute or until discharged\nSaving Throw Will negates (harmless); Spell Resistance yes (harmless)\n\nYou imbue the subject with divine diplomacy skills. The creature gets a +2 competence bonus on a single Diplomacy or Intimidate check. It must choose to use the bonus before making the roll to which it applies."
+            "notes": "",
+            "link": ""
         },
         {
             "level": "1",
             "name": "Unseen Servant",
             "school": "Conjuration",
-            "description": "",
+            "notes": "",
             "link": "",
             "status": ""
         },
@@ -139,7 +143,7 @@
             "level": "1",
             "name": "Liberating Command",
             "school": "Transmutation",
-            "description": "",
+            "notes": "",
             "link": "",
             "status": ""
         },
@@ -147,7 +151,7 @@
             "level": "1",
             "name": "Stone Shield",
             "school": "Conjuration",
-            "description": "",
+            "notes": "",
             "link": "",
             "status": ""
         },
@@ -155,7 +159,7 @@
             "level": "1",
             "name": "Cure Light Wounds",
             "school": "Conjuration",
-            "description": "",
+            "notes": "",
             "link": "",
             "status": ""
         },
@@ -163,7 +167,7 @@
             "level": "1",
             "name": "Sanctuary",
             "school": "Abjuration",
-            "description": "",
+            "notes": "",
             "link": "",
             "status": ""
         },
@@ -171,7 +175,7 @@
             "level": "1",
             "name": "Shield Of Faith",
             "school": "Abjuration",
-            "description": "",
+            "notes": "",
             "link": "",
             "status": ""
         },
@@ -179,7 +183,7 @@
             "level": "1",
             "name": "Inflict Light Wounds",
             "school": "Necromancy",
-            "description": "",
+            "notes": "",
             "link": "",
             "status": ""
         },
@@ -187,7 +191,7 @@
             "level": "2",
             "name": "Cure Moderate Wounds",
             "school": "Conjuration",
-            "description": "",
+            "notes": "",
             "link": "",
             "status": ""
         },
@@ -195,7 +199,7 @@
             "level": "2",
             "name": "Spiritual Weapon",
             "school": "Evocation",
-            "description": "",
+            "notes": "",
             "link": "",
             "status": ""
         },
@@ -203,7 +207,7 @@
             "level": "2",
             "name": "Boneshaker",
             "school": "Necromancy",
-            "description": "",
+            "notes": "",
             "link": "",
             "status": ""
         },
@@ -211,7 +215,7 @@
             "level": "2",
             "name": "Restoration, Lesser",
             "school": "Conjuration",
-            "description": "",
+            "notes": "",
             "link": "",
             "status": ""
         },
@@ -219,7 +223,7 @@
             "level": "2",
             "name": "Defending Bone",
             "school": "Necromancy",
-            "description": "",
+            "notes": "",
             "link": "",
             "status": ""
         },
@@ -227,7 +231,7 @@
             "level": "3",
             "name": "Heroism",
             "school": "Enchantment",
-            "description": "",
+            "notes": "",
             "link": "",
             "status": ""
         },
@@ -235,7 +239,7 @@
             "level": "3",
             "name": "Cure Serious Wounds",
             "school": "Conjuration",
-            "description": "",
+            "notes": "",
             "link": "",
             "status": ""
         },
@@ -243,7 +247,7 @@
             "level": "3",
             "name": "Animate Dead",
             "school": "Necromancy",
-            "description": "",
+            "notes": "",
             "link": "",
             "status": ""
         },
@@ -251,7 +255,7 @@
             "level": "3",
             "name": "Remove Curse",
             "school": "Abjuration",
-            "description": "",
+            "notes": "",
             "link": "",
             "status": ""
         },
@@ -259,7 +263,7 @@
             "level": "3",
             "name": "Remove Blindness/Deafness",
             "school": "Conjuration",
-            "description": "",
+            "notes": "",
             "link": "",
             "status": ""
         },
@@ -267,7 +271,7 @@
             "level": "4",
             "name": "Cure Critical Wounds",
             "school": "Conjuration",
-            "description": "",
+            "notes": "",
             "link": "",
             "status": ""
         },
@@ -275,7 +279,7 @@
             "level": "4",
             "name": "Spiritual Ally",
             "school": "Evocation",
-            "description": "",
+            "notes": "",
             "link": "",
             "status": ""
         },
@@ -283,7 +287,7 @@
             "level": "4",
             "name": "Wall Of Bone",
             "school": "Necromancy",
-            "description": "",
+            "notes": "",
             "link": "",
             "status": ""
         }
@@ -324,7 +328,7 @@
     ],
     "melee": [
         {
-            "weapon": "Earth Breaker \"The Destroyer\"",
+            "name": "Earth Breaker \"The Destroyer\"",
             "attackBonus": "7",
             "damage": "2d6 + 1",
             "critical": "x3",
@@ -332,7 +336,7 @@
             "notes": "Two-handed"
         },
         {
-            "weapon": "Heavy Flail \"Skull Hunter\"",
+            "name": "Heavy Flail \"Skull Hunter\"",
             "attackBonus": "7",
             "damage": "1d10 + 1",
             "critical": "19-20 / x2",
@@ -340,7 +344,7 @@
             "notes": "Two-handed"
         },
         {
-            "weapon": "Javelin \"Heart Piercer\"",
+            "name": "Javelin \"Heart Piercer\"",
             "attackBonus": "8",
             "damage": "1d6",
             "critical": "x2",
@@ -348,7 +352,7 @@
             "notes": "Ranged"
         },
         {
-            "weapon": "Dagger",
+            "name": "Dagger",
             "attackBonus": "6",
             "damage": "1d4 + 1",
             "critical": "19-20 / x2",
@@ -357,7 +361,7 @@
     ],
     "ranged": [
         {
-            "weapon": "Orc Hornbow \"The Phoenix\"",
+            "name": "Orc Hornbow \"The Phoenix\"",
             "attackBonus": "8",
             "damage": "2d6 + 1",
             "critical": "x3",
@@ -365,169 +369,195 @@
             "ammunition": "Ranged"
         }
     ],
-    "skills": {
-        "craft1": {
+    "skills": [
+        {
+            "name": "Craft 1",
             "classSkill": true,
-            "name": "Sculpture",
+            "type": "Sculpture",
             "ranks": "1",
             "total": "5"
         },
-        "diplomacy": {
+        {
+            "name": "Diplomacy",
             "classSkill": true,
             "ranks": "6",
-            "misc": "",
             "total": "14"
         },
-        "heal": {
+        {
+            "name": "Heal",
             "classSkill": true,
             "ranks": "1",
             "total": "4"
         },
-        "intimidate": {
+        {
+            "name": "Intimidate",
             "classSkill": true,
             "ranks": "4",
-            "misc": "",
             "total": "15",
             "racial": "3"
         },
-        "knowledgeArcana": {
+        {
+            "name": "Knowledge",
+            "type": "Arcana",
             "classSkill": true,
             "total": "1"
         },
-        "knowledgeDungeoneering": {
+        {
+            "name": "Knowledge",
+            "type": "Dungeoneering",
             "classSkill": true,
             "total": "1"
         },
-        "knowledgeEngineering": {
+       {
+            "name": "Knowledge",
+            "type": "Engineering",
             "classSkill": true,
             "total": "5",
             "ranks": "1"
         },
-        "knowledgeGeography": {
+        {
+            "name": "Knowledge",
+            "type": "Geography",
             "classSkill": true,
             "total": "1"
         },
-        "knowledgeHistory": {
+        {
+            "name": "Knowledge",
+            "type": "History",
             "classSkill": true,
             "ranks": "1",
             "total": "5"
         },
-        "knowledgeLocal": {
+        {
+            "name": "Knowledge",
+            "type": "Local",
             "classSkill": true,
             "ranks": "1",
             "total": "5"
         },
-        "knowledgeNature": {
+        {
+            "name": "Knowledge",
+            "type": "Nature",
             "classSkill": true,
             "total": "1"
         },
-        "knowledgeNobility": {
+        {
+            "name": "Knowledge",
+            "type": "Nobility",
             "classSkill": true,
             "total": "1"
         },
-        "knowledgePlanes": {
+        {
+            "name": "Knowledge",
+            "type": "Planes",
             "classSkill": true,
             "ranks": "",
             "total": "1"
         },
-        "knowledgeReligion": {
+        {
+            "name": "Knowledge",
+            "type": "Religion",
             "classSkill": true,
             "ranks": "1",
             "total": "5"
         },
-        "profession1": {
+        {
+            "name": "Profession",
             "classSkill": true,
-            "name": "",
             "total": "0"
         },
-        "senseMotive": {
+        {
+            "name": "Sense Motive",
             "classSkill": true,
             "ranks": "8",
             "total": "14",
             "racial": "2"
         },
-        "spellcraft": {
+        {
+            "name": "Spellcraft",
             "classSkill": true,
             "ranks": "1",
             "total": "5"
         },
-        "acrobatics": {
+        {
+            "name": "Acrobatics",
             "ranks": "3",
             "total": "5"
         },
-        "appraise": {
+        {
+            "name": "Appraise",
             "total": "1"
         },
-        "bluff": {
+        {
+            "name": "Bluff",
             "ranks": "3",
-            "total": "8",
-            "misc": ""
+            "total": "8"
         },
-        "climb": {
+        {
+            "name": "Climb",
             "total": "1"
         },
-        "disguise": {
-            "ranks": "",
+        {
+            "name": "Disguise",
             "total": "5"
         },
-        "handleAnimal": {
+        {
+            "name": "Handle Animal",
             "ranks": "1",
             "total": "6"
         },
-        "perception": {
+        {
+            "name": "Perception",
             "misc": "6",
             "total": "8"
         },
-        "useMagicDevice": {
+        {
+            "name": "Use Magic Device",
             "ranks": "2",
             "total": "7"
         },
-        "perform1": {
-            "name": "",
+        {
+            "name": "Perform",
             "total": "5"
         },
-        "perform2": {
-            "name": "",
-            "total": "5"
-        },
-        "craft2": {
-            "name": "",
-            "misc": "",
-            "total": "",
-            "trait": ""
-        },
-        "escapeArtist": {
+        {
+            "name": "Escape Artist",
             "total": "2"
         },
-        "fly": {
+        {
+            "name": "Fly",
             "total": "2"
         },
-        "linguistics": {
+        {
+            "name": "Linguistics",
             "ranks": "1",
             "total": "2"
         },
-        "ride": {
+        {
+            "name": "Ride",
             "total": "2"
         },
-        "sleightOfHand": {
+        {
+            "name": "Sleight of Hand",
             "total": "0"
         },
-        "craft3": {
-            "total": ""
+        {
+            "name": "Disable Device",
+            "total": "0"
         },
-        "disableDevice": {
-            "total": "-"
-        },
-        "stealth": {
+        {
+            "name": "Stealth",
             "total": "2"
         },
-        "survival": {
+        {
+            "name": "Survival",
             "total": "0"
         },
-        "swim": {
+        {
+            "name": "Swim",
             "total": "1"
         }
-    },
+    ],
     "languages": ["Common", "Orc", "(Abyssal, Ignan in combat)"],
     "specialAbilities": [
         {
@@ -543,7 +573,6 @@
         {
             "name": "Darkvision",
             "school": "Transmutation",
-            "subschool": "",
             "notes": "Half-orcs can see in the dark up to 60 feet.",
             "type": "Racial"
         }
@@ -552,19 +581,16 @@
         {
             "name": "Brute",
             "type": "Background",
-            "link": "",
             "notes": "You gain a +1 trait bonus on Intimidate checks, and Intimidate is always a class skill for you."
         }
     ],
     "equipment": [
         {
-            "type": "",
             "name": "Rope"
         },
         {
             "name": "Cure Light Wounds",
             "school": "Conjuration",
-            "subschool": "Healing",
             "type": "Wand",
             "quantity": "24",
             "link": "",
@@ -574,46 +600,45 @@
             "type": "Wand",
             "name": "Obscuring Mist",
             "school": "Conjuration",
-            "subschool": "Creation",
             "quantity": "1",
             "link": "",
-            "notes": "Range 20 ft.\nEffect cloud spreads in 20-ft. radius from you, 20 ft. high\nDuration 1 min./level (D)\nSaving Throw none; Spell Resistance no\n\nA misty vapor arises around you. It is stationary. The vapor obscures all sight, including darkvision, beyond 5 feet. A creature 5 feet away has concealment (attacks have a 20% miss chance). Creatures farther away have total concealment (50% miss chance, and the attacker cannot use sight to locate the target).\n\nA moderate wind (11+ mph), such as from a gust of wind spell, disperses the fog in 4 rounds. A strong wind (21+ mph) disperses the fog in 1 round. A fireball, flame strike, or similar spell burns away the fog in the explosive or fiery spell’s area. A wall of fire burns away the fog in the area into which it deals damage."
+            "notes": ""
         },
         {
             "name": "Hat of Disguise",
             "type": "Magical",
             "quantity": "1",
             "link": "",
-            "notes": "Range personal\nTarget you\nDuration 10 min./level (D)\n\nThis apparently normal hat allows its wearer to alter her appearance as with a disguise self spell. As part of the disguise, the hat can be changed to appear as a comb, ribbon, headband, cap, coif, hood, helmet, or other headwear.\n\n------------------------------------------\n\nYou make yourself – including clothing, armor, weapons, and equipment – look different. You can seem 1 foot shorter or taller, thin, fat, or in between. You cannot change your creature type (although you can appear as another subtype). Otherwise, the extent of the apparent change is up to you. You could add or obscure a minor feature or look like an entirely different person or gender.\n\nThe spell does not provide the abilities or mannerisms of the chosen form, nor does it alter the perceived tactile (touch) or audible (sound) properties of you or your equipment. If you use this spell to create a disguise, you get a +10 bonus on the Disguise check. A creature that interacts with the glamer gets a Will save to recognize it as an illusion."
+            "notes": ""
         },
         {
-            "notes": "The medallion gives the wearer increased resistance to many forms of danger and allows him or her to draw temporary life force from it. If placed on a dead body, a sihedron medallion will keep the body from decomposing.\n\nFree action: False Life, 1d10 + 5 for 5 hours\n+1 on all saving throws",
             "quantity": "1",
             "name": "Sihedron medallion",
             "link": "",
-            "type": "Magical"
+            "type": "Magical",
+            "notes": ""
         },
         {
             "name": "Mithral chain shirt",
             "type": "Armor",
             "quantity": "1",
             "link": "",
-            "notes": "HP/inch 30; Hardness 15; Cost Weapons or armors fashioned from mithral are always masterwork items as well; the masterwork cost is included in the prices given below.\n\nMithral is a very rare silvery, glistening metal that is lighter than steel but just as hard.\n\nWhen worked like steel, it becomes a wonderful material from which to create armor, and is occasionally used for other items as well. Most mithral armors are one category lighter than normal for purposes of movement and other limitations. Heavy armors are treated as medium, and medium armors are treated as light, but light armors are still treated as light. This decrease does not apply to proficiency in wearing the armor. \n\n...\n\nSpell failure chances for armors and shields made from mithral are decreased by 10%, maximum Dexterity bonuses are increased by 2, and armor check penalties are decreased by 3 (to a minimum of 0)."
+            "notes": ""
         },
         {
             "name": "+1 Buckler",
             "type": "Shield",
             "quantity": "1",
             "link": "",
-            "notes": "This small metal shield is worn strapped to your forearm. You can use a bow or crossbow without penalty while carrying it. You can also use your shield arm to wield a weapon (whether you are using an offhand weapon or using your off hand to help wield a two-handed weapon), but you take a –1 penalty on attack rolls while doing so. This penalty stacks with those that may apply for fighting with your off hand and for fighting with two weapons. In any case, if you use a weapon in your off hand, you lose the buckler’s Armor Class bonus until your next turn. You can cast a spell with somatic components using your shield arm, but you lose the buckler’s Armor Class bonus until your next turn. You can’t make a shield bash with a buckler."
+            "notes": ""
         },
         {
             "type": "Wand",
             "name": "Cure Moderate Wounds",
             "school": "Conjuration",
-            "subschool": "Healing",
             "link": "",
-            "quantity": "3"
+            "quantity": "3",
+            "notes": ""
         }
     ],
     "feats": [
@@ -627,20 +652,17 @@
         {
             "name": "Ancestral Weapon (Su)",
             "link": "",
-            "notes": "You can summon a simple or martial weapon from your family’s history that is appropriate for your current size. You are considered proficient with this weapon. At 3rd level, the weapon is considered masterwork. At 7th level, 15th level, and 19th level, the weapon gains a cumulative +1 enhancement bonus. At 11th level, the weapon gains the ghost touch weapon property. You can use this ability for a number of minutes per day equal to your oracle level. This duration does not need to be consecutive, but it must be used in 1-minute increments. The weapon disappears after 1 round if it leaves your grasp.",
-            "level": 6
+            "notes": ""
         },
         {
             "name": "Blood of Heroes (Su)",
             "link": "",
-            "level": 6,
-            "notes": "As a move action, you can call upon your ancestors to grant you extra bravery in battle. You gain a +1 morale bonus on attack rolls, damage rolls, and Will saves against fear for a number of rounds equal to your Charisma bonus. At 7th level, this bonus increases to +2, and at 14th level this bonus increases to +3. You can use this ability once per day, plus one additional time per day at 5th level, and every five levels thereafter."
+            "notes": ""
         },
         {
             "name": "Voice of the Grave (Su)",
             "link": "",
-            "level": 6,
-            "notes": "You can speak with the dead, as per the spell, for a number of rounds per day equal to your oracle level. These rounds do not need to be consecutive. At 5th level, and every five levels thereafter, the dead creature you question takes a cumulative –2 penalty on its Will save to resist this effect."
+            "notes": ""
         }
     ]
 }

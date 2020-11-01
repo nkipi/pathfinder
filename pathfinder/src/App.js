@@ -1,8 +1,12 @@
 import "./App.css";
-import { Character } from "./components/character/character";
+import { Main } from "./components/main/main";
 
 function App() {
-  return <Character />;
+  return (
+    <>
+      <Main />
+    </>
+  );
 }
 
 export default App;

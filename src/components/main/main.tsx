@@ -33,14 +33,15 @@ export const Main: React.FC = () => {
         <Character />
         <Abilities />
         <Saves />
+        <DailyBonuses/>
         <Combat />
-        <SpellLikes />
         <Weapons/>
         <Equipment/>
-        <DailyBonuses/>
+        <SpellLikes />
+        <Languages />
+        <></>
         <SpecialAbilitiesAndTraits />
         <Feats />
-        <Languages />
       </Masonry>
       <AllSpells />
       <Skills/>

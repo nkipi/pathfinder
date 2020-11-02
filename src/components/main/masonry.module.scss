@@ -9,7 +9,7 @@
   background-clip: padding-box;
 }
 
-.card:nth-child(even) > * {
+.card > div {
   background-color: #f7f7ff;
 }
 

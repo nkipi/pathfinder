@@ -7,6 +7,7 @@ import { Combat } from "./combat/combat";
 import { Saves } from "./saves/saves";
 import Masonry from "react-masonry-css";
 import { AllSpells } from "./spells/allSpells";
+import { SpecialAbilitiesAndTraits } from "./specialAbilities/specialAbilities";
 
 const breakpointColumnsObj = {
   default: 3,
@@ -26,6 +27,7 @@ export const Main: React.FC = () => {
         <Abilities />
         <Saves />
         <Combat />
+        <SpecialAbilitiesAndTraits />
       </Masonry>
       <AllSpells />
     </div>

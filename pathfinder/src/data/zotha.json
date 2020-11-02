@@ -370,9 +370,9 @@
     ],
     "skills": [
         {
-            "name": "Craft 1",
+            "name": "Sculpture",
             "classSkill": true,
-            "type": "Sculpture",
+            "type": "Craft",
             "ranks": "1",
             "total": "5"
         },

@@ -6,19 +6,40 @@
         "race": "Half-orc",
         "alignment": "Neutral"
     },
-    "combat": {
-        "ac": "18",
-        "armor": "4",
-        "shield": "2",
-        "touch": "12",
-        "flatFooted": "16",
-        "hp": "49",
-        "init": "2",
-        "bab": "6",
-        "speed": "30",
-        "cmb": "7",
-        "cmd": "19"
-    },
+    "abilities": [
+        {
+            "name": "str",
+            "points": "12",
+            "mod": "1"
+        },
+        {
+            "name": "dex",
+            "points": "14",
+            "mod": "2"
+        },
+        {
+            "con": "14",
+            "name": "con",
+            "points": "14",
+            "mod": "2"
+        },
+        {
+            "name": "int",
+            "points": "12",
+            "mod": "1"
+        },
+        {
+            "wis": "10",
+            "name": "wis",
+            "points": "10",
+            "mod": "0"
+        },
+        {
+            "name": "cha",
+            "points": "20",
+            "mod": "5"
+        }
+    ],
     "saves": [
         {
             "name": "fort",
@@ -43,6 +64,19 @@
             "ability": "char"
         }
     ],
+    "combat": {
+        "hp": "49",
+        "init": "2",
+        "speed": "30",
+        "ac": "18",
+        "armor": "4",
+        "shield": "2",
+        "touch": "12",
+        "flatFooted": "16",
+        "bab": "6",
+        "cmb": "7",
+        "cmd": "19"
+    },
     "spellInfo": [
         {
             "level": "0",
@@ -290,40 +324,6 @@
             "notes": "",
             "link": "",
             "status": ""
-        }
-    ],
-    "abilities": [
-        {
-            "name": "str",
-            "points": "12",
-            "mod": "1"
-        },
-        {
-            "name": "dex",
-            "points": "14",
-            "mod": "2"
-        },
-        {
-            "con": "14",
-            "name": "con",
-            "points": "14",
-            "mod": "2"
-        },
-        {
-            "name": "int",
-            "points": "12",
-            "mod": "1"
-        },
-        {
-            "wis": "10",
-            "name": "wis",
-            "points": "10",
-            "mod": "0"
-        },
-        {
-            "name": "cha",
-            "points": "20",
-            "mod": "5"
         }
     ],
     "melee": [

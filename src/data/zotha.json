@@ -80,7 +80,7 @@
     "spellInfo": [
         {
             "level": "0",
-            "slots": "8",
+            "slots": "unlimited",
             "known": "9",
             "dc": "15"
         },

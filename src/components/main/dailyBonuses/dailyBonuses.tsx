@@ -1,25 +1,31 @@
+import { lowerCase } from "lodash";
 import React from "react";
 import zotha from "../../../data/zotha.json";
 import { Card } from "../../layout/card";
 import { Flex } from "../../layout/flex";
 import { Heading } from "../../styling/heading";
+import { Helper } from "../../styling/helper";
 import { Link } from "../../styling/link";
 import { PaddingWrapper } from "../../styling/paddingWrapper";
 import { Property } from "../../styling/property";
 
-export const SpellLikes: React.FC = () => {
-  const { spellLikes } = zotha;
+export const DailyBonuses: React.FC = () => {
+  const { dailyBonuses } = zotha;
   return (
     <Card>
-      <Heading>{"Spell Likes"}</Heading>
+      <Heading>{"Daily Bonuses"}</Heading>
       <Flex>
-        {spellLikes.map((spellLike) => {
-          const { name, link } = spellLike;
+        {dailyBonuses.map((dailyBonus) => {
+          const { source, name, bonuses, link } = dailyBonus;
           return (
             <Card>
               <PaddingWrapper>
                 <Property>{name}</Property>
-                <Link href={link} />
+                {bonuses.map((bonus) => {
+                  return <p>{bonus}</p>;
+                })}
+                <Helper>{source}</Helper>
+                {link && <Link href={link} />}
               </PaddingWrapper>
             </Card>
           );

@@ -5,6 +5,7 @@ import { Flex } from "../../layout/flex";
 import { Heading } from "../../styling/heading";
 import { Helper } from "../../styling/helper";
 import { Link } from "../../styling/link";
+import { PaddingWrapper } from "../../styling/paddingWrapper";
 import { Property } from "../../styling/property";
 import styles from "./spells.module.scss";
 
@@ -26,10 +27,12 @@ export const SpellsByLevel: React.FC<Props> = ({ spellInfo, spells }) => {
         {spells.map((spell) => {
           const { name, school, link } = spell;
           return (
-            <Card className={styles.card}>
-              <Property>{name}</Property>
-              <Helper>{school}</Helper>
-              {link && <Link href={link} className={styles.link} />}
+            <Card>
+              <PaddingWrapper>
+                <Property>{name}</Property>
+                <Helper>{school}</Helper>
+                {link && <Link href={link} />}
+              </PaddingWrapper>
             </Card>
           );
         })}

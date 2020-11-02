@@ -14,6 +14,7 @@ import { Languages } from "./languages/languages";
 import { Equipment } from "./equipment/equipment";
 import { Weapons } from "./weapons/weapons";
 import { Skills } from "./skills/skills";
+import { DailyBonuses } from "./dailyBonuses/dailyBonuses";
 
 const breakpointColumnsObj = {
   default: 3,
@@ -33,11 +34,12 @@ export const Main: React.FC = () => {
         <Abilities />
         <Saves />
         <Combat />
-        <SpecialAbilitiesAndTraits />
-        <Feats />
         <SpellLikes />
         <Weapons/>
         <Equipment/>
+        <DailyBonuses/>
+        <SpecialAbilitiesAndTraits />
+        <Feats />
         <Languages />
       </Masonry>
       <AllSpells />

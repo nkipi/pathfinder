@@ -4,6 +4,7 @@ import { Card } from "../../layout/card";
 import { Flex } from "../../layout/flex";
 import { Heading } from "../../styling/heading";
 import { Helper } from "../../styling/helper";
+import { Link } from "../../styling/link";
 import { Property } from "../../styling/property";
 import styles from "./spells.module.scss";
 
@@ -15,18 +16,20 @@ interface Props {
 export const SpellsByLevel: React.FC<Props> = ({ spellInfo, spells }) => {
   return (
     <div className={styles.wrapper}>
-      <Heading>{`Spells (${spellInfo.level})`}</Heading>
+      <h6>{`${spellInfo.slots} SLOTS`}</h6>
+      <Heading>{`Spells ${spellInfo.level}`}</Heading>
       <Flex className={styles.smallCard}>
         <Property>{"DC"}</Property>
         <h1>{spellInfo.dc}</h1>
       </Flex>
       <Flex>
         {spells.map((spell) => {
-          const { name, school } = spell;
+          const { name, school, link } = spell;
           return (
-            <Card>
+            <Card className={styles.card}>
               <Property>{name}</Property>
               <Helper>{school}</Helper>
+              {link && <Link href={link} className={styles.link} />}
             </Card>
           );
         })}

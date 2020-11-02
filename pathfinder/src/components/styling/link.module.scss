@@ -1,0 +1,11 @@
+.link {
+  padding: 0.2rem;
+}
+
+.icon {
+  color: limegreen;
+
+  &:hover {
+    color: blueviolet;
+  }
+}

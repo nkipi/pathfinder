@@ -1,11 +1,8 @@
 import classNames from "classnames";
 import React from "react";
+import { OptionalClassName } from "../../interfaces/optionalClassName";
 import styles from "./flex.module.scss";
 
-interface Props {
-  className?: string;
-}
-
-export const Flex: React.FC<Props> = ({ children, className }) => {
+export const Flex: React.FC<OptionalClassName> = ({ children, className }) => {
   return <div className={classNames(styles.flex, className)}>{children}</div>;
 };

@@ -8,20 +8,22 @@ import { Heading } from "../../styling/heading";
 import { Helper } from "../../styling/helper";
 import { Property } from "../../styling/property";
 
-export const Abilities: React.FC = () => {
-  const { abilities } = zotha;
+export const Saves: React.FC = () => {
+  const { saves } = zotha;
   return (
     <Wrapper>
       <Card>
-        <Heading>{"Abilities"}</Heading>
+        <Heading>{"Saves"}</Heading>
         <CenterFlex>
-          {abilities.map((ability) => {
-            const { name, points, mod } = ability;
+          {saves.map((save) => {
+            const { name, ability, total } = save;
             return (
+
+              
               <SmallCard>
                 <Property>{name}</Property>
-                <h1>{mod}</h1>
-                <Helper>{points}</Helper>
+                <h1>{total}</h1>
+                <Helper>{ability}</Helper>
               </SmallCard>
             );
           })}

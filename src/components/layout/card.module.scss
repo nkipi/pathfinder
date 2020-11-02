@@ -4,4 +4,8 @@
   height: max-content;
   background: white;
   position: relative;
+
+  @media (max-width: 1000px) {
+    margin: .5rem;
+  }
 }

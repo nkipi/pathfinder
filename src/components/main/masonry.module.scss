@@ -10,13 +10,10 @@
 }
 
 .card > div {
-  background-color: #f7f7ff;
-}
-
-.card > div {
   margin-bottom: 2rem;
   margin-right: 2rem;
   min-width: 250px;
+  background-color: #f7f7ff;
 
   @media (max-width: 700px) {
     margin-right: auto;

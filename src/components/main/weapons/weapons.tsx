@@ -17,7 +17,7 @@ export const Weapons: React.FC = () => {
           return (
             <Card>
               <Property>{name}</Property>
-              <h4>{`Attack: +${attackBonus}`}</h4>
+              <h4>{`Attack: ${attackBonus}`}</h4>
               <h4>{`Damage: ${damage}`}</h4>
               <Helper>{`Critical (${critical}), ${type}, ${notes}`}</Helper>
             </Card>

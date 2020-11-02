@@ -15,13 +15,13 @@ export const Character: React.FC = () => {
       <Flex className={styles.flex}>
         <img src={zothaPortrait} alt={"zotha"} className={styles.portrait} />
         <Heading>{name}</Heading>
-        <Flex>
-          <Property>{characterClass}</Property>
-          <Property>{level}</Property>
+        <Flex className={styles.subheading}>
+          <Property>{`${characterClass}`}</Property>
+          <Property>{`Level ${level}`}</Property>
         </Flex>
-        <Flex>
-          <Helper>{race}</Helper>
-          <Helper>{alignment}</Helper>
+        <Flex className={styles.subheading}>
+          <Helper>{`${race}`}</Helper>
+          <Helper>{`${alignment}`}</Helper>
         </Flex>
       </Flex>
     </Card>

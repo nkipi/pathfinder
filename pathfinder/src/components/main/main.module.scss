@@ -3,19 +3,3 @@
   padding: 2rem;
   margin: auto;
 }
-
-.masonry {
-  display: -webkit-box; /* Not needed if autoprefixing */
-  display: -ms-flexbox; /* Not needed if autoprefixing */
-  display: flex;
-  width: auto;
-}
-
-.card {
-  background-clip: padding-box;
-}
-
-.card > div {
-  margin-bottom: 2rem;
-  margin-right: 2rem;
-}

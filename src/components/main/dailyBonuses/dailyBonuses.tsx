@@ -1,4 +1,3 @@
-import { lowerCase } from "lodash";
 import React from "react";
 import zotha from "../../../data/zotha.json";
 import { Card } from "../../layout/card";

@@ -18,8 +18,7 @@ export interface Structure {
     spellInfo: SpellInfo[];
     spells: Spell[];
     abilities: Ability[];
-    melee: Weapon[];
-    ranged: Weapon[];
+    weapons: Weapon[];
     skills: Skill[];
     languages: string[];
     equipment: Equipment[];

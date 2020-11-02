@@ -3,22 +3,20 @@ import zotha from "../../../data/zotha.json";
 import { Card } from "../../layout/card";
 import { Flex } from "../../layout/flex";
 import { Heading } from "../../styling/heading";
-import { Helper } from "../../styling/helper";
 import { Property } from "../../styling/property";
 
-export const Saves: React.FC = () => {
-  const { saves } = zotha;
+export const Feats: React.FC = () => {
+  const { feats } = zotha;
   return (
       <Card>
-        <Heading>{"Saves"}</Heading>
+        <Heading>{"Feats"}</Heading>
         <Flex>
-          {saves.map((save) => {
-            const { name, ability, total } = save;
+          {feats.map((feat) => {
+            const { name, notes } = feat;
             return (
               <Card>
                 <Property>{name}</Property>
-                <h1>{total}</h1>
-                <Helper>{ability}</Helper>
+                <p>{notes}</p>
               </Card>
             );
           })}

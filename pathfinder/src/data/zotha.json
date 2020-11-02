@@ -326,7 +326,7 @@
             "status": ""
         }
     ],
-    "melee": [
+    "weapons": [
         {
             "name": "Earth Breaker \"The Destroyer\"",
             "attackBonus": "7",
@@ -356,17 +356,16 @@
             "attackBonus": "6",
             "damage": "1d4 + 1",
             "critical": "19-20 / x2",
-            "type": "S"
-        }
-    ],
-    "ranged": [
+            "type": "S",
+            "notes": "One-handed"
+        },
         {
             "name": "Orc Hornbow \"The Phoenix\"",
             "attackBonus": "8",
             "damage": "2d6 + 1",
             "critical": "x3",
             "type": "P",
-            "ammunition": "Ranged"
+            "notes": "Ranged"
         }
     ],
     "skills": [
@@ -400,13 +399,15 @@
             "name": "Knowledge",
             "type": "Arcana",
             "classSkill": true,
-            "total": "1"
+            "total": "1",
+            "ranks": "0"
         },
         {
             "name": "Knowledge",
             "type": "Dungeoneering",
             "classSkill": true,
-            "total": "1"
+            "total": "1",
+            "ranks": "0"
         },
        {
             "name": "Knowledge",
@@ -419,7 +420,8 @@
             "name": "Knowledge",
             "type": "Geography",
             "classSkill": true,
-            "total": "1"
+            "total": "1",
+            "ranks": "0"
         },
         {
             "name": "Knowledge",
@@ -439,13 +441,15 @@
             "name": "Knowledge",
             "type": "Nature",
             "classSkill": true,
-            "total": "1"
+            "total": "1",
+            "ranks": "0"
         },
         {
             "name": "Knowledge",
             "type": "Nobility",
             "classSkill": true,
-            "total": "1"
+            "total": "1",
+            "ranks": "0"
         },
         {
             "name": "Knowledge",
@@ -464,7 +468,8 @@
         {
             "name": "Profession",
             "classSkill": true,
-            "total": "0"
+            "total": "0",
+            "ranks": "0"
         },
         {
             "name": "Sense Motive",
@@ -495,11 +500,13 @@
         },
         {
             "name": "Climb",
-            "total": "1"
+            "total": "1",
+            "ranks": "0"
         },
         {
             "name": "Disguise",
-            "total": "5"
+            "total": "5",
+            "ranks": "0"
         },
         {
             "name": "Handle Animal",
@@ -509,7 +516,8 @@
         {
             "name": "Perception",
             "misc": "6",
-            "total": "8"
+            "total": "8",
+            "ranks": "0"
         },
         {
             "name": "Use Magic Device",
@@ -518,15 +526,18 @@
         },
         {
             "name": "Perform",
-            "total": "5"
+            "total": "5",
+            "ranks": "0"
         },
         {
             "name": "Escape Artist",
-            "total": "2"
+            "total": "2",
+            "ranks": "0"
         },
         {
             "name": "Fly",
-            "total": "2"
+            "total": "2",
+            "ranks": "0"
         },
         {
             "name": "Linguistics",
@@ -535,30 +546,36 @@
         },
         {
             "name": "Ride",
-            "total": "2"
+            "total": "2",
+            "ranks": "0"
         },
         {
             "name": "Sleight of Hand",
-            "total": "0"
+            "total": "0",
+            "ranks": "0"
         },
         {
             "name": "Disable Device",
-            "total": "0"
+            "total": "0",
+            "ranks": "0"
         },
         {
             "name": "Stealth",
-            "total": "2"
+            "total": "2",
+            "ranks": "0"
         },
         {
             "name": "Survival",
-            "total": "0"
+            "total": "0",
+            "ranks": "0"
         },
         {
             "name": "Swim",
-            "total": "1"
+            "total": "1",
+            "ranks": "0"
         }
     ],
-    "languages": ["Common", "Orc", "(Abyssal, Ignan in combat)"],
+    "languages": ["Common", "Orc", "Abyssal (C)", "Ignan (C)"],
     "specialAbilities": [
         {
             "name": "Orc Ferocity",
@@ -586,7 +603,9 @@
     ],
     "equipment": [
         {
-            "name": "Rope"
+            "type": "Hemp",
+            "name": "Rope",
+            "quantity": "1"
         },
         {
             "name": "Cure Light Wounds",
@@ -594,6 +613,14 @@
             "type": "Wand",
             "quantity": "24",
             "link": "",
+            "notes": ""
+        },
+        {
+            "type": "Wand",
+            "name": "Cure Moderate Wounds",
+            "school": "Conjuration",
+            "link": "",
+            "quantity": "3",
             "notes": ""
         },
         {
@@ -631,21 +658,13 @@
             "quantity": "1",
             "link": "",
             "notes": ""
-        },
-        {
-            "type": "Wand",
-            "name": "Cure Moderate Wounds",
-            "school": "Conjuration",
-            "link": "",
-            "quantity": "3",
-            "notes": ""
         }
     ],
     "feats": [
         {
             "name": "Harrowed",
             "link": "",
-            "notes": "You get a +1 bonus on all Will saves made to resist enchantment effects. Once per day, you may draw a card from a Harrow deck you own. At any one time for the rest of that day, you may apply a +2 bonus on any d20 roll modified by the card’s suit. For example, if you drew a card from the suit of Dexterity, you could apply this +2 bonus on an Initiative check, a Reflex save, a Dexterity-based skill check, or a ranged attack roll. You may assign this +2 bonus after you make the roll, but you must do so before you know whether the roll was a success or not."
+            "notes": "You get a +1 bonus on all Will saves made to resist enchantment effects. Once per day, you may draw a card from a Harrow deck you own. At any one time for the rest of that day, you may apply a +2 bonus on any d20 roll modified by the card’s suit. You may assign this +2 bonus after you make the roll, but you must do so before you know whether the roll was a success or not."
         }
     ],
     "spellLikes": [

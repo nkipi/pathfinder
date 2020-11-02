@@ -8,6 +8,12 @@ import { Saves } from "./saves/saves";
 import Masonry from "react-masonry-css";
 import { AllSpells } from "./spells/allSpells";
 import { SpecialAbilitiesAndTraits } from "./specialAbilities/specialAbilities";
+import { Feats } from "./feats/feats";
+import { SpellLikes } from "./spellLikes/spellLikes";
+import { Languages } from "./languages/languages";
+import { Equipment } from "./equipment/equipment";
+import { Weapons } from "./weapons/weapons";
+import { Skills } from "./skills/skills";
 
 const breakpointColumnsObj = {
   default: 3,
@@ -28,8 +34,14 @@ export const Main: React.FC = () => {
         <Saves />
         <Combat />
         <SpecialAbilitiesAndTraits />
+        <Feats />
+        <SpellLikes />
+        <Weapons/>
+        <Equipment/>
+        <Languages />
       </Masonry>
       <AllSpells />
+      <Skills/>
     </div>
   );
 };

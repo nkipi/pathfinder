@@ -5,6 +5,7 @@ import { SpellsByLevel } from "./spellsByLevel";
 import Masonry from "react-masonry-css";
 import zotha from "../../../data/zotha.json";
 import masonryStyles from "../masonry.module.scss";
+import { Wrapper } from "../../layout/wrapper";
 
 const breakpointColumnsObj = {
   default: 3,
@@ -14,7 +15,7 @@ const breakpointColumnsObj = {
 
 export const AllSpells: React.FC = () => {
   return (
-    <>
+    <Wrapper>
     <Heading>{"Spells"}</Heading>
       <Masonry
         className={masonryStyles.masonry}
@@ -23,7 +24,7 @@ export const AllSpells: React.FC = () => {
       >
         {renderSpells()}
       </Masonry>
-    </>
+    </Wrapper>
   );
 
   function renderSpells() {

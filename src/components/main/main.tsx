@@ -35,16 +35,18 @@ export const Main: React.FC = () => {
         <Saves />
         <DailyBonuses/>
         <Combat />
-        <Weapons/>
-        <Equipment/>
         <SpellLikes />
         <Languages />
         <></>
         <SpecialAbilitiesAndTraits />
+        <></>
+        <></>
         <Feats />
       </Masonry>
+      <Weapons/>
       <AllSpells />
       <Skills/>
+      <Equipment/>
     </div>
   );
 };

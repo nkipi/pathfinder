@@ -612,17 +612,17 @@
             "name": "Cure Light Wounds",
             "school": "Conjuration",
             "type": "Wand",
-            "quantity": "24",
+            "quantity": "2",
             "link": "",
-            "notes": ""
+            "notes": "23 and 47 charges"
         },
         {
             "type": "Wand",
             "name": "Cure Moderate Wounds",
             "school": "Conjuration",
             "link": "",
-            "quantity": "3",
-            "notes": ""
+            "quantity": "1",
+            "notes": "3 charges"
         },
         {
             "type": "Wand",

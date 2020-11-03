@@ -15,7 +15,7 @@ export const Skills: React.FC = () => {
 
   const orderedSkills = orderBy(skills, (skill) => skill.name, ["asc"]);
   return (
-    <Wrapper>
+    <Wrapper id={"skills"}>
       <Heading>{"Skills"}</Heading>
       <Flex>
         {orderedSkills.map((skill) => {

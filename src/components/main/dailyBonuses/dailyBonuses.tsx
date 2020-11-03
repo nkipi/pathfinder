@@ -11,7 +11,7 @@ import { Property } from "../../styling/property";
 export const DailyBonuses: React.FC = () => {
   const { dailyBonuses } = zotha;
   return (
-    <Card>
+    <Card id={"dailyBonuses"}>
       <Heading>{"Daily Bonuses"}</Heading>
       <Flex>
         {dailyBonuses.map((dailyBonus) => {

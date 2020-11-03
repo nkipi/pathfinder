@@ -9,7 +9,7 @@ import { Property } from "../../styling/property";
 export const SpecialAbilitiesAndTraits: React.FC = () => {
   const { specialAbilities, traits } = zotha;
   return (
-      <Card>
+      <Card id={"specialAbilities"}>
         <Heading>{"Special Abilities & Traits"}</Heading>
         <Flex>
           {specialAbilities.map((ability) => {

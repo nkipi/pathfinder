@@ -9,7 +9,7 @@ import { Property } from "../../styling/property";
 export const Abilities: React.FC = () => {
   const { abilities } = zotha;
   return (
-      <Card>
+      <Card id={"abilities"}>
         <Heading>{"Abilities"}</Heading>
         <Flex>
           {abilities.map((ability) => {

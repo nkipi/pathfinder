@@ -9,7 +9,7 @@ import { Flex } from "../../layout/flex";
 export const Combat: React.FC = () => {
   const { combat } = zotha;
   return (
-    <Card>
+    <Card id={"combat"}>
       <Heading>{"Combat"}</Heading>
       <Flex>
         {Object.entries(combat).map(([key, value]) => {

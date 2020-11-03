@@ -15,7 +15,7 @@ const breakpointColumnsObj = {
 
 export const AllSpells: React.FC = () => {
   return (
-    <Wrapper>
+    <Wrapper id={"spells"}>
     <Heading>{"Spells"}</Heading>
       <Masonry
         className={masonryStyles.masonry}

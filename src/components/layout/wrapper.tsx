@@ -3,11 +3,16 @@ import React from "react";
 import { OptionalClassName } from "../../interfaces/optionalClassName";
 import styles from "./wrapper.module.scss";
 
-export const Wrapper: React.FC<OptionalClassName> = ({
+interface Props extends OptionalClassName {
+  id?: string;
+}
+
+export const Wrapper: React.FC<Props> = ({
+  id,
   className,
   children,
 }) => {
   return (
-    <div className={classNames(className, styles.wrapper)}>{children}</div>
+    <div id={id} className={classNames(className, styles.wrapper)}>{children}</div>
   );
 };

@@ -10,7 +10,7 @@ import { Property } from "../../styling/property";
 export const Weapons: React.FC = () => {
   const { weapons } = zotha;
   return (
-    <Wrapper>
+    <Wrapper id={"weapons"}>
       <Heading>{"Weapons"}</Heading>
       <Flex>
         {weapons.map((weapon) => {

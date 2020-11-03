@@ -8,7 +8,7 @@ import { Property } from "../../styling/property";
 export const Languages: React.FC = () => {
   const { languages } = zotha;
   return (
-    <Card>
+    <Card id={"languages"}>
       <Heading>{"Languages"}</Heading>
       <Flex>
         {languages.map((language) => {

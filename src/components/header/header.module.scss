@@ -1,0 +1,21 @@
+.header {
+    position: sticky;
+    top: 0;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    z-index: 20;
+    width: auto;
+    border-bottom: 1px solid orange;
+}
+
+.link {
+    color: blueviolet;
+    cursor: pointer;
+    padding: 0 .5rem;
+
+    &:hover {
+        color: limegreen;
+    }
+}

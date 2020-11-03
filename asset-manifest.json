@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/pathfinder/static/css/main.0c9f9503.chunk.css",
+    "main.css": "/pathfinder/static/css/main.7b83d885.chunk.css",
     "main.js": "/pathfinder/static/js/main.50a0c40d.chunk.js",
     "main.js.map": "/pathfinder/static/js/main.50a0c40d.chunk.js.map",
     "runtime-main.js": "/pathfinder/static/js/runtime-main.e7d567c9.js",
@@ -10,14 +10,14 @@
     "static/js/3.fc80c359.chunk.js": "/pathfinder/static/js/3.fc80c359.chunk.js",
     "static/js/3.fc80c359.chunk.js.map": "/pathfinder/static/js/3.fc80c359.chunk.js.map",
     "index.html": "/pathfinder/index.html",
-    "static/css/main.0c9f9503.chunk.css.map": "/pathfinder/static/css/main.0c9f9503.chunk.css.map",
+    "static/css/main.7b83d885.chunk.css.map": "/pathfinder/static/css/main.7b83d885.chunk.css.map",
     "static/js/2.29d4b4c6.chunk.js.LICENSE.txt": "/pathfinder/static/js/2.29d4b4c6.chunk.js.LICENSE.txt",
     "static/media/zotha.031f5a0f.jpg": "/pathfinder/static/media/zotha.031f5a0f.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.e7d567c9.js",
     "static/js/2.29d4b4c6.chunk.js",
-    "static/css/main.0c9f9503.chunk.css",
+    "static/css/main.7b83d885.chunk.css",
     "static/js/main.50a0c40d.chunk.js"
   ]
 }

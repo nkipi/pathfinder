@@ -328,6 +328,14 @@
     ],
     "weapons": [
         {
+            "name": "Keen Dagger",
+            "attackBonus": "+9 / +4",
+            "damage": "1d4 + 2",
+            "critical": "17-20 / x2",
+            "type": "S",
+            "notes": "One-handed / +1 Keen"
+        },
+        {
             "name": "Dagger",
             "attackBonus": "+8 / +3",
             "damage": "1d4 + 1",
@@ -604,17 +612,12 @@
     ],
     "equipment": [
         {
-            "type": "Hemp",
-            "name": "Rope",
-            "quantity": "1"
-        },
-        {
             "name": "Cure Light Wounds",
             "school": "Conjuration",
             "type": "Wand",
-            "quantity": "2",
+            "quantity": "1",
             "link": "",
-            "notes": "23 and 47 charges"
+            "notes": "23 charges"
         },
         {
             "type": "Wand",
@@ -630,7 +633,23 @@
             "school": "Conjuration",
             "quantity": "1",
             "link": "",
-            "notes": ""
+            "notes": "Single use"
+        },
+        {
+            "type": "Wand",
+            "name": "Scorching Ray",
+            "school": "Conjuration",
+            "quantity": "1",
+            "link": "",
+            "notes": "18 charges / 7th level"
+        },
+        {
+            "type": "Wand",
+            "name": "Acid arrow",
+            "school": "Conjuration",
+            "quantity": "1",
+            "link": "",
+            "notes": "23 charges"
         },
         {
             "name": "Hat of Disguise",
@@ -638,6 +657,11 @@
             "quantity": "1",
             "link": "",
             "notes": ""
+        },
+        {
+            "type": "Hemp",
+            "name": "Rope",
+            "quantity": "1"
         },
         {
             "quantity": "1",

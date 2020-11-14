@@ -1,0 +1,50 @@
+.icons {
+  z-index: 999;
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  width: max-content;
+}
+
+.icon {
+  color: orange;
+  cursor: pointer;
+
+  &.saved {
+    color: limegreen;
+  }
+
+  &.remove {
+    color: blueviolet;
+  }
+}
+
+.stickynote {
+  background: orange;
+  border: 2px solid darkorange;
+}
+
+.stickyNotes {
+  z-index: 999;
+  position: fixed;
+  top: 50px;
+  right: 20px;
+  width: 100%;
+  visibility: hidden;
+
+  &.visible {
+    visibility: visible;
+  }
+
+  :global(.note) {
+    background-color: orange !important;
+    
+    > *, :global(.title), font {
+      color: black !important;
+    }
+
+    :global(.note-body) {
+      font-size: 14px !important;
+    }
+  }
+}

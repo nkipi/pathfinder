@@ -417,7 +417,7 @@
             "total": "1",
             "ranks": "0"
         },
-       {
+        {
             "type": "Knowledge",
             "name": "Engineering",
             "classSkill": true,
@@ -584,7 +584,12 @@
             "ranks": "0"
         }
     ],
-    "languages": ["Common", "Orc", "Abyssal (C)", "Ignan (C)"],
+    "languages": [
+        "Common",
+        "Orc",
+        "Abyssal (C)",
+        "Ignan (C)"
+    ],
     "specialAbilities": [
         {
             "name": "Orc Ferocity",
@@ -713,14 +718,36 @@
         {
             "source": "Feat",
             "name": "Harrowed",
-            "bonuses": ["+1 WILL saves agains enchantment effects", "+2 bonus on a d20 roll on INT"],
+            "bonuses": [
+                "+1 WILL saves agains enchantment effects",
+                "+2 bonus on a d20 roll on INT"
+            ],
             "link": "https://www.d20pfsrd.com/feats/general-feats/harrowed/"
         },
         {
             "source": "Spirit Guide",
             "name": "Bones",
-            "bonuses": ["Fearful Gaze (Hex)", "Touch of the grave (Su)"],
+            "bonuses": [
+                "Fearful Gaze (Hex)",
+                "Touch of the grave (Su)"
+            ],
             "link": "https://www.d20pfsrd.com/classes/hybrid-classes/shaman/spirits/bones/"
+        }
+    ],
+    "extras": [
+        {
+            "general": [
+                "You are badass & you can be a bitch too"
+            ],
+            "combat": [
+                "Cast all the protection spells before combat starts",
+                "Disable the fucking spellcasters first"
+            ],
+            "interrogations": [
+                "Always do sense motive",
+                "Disable the enemy",
+                "Even if they seem to tell the truth doesn't mean you can trust them"
+            ]
         }
     ]
 }

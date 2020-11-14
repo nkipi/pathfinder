@@ -26,7 +26,7 @@ export const Header: React.FC = () => {
     <Flex className={styles.header}>
       {navigationLinks.map((link) => {
         return (
-          <span className={styles.link} onClick={() => scrollToAnchor(link)}>
+          <span key={link} className={styles.link} onClick={() => scrollToAnchor(link)}>
             {startCase(link)}
           </span>
         );

@@ -16,7 +16,7 @@ export const Feats: React.FC = () => {
         {feats.map((feat) => {
           const { name, link } = feat;
           return (
-            <Card>
+            <Card key={name}>
               <PaddingWrapper>
                 <Property>{name}</Property>
                 <Link href={link} />

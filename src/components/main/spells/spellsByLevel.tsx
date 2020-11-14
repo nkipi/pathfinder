@@ -27,7 +27,7 @@ export const SpellsByLevel: React.FC<Props> = ({ spellInfo, spells }) => {
         {spells.map((spell) => {
           const { name, school, link } = spell;
           return (
-            <Card>
+            <Card key={name}>
               <PaddingWrapper>
                 <Property>{name}</Property>
                 <Helper>{school}</Helper>

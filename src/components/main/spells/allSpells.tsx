@@ -32,7 +32,7 @@ export const AllSpells: React.FC = () => {
 
     return spellInfo.map((info, index) => {
       return (
-        <Card>
+        <Card key={`spellInfo_${index}`}>
           <SpellsByLevel
             spellInfo={info}
             spells={spells.filter(

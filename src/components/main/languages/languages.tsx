@@ -13,7 +13,7 @@ export const Languages: React.FC = () => {
       <Flex>
         {languages.map((language) => {
           return (
-            <Card>
+            <Card key={language}>
               <Property>{language}</Property>
             </Card>
           );

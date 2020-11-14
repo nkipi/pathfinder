@@ -15,7 +15,7 @@ export const SpecialAbilitiesAndTraits: React.FC = () => {
           {specialAbilities.map((ability) => {
             const { name, type } = ability;
             return (
-              <Card>
+              <Card key={name}>
                 <Property>{name}</Property>
                 <Helper>{type}</Helper>
               </Card>
@@ -24,7 +24,7 @@ export const SpecialAbilitiesAndTraits: React.FC = () => {
            {traits.map((trait) => {
             const { name, type } = trait;
             return (
-              <Card>
+              <Card key={name}>
                 <Property>{name}</Property>
                 <Helper>{type}</Helper>
               </Card>

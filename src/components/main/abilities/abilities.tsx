@@ -15,7 +15,7 @@ export const Abilities: React.FC = () => {
           {abilities.map((ability) => {
             const { name, points, mod } = ability;
             return (
-              <Card>
+              <Card key={name}>
                 <Property>{name}</Property>
                 <h1>{mod}</h1>
                 <Helper>{points}</Helper>

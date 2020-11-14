@@ -21,7 +21,7 @@ export const Skills: React.FC = () => {
         {orderedSkills.map((skill) => {
           const { name, classSkill, type, ranks, total } = skill;
           return (
-            <Card className={classNames({[styles.classSkill]: classSkill})}>
+            <Card key={name} className={classNames({[styles.classSkill]: classSkill})}>
               <Property>{name}</Property>
               {type && <p>{type}</p>}
               <h1>{total}</h1>

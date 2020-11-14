@@ -17,11 +17,11 @@ export const DailyBonuses: React.FC = () => {
         {dailyBonuses.map((dailyBonus) => {
           const { source, name, bonuses, link } = dailyBonus;
           return (
-            <Card>
+            <Card key={name}>
               <PaddingWrapper>
                 <Property>{name}</Property>
                 {bonuses.map((bonus) => {
-                  return <p>{bonus}</p>;
+                  return <p key={bonus}>{bonus}</p>;
                 })}
                 <Helper>{source}</Helper>
                 {link && <Link href={link} />}

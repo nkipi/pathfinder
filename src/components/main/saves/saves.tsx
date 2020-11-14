@@ -15,7 +15,7 @@ export const Saves: React.FC = () => {
           {saves.map((save) => {
             const { name, ability, total } = save;
             return (
-              <Card>
+              <Card key={name}>
                 <Property>{name}</Property>
                 <h1>{total}</h1>
                 <Helper>{ability}</Helper>

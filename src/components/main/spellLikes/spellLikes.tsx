@@ -16,7 +16,7 @@ export const SpellLikes: React.FC = () => {
         {spellLikes.map((spellLike) => {
           const { name, link } = spellLike;
           return (
-            <Card>
+            <Card key={name}>
               <PaddingWrapper>
                 <Property>{name}</Property>
                 <Link href={link} />

@@ -14,7 +14,7 @@ export const Combat: React.FC = () => {
       <Flex>
         {Object.entries(combat).map(([key, value]) => {
           return (
-            <Card>
+            <Card key={key}>
               <Property>{startCase(key)}</Property>
               <h1>{value}</h1>
             </Card>

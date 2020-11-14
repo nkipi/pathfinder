@@ -14,9 +14,9 @@ export const Equipment: React.FC = () => {
       <Heading>{"Equipment"}</Heading>
       <Flex>
         {equipment.map((item) => {
-          const { name, type, quantity, school, notes } = item;
+          const { name, type, quantity, notes } = item;
           return (
-            <Card>
+            <Card key={name}>
               <Property>{type}</Property>
               <h3>{`${name} (${quantity})`}</h3>
               {notes && <Helper>{notes}</Helper>}

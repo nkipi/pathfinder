@@ -16,7 +16,7 @@ export const Weapons: React.FC = () => {
         {weapons.map((weapon) => {
           const { name, attackBonus, damage, critical, type, notes } = weapon;
           return (
-            <Card>
+            <Card key={name}>
               <Property>{name}</Property>
               <h4>{`Attack: ${attackBonus}`}</h4>
               <h4>{`Damage: ${damage}`}</h4>

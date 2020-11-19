@@ -314,7 +314,7 @@
             "name": "Spiritual Ally",
             "school": "Evocation",
             "notes": "",
-            "link": "https://www.d20pfsrd.com/magic/all-spells/s/spiritua-ally/",
+            "link": "https://www.d20pfsrd.com/magic/all-spells/s/spiritual-ally/",
             "status": ""
         },
         {
@@ -621,14 +621,14 @@
             "school": "Conjuration",
             "type": "Wand",
             "quantity": "1",
-            "link": "",
+            "link": "https://www.d20pfsrd.com/magic/all-spells/c/cure-light-wounds/",
             "notes": "23 charges"
         },
         {
             "type": "Wand",
             "name": "Cure Moderate Wounds",
             "school": "Conjuration",
-            "link": "",
+            "link": "https://www.d20pfsrd.com/magic/all-spells/c/cure-moderate-wounds/",
             "quantity": "1",
             "notes": "3 charges"
         },
@@ -637,8 +637,32 @@
             "name": "Obscuring Mist",
             "school": "Conjuration",
             "quantity": "1",
-            "link": "",
+            "link": "https://www.d20pfsrd.com/magic/all-spells/o/obscuring-mist/",
             "notes": "Single use"
+        },
+        {
+            "type": "Wand",
+            "name": "Vampiric Touch",
+            "school": "Necromancy",
+            "quantity": "1",
+            "link": "https://www.d20pfsrd.com/magic/all-spells/v/vampiric-touch/",
+            "notes": "33 charges"
+        },
+        {
+            "type": "Wand",
+            "name": "Ray of Enfeeblement",
+            "school": "Necromancy",
+            "quantity": "1",
+            "link": "https://www.d20pfsrd.com/magic/all-spells/r/ray-of-enfeeblement/",
+            "notes": "28 charges"
+        },
+        {
+            "type": "Wand",
+            "name": "Magic Missile",
+            "school": "Necromancy",
+            "quantity": "1",
+            "link": "https://www.d20pfsrd.com/magic/all-spells/m/magic-missile/",
+            "notes": "44 charges"
         },
         {
             "type": "Wand",
@@ -720,7 +744,7 @@
             "name": "Harrowed",
             "bonuses": [
                 "+1 WILL saves agains enchantment effects",
-                "+2 bonus on a d20 roll on INT"
+                "+2 bonus on a d20 roll on WIS"
             ],
             "link": "https://www.d20pfsrd.com/feats/general-feats/harrowed/"
         },

@@ -5,6 +5,7 @@ import { Flex } from "../../layout/flex";
 import { Wrapper } from "../../layout/wrapper";
 import { Heading } from "../../styling/heading";
 import { Helper } from "../../styling/helper";
+import { Link } from "../../styling/link";
 import { Property } from "../../styling/property";
 
 export const Equipment: React.FC = () => {
@@ -14,12 +15,13 @@ export const Equipment: React.FC = () => {
       <Heading>{"Equipment"}</Heading>
       <Flex>
         {equipment.map((item) => {
-          const { name, type, quantity, notes } = item;
+          const { name, type, quantity, link, notes } = item;
           return (
             <Card key={name}>
               <Property>{type}</Property>
               <h3>{`${name} (${quantity})`}</h3>
               {notes && <Helper>{notes}</Helper>}
+              {link && <Link href={link} />}
             </Card>
           );
         })}

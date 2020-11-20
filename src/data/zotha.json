@@ -750,12 +750,12 @@
         },
         {
             "source": "Spirit Guide",
-            "name": "Bones",
+            "name": "Flame",
             "bonuses": [
-                "Fearful Gaze (Hex)",
-                "Touch of the grave (Su)"
+                "Flame Curse (Hex)",
+                "Touch of Flames (Su)"
             ],
-            "link": "https://www.d20pfsrd.com/classes/hybrid-classes/shaman/spirits/bones/"
+            "link": "https://www.d20pfsrd.com/classes/hybrid-classes/shaman/spirits/flame/"
         }
     ],
     "extras": [

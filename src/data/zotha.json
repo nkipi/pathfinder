@@ -144,10 +144,18 @@
         },
         {
             "level": "0",
-            "name": "Guidance",
-            "school": "Divination",
+            "name": "Mending",
+            "school": "Transmutation",
             "notes": "",
-            "link": "https://www.d20pfsrd.com/magic/all-spells/g/guidance/",
+            "link": "https://www.d20pfsrd.com/magic/all-spells/m/mending",
+            "status": ""
+        },
+        {
+            "level": "0",
+            "name": "Create Water",
+            "school": "Conjuration",
+            "notes": "",
+            "link": "https://www.d20pfsrd.com/magic/all-spells/c/create-water",
             "status": ""
         },
         {

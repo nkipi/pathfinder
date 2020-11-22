@@ -3,7 +3,7 @@ import zotha from "../../../data/zotha.json";
 import { Card } from "../../layout/card";
 import { Flex } from "../../layout/flex";
 import styles from "./character.module.scss";
-import zothaPortrait from "../../../images/zotha.jpg";
+import zothaPortrait from "../../../images/zotha_dark.jpg";
 import { Helper } from "../../styling/helper";
 import { Property } from "../../styling/property";
 import { Heading } from "../../styling/heading";

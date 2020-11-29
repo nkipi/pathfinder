@@ -1,0 +1,91 @@
+.wrapper {
+  padding: 2rem;
+  width: 80%;
+  margin: auto;
+
+  @media (max-width: 670px) {
+    padding: 1rem;
+    width: 90%;
+  }
+
+  .heading {
+    align-items: center;
+
+    .icon {
+      margin-bottom: 0.5rem;
+      cursor: pointer;
+
+      &.active {
+        color: blueviolet;
+      }
+    }
+  }
+
+  .deck {
+    flex-direction: column;
+
+    .title {
+      flex-direction: column;
+      column-gap: 0;
+      row-gap: 0;
+
+      .description {
+        padding-top: 1rem;
+      }
+    }
+
+    .deckCards {
+      margin: auto;
+
+      .card {
+        width: 500px;
+
+        @media (max-width: 670px) {
+          width: 250px;
+        }
+
+        .content {
+          flex-direction: row;
+          justify-content: center;
+
+          .image {
+            box-shadow: 1px 1px 5px gray;
+            width: 250px;
+            height: 410px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.text {
+  padding: 1rem 0;
+  flex-direction: column;
+  width: 200px;
+
+  .tag {
+    background: lightgreen;
+    border: 1px solid limegreen;
+    padding: 0.5rem;
+  }
+
+  .misalignment {
+    background: lightsalmon;
+    border: 1px solid orange;
+    padding: 0.5rem;
+  }
+}
+
+.gridView {
+  justify-content: center;
+  .image {
+    width: 250px;
+    box-shadow: 1px 1px 5px gray;
+    cursor: pointer;
+  }
+}
+
+.drawerContent {
+  padding: 2rem;
+}

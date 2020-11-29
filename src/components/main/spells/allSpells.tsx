@@ -4,7 +4,7 @@ import { Heading } from "../../styling/heading";
 import { SpellsByLevel } from "./spellsByLevel";
 import Masonry from "react-masonry-css";
 import zotha from "../../../data/zotha.json";
-import masonryStyles from "../masonry.module.scss";
+import masonryStyles from "../../../styles/masonry.module.scss";
 import { Wrapper } from "../../layout/wrapper";
 
 const breakpointColumnsObj = {

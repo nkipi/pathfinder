@@ -13,7 +13,7 @@ export const Header: React.FC = () => {
             key === "character" ||
             key === "weapons" ||
             key === "spells" ||
-            key === "skills" || 
+            key === "skills" ||
             key === "equipment"
         )
         .map(([key]) => key)
@@ -26,11 +26,18 @@ export const Header: React.FC = () => {
     <Flex className={styles.header}>
       {navigationLinks.map((link) => {
         return (
-          <span key={link} className={styles.link} onClick={() => scrollToAnchor(link)}>
+          <a
+            key={link}
+            className={styles.link}
+            href={`/#${link}`}
+          >
             {startCase(link)}
-          </span>
+          </a>
         );
       })}
+      <a key={"deck"} className={styles.link} href="/deck">
+        {"The Harrow Deck"}
+      </a>
     </Flex>
   );
 

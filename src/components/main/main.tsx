@@ -2,7 +2,7 @@ import React from "react";
 import { Abilities } from "./abilities/abilities";
 import { Character } from "./character/character";
 import styles from "./main.module.scss";
-import masonryStyles from "./masonry.module.scss";
+import masonryStyles from "../../styles/masonry.module.scss";
 import { Combat } from "./combat/combat";
 import { Saves } from "./saves/saves";
 import Masonry from "react-masonry-css";
@@ -15,6 +15,7 @@ import { Equipment } from "./equipment/equipment";
 import { Weapons } from "./weapons/weapons";
 import { Skills } from "./skills/skills";
 import { DailyBonuses } from "./dailyBonuses/dailyBonuses";
+import { StickyNotes } from "../stickyNotes/stickyNotes";
 
 const breakpointColumnsObj = {
   default: 3,
@@ -26,6 +27,7 @@ export const Main: React.FC = () => {
   return (
     <div className={styles.main}>
       <Masonry
+        id={"character"}
         className={masonryStyles.masonry}
         columnClassName={masonryStyles.card}
         breakpointCols={breakpointColumnsObj}
@@ -47,6 +49,7 @@ export const Main: React.FC = () => {
       <AllSpells />
       <Skills/>
       <Equipment/>
+      <StickyNotes />
     </div>
   );
 };

@@ -11,7 +11,7 @@ import { Heading } from "../../styling/heading";
 export const Character: React.FC = () => {
   const { name, characterClass, level, race, alignment } = zotha.character;
   return (
-    <Card className={styles.card} id={"character"}>
+    <Card className={styles.card}>
       <Flex className={styles.flex}>
         <img src={zothaPortrait} alt={"zotha"} className={styles.portrait} />
         <Heading>{name}</Heading>

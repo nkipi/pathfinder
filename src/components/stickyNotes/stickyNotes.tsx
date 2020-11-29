@@ -52,7 +52,6 @@ export const StickyNotes: React.FC = () => {
       >
         <ReactStickies notes={notes} onChange={(n: any) => onChange(n)} />
       </Flex>
-      )
     </>
   );
 
@@ -63,7 +62,7 @@ export const StickyNotes: React.FC = () => {
 
   function onSave() {
     notes.map((note: any) => {
-      delete note.editorState;
+      return delete note.editorState;
     });
     localStorage.setItem("notes", JSON.stringify(notes));
     setAreNotesSaved(true);

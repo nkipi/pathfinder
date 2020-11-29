@@ -1,20 +1,11 @@
 import React from "react";
-import { harrowDeck } from "./getHarrowDeck";
 import { Flex } from "../layout/flex";
 import styles from "./harrowDeck.module.scss";
 import ReactCardFlip from "react-card-flip";
-import { Property } from "../styling/property";
 import { Drawer } from "@material-ui/core";
-import classNames from "classnames";
 import { Details } from "./details";
 
-export const GridView: React.FC = () => {
-  const cards = harrowDeck.flatMap((deck) =>
-    deck.cards.flatMap((card) => {
-      return card.name;
-    })
-  );
-
+export const GridView: React.FC<{ cards: string[] }> = ({ cards }) => {
   return (
     <Flex className={styles.gridView}>
       {cards.map((name) => {
@@ -27,15 +18,6 @@ export const GridView: React.FC = () => {
 const CardFlip: React.FC<{ cardName: string }> = ({ cardName }) => {
   const [isFlipped, setIsFlipped] = React.useState(false);
   const [showDrawer, setShowDrawer] = React.useState(false);
-  const {
-    name,
-    alignment,
-    description,
-    keywords,
-    misalignments,
-  } = harrowDeck.flatMap((deck) => {
-    return deck.cards.filter((card) => card.name === cardName);
-  })[0];
   return (
     <>
       <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">

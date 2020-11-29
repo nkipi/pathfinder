@@ -1,3 +1,5 @@
+@import "../../colors.scss";
+
 .header {
     position: sticky;
     top: 0;
@@ -7,16 +9,16 @@
     background: white;
     z-index: 20;
     width: auto;
-    border-bottom: 1px solid orange;
+    border-bottom: 1px solid $tertiary-main;
 }
 
 .link {
-    color: blueviolet;
+    color: $primary-main;
     cursor: pointer;
     padding: 0 .5rem;
     text-decoration: none;
 
     &:hover {
-        color: limegreen;
+        color: $secondary-main;
     }
 }

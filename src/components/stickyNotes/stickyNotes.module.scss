@@ -1,3 +1,5 @@
+@import "../../colors.scss";
+
 .icons {
   z-index: 999;
   position: fixed;
@@ -7,21 +9,21 @@
 }
 
 .icon {
-  color: orange;
+  color: $tertiary-main;
   cursor: pointer;
 
   &.saved {
-    color: limegreen;
+    color: $secondary-main;
   }
 
   &.remove {
-    color: blueviolet;
+    color: $primary-main;
   }
 }
 
 .stickynote {
-  background: orange;
-  border: 2px solid darkorange;
+  background: $tertiary-main;
+  border: 2px solid dark$tertiary-main;
 }
 
 .stickyNotes {
@@ -37,7 +39,7 @@
   }
 
   :global(.note) {
-    background-color: orange !important;
+    background-color: $tertiary-main !important;
     
     > *, :global(.title), font {
       color: black !important;

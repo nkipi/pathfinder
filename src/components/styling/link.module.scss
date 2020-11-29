@@ -1,3 +1,5 @@
+@import "../../colors.scss";
+
 .link {
   padding: 0.2rem;
   position: absolute;
@@ -6,9 +8,9 @@
 }
 
 .icon {
-  color: limegreen;
+  color: $secondary-main;
 
   &:hover {
-    color: blueviolet;
+    color: $primary-main;
   }
 }

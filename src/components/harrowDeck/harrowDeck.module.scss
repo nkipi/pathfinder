@@ -1,3 +1,5 @@
+@import "../../colors.scss";
+
 .wrapper {
   padding: 2rem;
   width: 80%;
@@ -16,7 +18,7 @@
       cursor: pointer;
 
       &.active {
-        color: limegreen;
+        color: $secondary-main;
       }
     }
   }
@@ -65,13 +67,13 @@
   width: 200px;
 
   .tag {
-    background: lightgreen;
-    border: 1px solid limegreen;
+    background: $secondary-light;
+    border: 1px solid $secondary-main;
   }
 
   .misalignment {
-    background: lightsalmon;
-    border: 1px solid orange;
+    background: $tertiary-light;
+    border: 1px solid $tertiary-main;
   }
 }
 
@@ -82,10 +84,30 @@
     width: 250px;
     box-shadow: 1px 1px 5px gray;
     cursor: pointer;
-    margin: .5rem;
+    margin: 0.5rem;
   }
 }
 
 .drawerContent {
   padding: 2rem;
+}
+
+.input {
+  height: 46px;
+  margin-left: auto !important;
+  margin-bottom: 0.5rem !important;
+
+  .inputContent {
+    column-gap: 0;
+    row-gap: 0;
+  }
+
+  .inputAdornment {
+    color: $secondary-main !important;
+  }
+  
+  .divider {
+    margin: auto 0 !important;
+    height: 30px;
+  }
 }

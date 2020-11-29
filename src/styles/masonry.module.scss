@@ -1,3 +1,5 @@
+@import "../colors.scss";
+
 .masonry {
   display: -webkit-box; /* Not needed if autoprefixing */
   display: -ms-flexbox; /* Not needed if autoprefixing */
@@ -13,7 +15,7 @@
   margin-bottom: 2rem;
   margin-right: 2rem;
   min-width: 250px;
-  background-color: #f7f7ff;
+  background-color: $background-color;
 
   @media (max-width: 700px) {
     margin-right: auto;

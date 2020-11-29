@@ -1,4 +1,6 @@
+@import "../../../colors.scss";
+
 .classSkill {
-  border-color: blueviolet;
-  background-color: #f7f7ff;
+  border-color: $primary-main;
+  background-color: $background-color;
 }

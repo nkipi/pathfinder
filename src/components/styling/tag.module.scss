@@ -1,5 +1,7 @@
+@import "../../colors.scss";
+
 .tag {
-  background-color: orange;
+  background-color: $tertiary-main;
   padding: .5rem;
   font-size: 12px;
   font-weight: bold;

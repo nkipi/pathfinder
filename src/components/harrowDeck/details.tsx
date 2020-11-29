@@ -1,21 +1,18 @@
 import React from "react";
-import { harrowDeck } from "./getHarrowDeck";
 import { Flex } from "../layout/flex";
 import styles from "./harrowDeck.module.scss";
 import { Property } from "../styling/property";
 import classNames from "classnames";
 import { Tag } from "../styling/tag";
+import { getCardInfo } from "./getCards";
 
-export const Details: React.FC<{ cardName: string, className?: string }> = ({ cardName, className }) => {
-  const {
-    name,
-    alignment,
-    description,
-    keywords,
-    misalignments,
-  } = harrowDeck.flatMap((deck) => {
-    return deck.cards.filter((card) => card.name === cardName);
-  })[0];
+export const Details: React.FC<{ cardName: string; className?: string }> = ({
+  cardName,
+  className,
+}) => {
+  const { name, alignment, description, keywords, misalignments } = getCardInfo(
+    cardName
+  );
   return (
     <Flex className={classNames(className, styles.text)}>
       <Property>{alignment}</Property>

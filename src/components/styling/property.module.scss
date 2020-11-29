@@ -1,5 +1,7 @@
+@import "../../colors.scss";
+
 .property {
   font-weight: bold;
-  color: blueviolet;
+  color: $primary-main;
   text-transform: uppercase;
 }

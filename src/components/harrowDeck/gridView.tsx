@@ -6,6 +6,7 @@ import ReactCardFlip from "react-card-flip";
 import { Property } from "../styling/property";
 import { Drawer } from "@material-ui/core";
 import classNames from "classnames";
+import { Details } from "./details";
 
 export const GridView: React.FC = () => {
   const cards = harrowDeck.flatMap((deck) =>
@@ -60,17 +61,7 @@ const CardFlip: React.FC<{ cardName: string }> = ({ cardName }) => {
         onClose={() => setShowDrawer(false)}
         anchor="right"
       >
-        <Flex className={classNames(styles.drawerContent, styles.text)}>
-          <Property>{alignment}</Property>
-          <h3>{name}</h3>
-          <p>{description}</p>
-          {keywords.map((keyword) => (
-            <h5 className={styles.tag}>{keyword}</h5>
-          ))}
-          {misalignments.map((misalignment) => (
-            <h5 className={styles.misalignment}>{misalignment}</h5>
-          ))}
-        </Flex>
+        <Details cardName={cardName} className={styles.drawerContent} />
       </Drawer>
     </>
   );

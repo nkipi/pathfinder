@@ -7,6 +7,7 @@ import styles from "./harrowDeck.module.scss";
 import Masonry from "react-masonry-css";
 import masonryStyles from "../../styles/masonry.module.scss";
 import classNames from "classnames";
+import { Details } from "./details";
 
 const breakpointColumnsObj = {
   default: 2,
@@ -40,19 +41,7 @@ export const DetailsView: React.FC = () => {
                           alt={name}
                           src={require(`./images/${name}.jpg`).default}
                         />
-                        <Flex className={styles.text}>
-                          <Property>{alignment}</Property>
-                          <h3>{name}</h3>
-                          <p>{description}</p>
-                          {keywords.map((keyword) => (
-                            <h5 className={styles.tag}>{keyword}</h5>
-                          ))}
-                          {misalignments.map((misalignment) => (
-                            <h5 className={styles.misalignment}>
-                              {misalignment}
-                            </h5>
-                          ))}
-                        </Flex>
+                        <Details cardName={name} />
                       </Flex>
                     </Card>
                   );

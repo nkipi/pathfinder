@@ -29,13 +29,17 @@ export const Header: React.FC = () => {
           <a
             key={link}
             className={styles.link}
-            href={`/#${link}`}
+            href={`/pathfinder#${link}`}
           >
             {startCase(link)}
           </a>
         );
       })}
-      <a key={"deck"} className={styles.link} href="/deck">
+      <a
+        key={"deck"}
+        className={styles.link}
+        href={`/pathfinder/deck`}
+      >
         {"The Harrow Deck"}
       </a>
     </Flex>

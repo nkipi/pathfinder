@@ -6,11 +6,10 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/pathfinder">
       <Header />
       <Switch>
         <Route exact path="/"><Main /></Route>
-        <Route exact path="/pathfinder"><Main /></Route>
         <Route exact path="/deck"><HarrowDeck /></Route>
       </Switch>
     </BrowserRouter>

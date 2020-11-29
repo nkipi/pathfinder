@@ -17,10 +17,22 @@ export function getCardInfo(cardName: string) {
 
 export function drawRandomCards(quantity: number | undefined) {
   var randomNumbers = [];
-  if(quantity !== undefined) {
-    for (var i = 0; i < quantity; i++) {
-      randomNumbers.push(getRandomInt(54));
+  if (quantity !== undefined) {
+    while (randomNumbers.length < quantity) {
+      const randomNumber = getRandomInt(54);
+
+      if(randomNumbers.length === 0) {
+        randomNumbers.push(randomNumber);
+      }
+
+      if (randomNumbers.indexOf(randomNumber) === -1) {
+        randomNumbers.push(randomNumber);
+      }
+
+      if(randomNumbers.length === quantity) {
+        break;
+      }
     }
   }
-  return randomNumbers.map(number => getAllCards()[number]);
+  return randomNumbers.map((number) => getAllCards()[number]);
 }

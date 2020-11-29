@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/pathfinder/static/css/main.0c2f7b90.chunk.css",
-    "main.js": "/pathfinder/static/js/main.e7d3252b.chunk.js",
-    "main.js.map": "/pathfinder/static/js/main.e7d3252b.chunk.js.map",
+    "main.js": "/pathfinder/static/js/main.f4bb21ba.chunk.js",
+    "main.js.map": "/pathfinder/static/js/main.f4bb21ba.chunk.js.map",
     "runtime-main.js": "/pathfinder/static/js/runtime-main.6926939c.js",
     "runtime-main.js.map": "/pathfinder/static/js/runtime-main.6926939c.js.map",
     "static/js/2.e4bf14a9.chunk.js": "/pathfinder/static/js/2.e4bf14a9.chunk.js",
@@ -13,7 +13,7 @@
     "static/css/main.0c2f7b90.chunk.css.map": "/pathfinder/static/css/main.0c2f7b90.chunk.css.map",
     "static/js/2.e4bf14a9.chunk.js.LICENSE.txt": "/pathfinder/static/js/2.e4bf14a9.chunk.js.LICENSE.txt",
     "static/media/The Avalanche.jpg": "/pathfinder/static/media/The Avalanche.f4415bc5.jpg",
-    "static/media/The Back.jpg": "/pathfinder/static/media/The Back.809a87e7.jpg",
+    "static/media/The Back.jpg": "/pathfinder/static/media/The Back.b608676d.jpg",
     "static/media/The Bear.jpg": "/pathfinder/static/media/The Bear.f1f8aa40.jpg",
     "static/media/The Beating.jpg": "/pathfinder/static/media/The Beating.4b4aa14b.jpg",
     "static/media/The Betrayal.jpg": "/pathfinder/static/media/The Betrayal.c0ccad1c.jpg",
@@ -73,6 +73,6 @@
     "static/js/runtime-main.6926939c.js",
     "static/js/2.e4bf14a9.chunk.js",
     "static/css/main.0c2f7b90.chunk.css",
-    "static/js/main.e7d3252b.chunk.js"
+    "static/js/main.f4bb21ba.chunk.js"
   ]
 }

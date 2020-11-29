@@ -66,6 +66,10 @@
   flex-direction: column;
   width: 200px;
 
+  > * {
+    margin: .5rem 0 !important;
+  }
+
   .tag {
     background: $secondary-light;
     border: 1px solid $secondary-main;

@@ -77,10 +77,12 @@
 
 .gridView {
   justify-content: center;
+  padding: 2rem 0;
   .image {
     width: 250px;
     box-shadow: 1px 1px 5px gray;
     cursor: pointer;
+    margin: .5rem;
   }
 }
 

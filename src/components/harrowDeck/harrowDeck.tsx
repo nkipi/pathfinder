@@ -40,20 +40,22 @@ export const HarrowDeck: React.FC = () => {
     return (
       <Flex className={styles.heading}>
         <Heading>{"Harrow Deck"}</Heading>
-        <MdViewList
-          size={20}
-          onClick={() => changeView("details")}
-          className={classNames(styles.icon, {
-            [styles.active]: isDetailsView(),
-          })}
-        />
-        <RiGridFill
-          size={16}
-          onClick={() => changeView("grid")}
-          className={classNames(styles.icon, {
-            [styles.active]: isGridView(),
-          })}
-        />
+        <Flex className={styles.icons}>
+          <MdViewList
+            size={20}
+            onClick={() => changeView("details")}
+            className={classNames(styles.icon, {
+              [styles.active]: isDetailsView(),
+            })}
+          />
+          <RiGridFill
+            size={16}
+            onClick={() => changeView("grid")}
+            className={classNames(styles.icon, {
+              [styles.active]: isGridView(),
+            })}
+          />
+        </Flex>
         {renderInput()}
       </Flex>
     );

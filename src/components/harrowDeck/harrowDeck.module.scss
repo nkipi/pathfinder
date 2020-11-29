@@ -14,12 +14,8 @@
     align-items: center;
 
     .icon {
-      margin-bottom: 0.5rem;
+      margin: 0 .2rem .5rem;
       cursor: pointer;
-
-      @media (max-width: 800px) {
-        margin: 0 .2rem .5rem  !important;
-      }
 
       &.active {
         color: $secondary-main;
@@ -36,7 +32,7 @@
       row-gap: 0;
 
       .description {
-        padding-top: 1rem;
+        padding: 1rem 0;
       }
     }
 

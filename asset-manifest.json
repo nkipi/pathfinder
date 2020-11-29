@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/pathfinder/static/css/main.9e6742b5.chunk.css",
+    "main.css": "/pathfinder/static/css/main.53221666.chunk.css",
     "main.js": "/pathfinder/static/js/main.3c06c304.chunk.js",
     "main.js.map": "/pathfinder/static/js/main.3c06c304.chunk.js.map",
     "runtime-main.js": "/pathfinder/static/js/runtime-main.4fcd3c12.js",
@@ -10,7 +10,7 @@
     "static/js/3.4fe2a0a0.chunk.js": "/pathfinder/static/js/3.4fe2a0a0.chunk.js",
     "static/js/3.4fe2a0a0.chunk.js.map": "/pathfinder/static/js/3.4fe2a0a0.chunk.js.map",
     "index.html": "/pathfinder/index.html",
-    "static/css/main.9e6742b5.chunk.css.map": "/pathfinder/static/css/main.9e6742b5.chunk.css.map",
+    "static/css/main.53221666.chunk.css.map": "/pathfinder/static/css/main.53221666.chunk.css.map",
     "static/js/2.878d6682.chunk.js.LICENSE.txt": "/pathfinder/static/js/2.878d6682.chunk.js.LICENSE.txt",
     "static/media/The Avalanche.jpg": "/pathfinder/static/media/The Avalanche.f4415bc5.jpg",
     "static/media/The Back.jpg": "/pathfinder/static/media/The Back.809a87e7.jpg",
@@ -72,7 +72,7 @@
   "entrypoints": [
     "static/js/runtime-main.4fcd3c12.js",
     "static/js/2.878d6682.chunk.js",
-    "static/css/main.9e6742b5.chunk.css",
+    "static/css/main.53221666.chunk.css",
     "static/js/main.3c06c304.chunk.js"
   ]
 }

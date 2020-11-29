@@ -26,27 +26,24 @@ export const DetailsView: React.FC = () => {
               <p className={styles.description}>{deck.description}</p>
             </Flex>
             <Masonry
-              id={"character"}
               className={classNames(masonryStyles.masonry, styles.deckCards)}
               columnClassName={masonryStyles.card}
               breakpointCols={breakpointColumnsObj}
             >
-              {deck.cards.map(
-                ({ name, description, alignment, keywords, misalignments }) => {
-                  return (
-                    <Card key={name} className={styles.card}>
-                      <Flex className={styles.content}>
-                        <img
-                          className={styles.image}
-                          alt={name}
-                          src={require(`./images/${name}.jpg`).default}
-                        />
-                        <Details cardName={name} />
-                      </Flex>
-                    </Card>
-                  );
-                }
-              )}
+              {deck.cards.map(({ name }) => {
+                return (
+                  <Card key={name} className={styles.card}>
+                    <Flex className={styles.content}>
+                      <img
+                        className={styles.image}
+                        alt={name}
+                        src={require(`./images/${name}.jpg`).default}
+                      />
+                      <Details cardName={name} />
+                    </Flex>
+                  </Card>
+                );
+              })}
             </Masonry>
           </Flex>
         );

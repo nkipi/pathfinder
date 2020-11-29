@@ -17,6 +17,10 @@
       margin-bottom: 0.5rem;
       cursor: pointer;
 
+      @media (max-width: 800px) {
+        margin: 0 .2rem .5rem  !important;
+      }
+
       &.active {
         color: $secondary-main;
       }
@@ -48,7 +52,7 @@
 
         .content {
           flex-direction: row;
-          justify-content: center;
+          justify-content: space-around;
 
           .image {
             box-shadow: 1px 1px 5px gray;
@@ -96,10 +100,16 @@
   height: 46px;
   margin-left: auto !important;
   margin-bottom: 0.5rem !important;
+  min-width: 320px;
+
+  @media (max-width: 765px) {
+    margin: 0 0 4rem !important;
+  }
 
   .inputContent {
     column-gap: 0;
     row-gap: 0;
+    min-width: 320px;
   }
 
   .inputAdornment {

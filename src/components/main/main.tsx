@@ -15,7 +15,6 @@ import { Equipment } from "./equipment/equipment";
 import { Weapons } from "./weapons/weapons";
 import { Skills } from "./skills/skills";
 import { DailyBonuses } from "./dailyBonuses/dailyBonuses";
-import { StickyNotes } from "../stickyNotes/stickyNotes";
 
 const breakpointColumnsObj = {
   default: 3,
@@ -49,7 +48,6 @@ export const Main: React.FC = () => {
       <AllSpells />
       <Skills/>
       <Equipment/>
-      <StickyNotes />
     </div>
   );
 };

@@ -30,10 +30,10 @@
   top: 50px;
   right: 20px;
   width: 100%;
-  visibility: hidden;
+  transform: scale(0);
 
   &.visible {
-    visibility: visible;
+    transform: scale(1);
   }
 
   :global(.note) {

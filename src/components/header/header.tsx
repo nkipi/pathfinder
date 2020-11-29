@@ -3,6 +3,7 @@ import { Flex } from "../layout/flex";
 import styles from "./header.module.scss";
 import zotha from "../../data/zotha.json";
 import { orderBy, startCase, union } from "lodash";
+import { StickyNotes } from "../stickyNotes/stickyNotes";
 
 export const Header: React.FC = () => {
   const navigationLinks = orderBy(
@@ -42,6 +43,7 @@ export const Header: React.FC = () => {
       >
         {"The Harrow Deck"}
       </a>
+      <StickyNotes />
     </Flex>
   );
 

@@ -641,6 +641,14 @@
             "notes": "3 charges"
         },
         {
+            "type": "Potion",
+            "name": "Cure Serious Wounds",
+            "school": "Conjuration",
+            "link": "https://www.d20pfsrd.com/magic/all-spells/c/cure-serious-wounds/",
+            "quantity": "1",
+            "notes": "Single use"
+        },
+        {
             "type": "Wand",
             "name": "Obscuring Mist",
             "school": "Conjuration",
@@ -719,6 +727,13 @@
             "type": "Shield",
             "quantity": "1",
             "link": "",
+            "notes": ""
+        },
+        {
+            "name": "Medusa Mask",
+            "type": "Mask",
+            "quantity": "1",
+            "link": "https://www.d20pfsrd.com/magic-items/wondrous-items/m-p/mask-medusa/",
             "notes": ""
         }
     ],

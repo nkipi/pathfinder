@@ -10,7 +10,8 @@ import classNames from "classnames";
 import { Details } from "./details";
 
 const breakpointColumnsObj = {
-  default: 2,
+  default: 3,
+  2000: 2,
   1000: 1,
 };
 

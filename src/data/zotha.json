@@ -2,7 +2,7 @@
     "character": {
         "name": "Zotha",
         "characterClass": "Oracle",
-        "level": "8",
+        "level": "9",
         "race": "Half-orc",
         "alignment": "Neutral"
     },
@@ -43,16 +43,16 @@
     "saves": [
         {
             "name": "fort",
-            "base": "2",
+            "base": "3",
             "magicModifier": "1",
-            "total": "5",
+            "total": "6",
             "ability": "con"
         },
         {
             "name": "ref",
-            "base": "2",
+            "base": "3",
             "magicModifier": "1",
-            "total": "5",
+            "total": "6",
             "ability": "dex"
         },
         {
@@ -65,7 +65,7 @@
         }
     ],
     "combat": {
-        "hp": "50",
+        "hp": "57",
         "init": "2",
         "speed": "30",
         "ac": "18",
@@ -98,13 +98,13 @@
         },
         {
             "level": "3",
-            "slots": "6",
+            "slots": "7",
             "known": "5",
             "dc": "18"
         },
         {
             "level": "4",
-            "slots": "4",
+            "slots": "5",
             "known": "3",
             "dc": "19"
         }
@@ -270,6 +270,14 @@
             "status": ""
         },
         {
+            "level": "2",
+            "name": "Grace",
+            "school": "Abjuration",
+            "notes": "",
+            "link": "https://www.d20pfsrd.com/magic/all-spells/g/grace/",
+            "status": ""
+        },
+        {
             "level": "3",
             "name": "Heroism",
             "school": "Enchantment",
@@ -310,6 +318,22 @@
             "status": ""
         },
         {
+            "level": "3",
+            "name": "Summon Monster III",
+            "school": "Conjuration",
+            "notes": "",
+            "link": "https://www.d20pfsrd.com/magic/all-spells/s/Summon-Monster/#3rd-level",
+            "status": ""
+        },
+        {
+            "level": "3",
+            "name": "Dispel Magic",
+            "school": "Abjuration",
+            "notes": "",
+            "link": "https://www.d20pfsrd.com/magic/all-spells/d/dispel-magic/",
+            "status": ""
+        },
+        {
             "level": "4",
             "name": "Cure Critical Wounds",
             "school": "Conjuration",
@@ -331,6 +355,14 @@
             "school": "Necromancy",
             "notes": "",
             "link": "https://www.d20pfsrd.com/magic/all-spells/w/wall-of-bone/",
+            "status": ""
+        },
+        {
+            "level": "4",
+            "name": "Sending",
+            "school": "Evocation",
+            "notes": "",
+            "link": "https://www.d20pfsrd.com/magic/all-spells/s/sending/",
             "status": ""
         }
     ],
@@ -471,7 +503,7 @@
             "type": "Knowledge",
             "name": "Planes",
             "classSkill": true,
-            "ranks": "",
+            "ranks": "0",
             "total": "1"
         },
         {
@@ -490,8 +522,8 @@
         {
             "name": "Sense Motive",
             "classSkill": true,
-            "ranks": "8",
-            "total": "14",
+            "ranks": "10",
+            "total": "16",
             "racial": "2"
         },
         {
@@ -517,8 +549,8 @@
         },
         {
             "name": "Climb",
-            "total": "1",
-            "ranks": "0"
+            "total": "4",
+            "ranks": "3"
         },
         {
             "name": "Disguise",
@@ -682,14 +714,6 @@
         },
         {
             "type": "Wand",
-            "name": "Scorching Ray",
-            "school": "Conjuration",
-            "quantity": "1",
-            "link": "https://www.d20pfsrd.com/magic/all-spells/s/scorching-ray/",
-            "notes": "18 charges / 7th level"
-        },
-        {
-            "type": "Wand",
             "name": "Acid arrow",
             "school": "Conjuration",
             "quantity": "1",
@@ -697,11 +721,43 @@
             "notes": "23 charges"
         },
         {
+            "type": "Scroll",
+            "name": "Hold Moster",
+            "school": "Compulsion",
+            "quantity": "1",
+            "link": "https://www.d20pfsrd.com/magic/all-spells/h/hold-monster/",
+            "notes": "Single use"
+        },
+        {
+            "type": "Scroll",
+            "name": "Telekinesis",
+            "school": "Transmutation",
+            "quantity": "1",
+            "link": "https://www.d20pfsrd.com/magic/all-spells/t/telekinesis",
+            "notes": "Single use"
+        },
+        {
+            "type": "Headband",
+            "name": "Phylactery of Positive Healing",
+            "school": "",
+            "quantity": "1",
+            "link": "https://aonprd.com/MagicWondrousDisplay.aspx?FinalName=Phylactery%20of%20Positive%20Channeling",
+            "notes": "Not in use"
+        },
+        {
+            "type": "Headband",
+            "name": "Headband of Alluring Charisma",
+            "school": "",
+            "quantity": "1",
+            "link": "https://www.d20pfsrd.com/magic-items/wondrous-items/h-l/headband-of-alluring-charisma/",
+            "notes": "In use"
+        },
+        {
             "name": "Hat of Disguise",
             "type": "Magical",
             "quantity": "1",
             "link": "",
-            "notes": ""
+            "notes": "In use"
         },
         {
             "type": "Hemp",
@@ -713,27 +769,34 @@
             "name": "Sihedron medallion",
             "link": "",
             "type": "Magical",
-            "notes": ""
+            "notes": "Not in use"
         },
         {
             "name": "Mithral chain shirt",
             "type": "Armor",
             "quantity": "1",
             "link": "",
-            "notes": ""
+            "notes": "In use"
         },
         {
             "name": "+1 Buckler",
             "type": "Shield",
             "quantity": "1",
             "link": "",
-            "notes": ""
+            "notes": "In use"
         },
         {
             "name": "Medusa Mask",
             "type": "Mask",
             "quantity": "1",
             "link": "https://www.d20pfsrd.com/magic-items/wondrous-items/m-p/mask-medusa/",
+            "notes": ""
+        },
+        {
+            "name": "Explosive Bomb",
+            "type": "Ranged Item",
+            "quantity": "1",
+            "link": "https://www.d20pfsrd.com/classes/base-classes/alchemist/discoveries/paizo-alchemist-discoveries/explosive-bomb/",
             "notes": ""
         }
     ],
@@ -742,6 +805,11 @@
             "name": "Harrowed",
             "link": "https://www.d20pfsrd.com/feats/general-feats/harrowed/",
             "notes": "You get a +1 bonus on all Will saves made to resist enchantment effects. Once per day, you may draw a card from a Harrow deck you own. At any one time for the rest of that day, you may apply a +2 bonus on any d20 roll modified by the card’s suit. You may assign this +2 bonus after you make the roll, but you must do so before you know whether the roll was a success or not."
+        },
+        {
+            "name": "Harrowed Summoning",
+            "link": "https://www.d20pfsrd.com/feats/general-feats/harrowed-summoning/",
+            "notes": "For the duration of the spell, each summoned creature gains a +4 enhancement bonus to the corresponding ability scores of the drawn card’s suits. If both cards are the same suit, each summoned creature gains a +6 bonus to that ability score instead. If either card’s alignment is a true match for the summoned creatures’ alignment, the duration of the spell is doubled, while drawing an opposite match halves the duration of the spell. If both a true match and an opposite match are drawn, the spell’s duration is unchanged."
         }
     ],
     "spellLikes": [

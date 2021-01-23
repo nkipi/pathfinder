@@ -1,4 +1,5 @@
 import React from "react";
+import { Save } from "../../../interfaces/save";
 import { Card } from "../../layout/card";
 import { Flex } from "../../layout/flex";
 import { Heading } from "../../styling/heading";
@@ -12,7 +13,7 @@ export const Senses: React.FC<MainProps> = ({ character }) => {
     <Card id={"senses"}>
       <Heading>{"Senses"}</Heading>
       <Flex>
-        {senses.map((sense) => {
+        {senses.map((sense: Save) => {
           const { name, ability, total } = sense;
           return (
             <Card key={name}>

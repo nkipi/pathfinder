@@ -1,4 +1,5 @@
 import React from "react";
+import { SpellLikes as ISpellLikes } from "../../../interfaces/spellLikes";
 import { Card } from "../../layout/card";
 import { Flex } from "../../layout/flex";
 import { Heading } from "../../styling/heading";
@@ -13,13 +14,13 @@ export const SpellLikes: React.FC<MainProps> = ({ character }) => {
     <Card id={"spellLikes"}>
       <Heading>{"Spell Likes"}</Heading>
       <Flex>
-        {spellLikes.map((spellLike) => {
+        {spellLikes.map((spellLike: ISpellLikes) => {
           const { name, link } = spellLike;
           return (
             <Card key={name}>
               <PaddingWrapper>
                 <Property>{name}</Property>
-                <Link href={link} />
+                {link && <Link href={link} />}
               </PaddingWrapper>
             </Card>
           );

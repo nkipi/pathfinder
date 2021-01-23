@@ -14,13 +14,13 @@ export const DailyBonuses: React.FC<MainProps> = ({ character }) => {
     <Card id={"dailyBonuses"}>
       <Heading>{"Daily Bonuses"}</Heading>
       <Flex>
-        {dailyBonuses.map((dailyBonus) => {
+        {dailyBonuses.map((dailyBonus: any) => {
           const { source, name, bonuses, link } = dailyBonus;
           return (
             <Card key={name}>
               <PaddingWrapper>
                 <Property>{name}</Property>
-                {bonuses.map((bonus) => {
+                {bonuses.map((bonus: string) => {
                   return <p key={bonus}>{bonus}</p>;
                 })}
                 <Helper>{source}</Helper>

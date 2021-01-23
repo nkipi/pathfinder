@@ -1,4 +1,6 @@
 import React from "react";
+import { SpecialAbility } from "../../../interfaces/specialAbility";
+import { Trait } from "../../../interfaces/trait";
 import { Card } from "../../layout/card";
 import { Flex } from "../../layout/flex";
 import { Heading } from "../../styling/heading";
@@ -14,7 +16,7 @@ export const SpecialAbilitiesAndTraits: React.FC<MainProps> = ({
     <Card id={"specialAbilities"}>
       <Heading>{"Special Abilities & Traits"}</Heading>
       <Flex>
-        {specialAbilities.map((ability) => {
+        {specialAbilities.map((ability: SpecialAbility) => {
           const { name, type } = ability;
           return (
             <Card key={name}>
@@ -23,7 +25,7 @@ export const SpecialAbilitiesAndTraits: React.FC<MainProps> = ({
             </Card>
           );
         })}
-        {traits && traits.map((trait) => {
+        {traits && traits.map((trait: Trait) => {
           const { name, type } = trait;
           return (
             <Card key={name}>

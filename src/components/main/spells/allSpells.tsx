@@ -6,6 +6,7 @@ import Masonry from "react-masonry-css";
 import masonryStyles from "../../../styles/masonry.module.scss";
 import { Wrapper } from "../../layout/wrapper";
 import { MainProps } from "../main";
+import { Spell, SpellInfo } from "../../../interfaces/spell";
 
 const breakpointColumnsObj = {
   default: 3,
@@ -32,13 +33,13 @@ export const AllSpells: React.FC<MainProps> = ({character}) => {
   function renderSpells() {
     const { spellInfo, spells } = character;
 
-    return spellInfo ? spellInfo.map((info, index) => {
+    return spellInfo ? spellInfo.map((info: SpellInfo, index: number) => {
       return (
         <Card key={`spellInfo_${index}`}>
           <SpellsByLevel
             spellInfo={info}
             spells={spells.filter(
-              (spell) => spell.level === `${index.toString()}`
+              (spell: Spell) => spell.level === `${index.toString()}`
             )}
           />
         </Card>

@@ -11,7 +11,7 @@ export const Languages: React.FC<MainProps> = ({ character }) => {
     <Card id={"languages"}>
       <Heading>{"Languages"}</Heading>
       <Flex>
-        {languages.map((language) => {
+        {languages.map((language: string) => {
           return (
             <Card key={language}>
               <Property>{language}</Property>

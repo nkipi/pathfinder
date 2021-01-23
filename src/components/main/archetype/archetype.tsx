@@ -14,13 +14,13 @@ export const Archetype: React.FC<MainProps> = ({ character }) => {
     <Card id={"archetype"}>
       <Heading>{"Archetype"}</Heading>
       <Flex>
-        {archetype.map((bonus) => {
+        {archetype.map((bonus: any) => {
           const { source, name, bonuses, link } = bonus;
           return (
             <Card key={name}>
               <PaddingWrapper>
                 <Property>{name}</Property>
-                {bonuses.map((bonus) => {
+                {bonuses.map((bonus: string) => {
                   return <p key={bonus}>{bonus}</p>;
                 })}
                 <Helper>{source}</Helper>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Equipment as IEquipment } from "../../../interfaces/equipment";
 import { Card } from "../../layout/card";
 import { Flex } from "../../layout/flex";
 import { Wrapper } from "../../layout/wrapper";
@@ -14,7 +15,7 @@ export const Equipment: React.FC<MainProps> = ({ character }) => {
     <Wrapper id={"equipment"}>
       <Heading>{"Equipment"}</Heading>
       <Flex>
-        {equipment.map((item) => {
+        {equipment.map((item: IEquipment) => {
           const { name, type, quantity, link, notes } = item;
           return (
             <Card key={name}>

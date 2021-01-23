@@ -1,4 +1,5 @@
 import React from "react";
+import { Weapon } from "../../../interfaces/weapon";
 import { Card } from "../../layout/card";
 import { Flex } from "../../layout/flex";
 import { Wrapper } from "../../layout/wrapper";
@@ -13,7 +14,7 @@ export const Weapons: React.FC<MainProps> = ({ character }) => {
     <Wrapper id={"weapons"}>
       <Heading>{"Weapons"}</Heading>
       <Flex>
-        {weapons.map((weapon) => {
+        {weapons.map((weapon: Weapon) => {
           const { name, attackBonus, damage, critical, type, notes } = weapon;
           return (
             <Card key={name}>

@@ -28,7 +28,7 @@ export const Header: React.FC<MainProps> = ({ character }) => {
 
   return (
     <Flex className={"headerFlex"}>
-      <a href="/" className={"homeIcon"}>
+      <a href="/pathfinder" className={"homeIcon"}>
         <RiHomeHeartFill size={24} />
       </a>
       <Flex className={"navigationFlex"}>

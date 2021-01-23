@@ -11,14 +11,14 @@ export const CharacterSelection: React.FC = () => {
     <Flex className={"charSelFlex"}>
       <Heading>Characters</Heading>
       <Flex>
-        <a href="/zotha">
+        <a href="/pathfinder/zotha">
           <img
             src={zothaPortrait}
             alt={"character"}
             className={"charSelPortrait"}
           />
         </a>
-        <a href="/twinkle" className={"charSelCard"}>
+        <a href="/pathfinder/twinkle" className={"charSelCard"}>
           <img
             src={twinklePortrait}
             alt={"character"}

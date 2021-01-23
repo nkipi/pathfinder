@@ -1,14 +1,17 @@
 import React from "react";
 import { Flex } from "../layout/flex";
-import styles from "./header.module.scss";
-import zotha from "../../data/zotha.json";
+import "./header.scss";
 import { orderBy, startCase, union } from "lodash";
 import { StickyNotes } from "../stickyNotes/stickyNotes";
+import { MainProps } from "../main/main";
+import { isCharacter } from "../../utils/isCharacter";
+import { getCharacterRoute } from "../../utils/getCharacterRoute";
+import { RiHomeHeartFill } from "react-icons/ri";
 
-export const Header: React.FC = () => {
+export const Header: React.FC<MainProps> = ({ character }) => {
   const navigationLinks = orderBy(
     union(
-      Object.entries(zotha)
+      Object.entries(character)
         .filter(
           ([key]) =>
             key === "character" ||
@@ -24,25 +27,28 @@ export const Header: React.FC = () => {
   );
 
   return (
-    <Flex className={styles.header}>
-      {navigationLinks.map((link) => {
-        return (
-          <a
-            key={link}
-            className={styles.link}
-            href={`/pathfinder#${link}`}
-          >
-            {startCase(link)}
-          </a>
-        );
-      })}
-      <a
-        key={"deck"}
-        className={styles.link}
-        href={`/pathfinder/deck`}
-      >
-        {"The Harrow Deck"}
+    <Flex className={"headerFlex"}>
+      <a href="/" className={"homeIcon"}>
+        <RiHomeHeartFill size={24} />
       </a>
+      <Flex className={"navigationFlex"}>
+        {navigationLinks.map((link) => {
+          return (
+            <a
+              key={link}
+              className={"headerLink"}
+              href={`/pathfinder/${getCharacterRoute(character)}#${link}`}
+            >
+              {startCase(link)}
+            </a>
+          );
+        })}
+        {isCharacter(character, "zotha") && (
+          <a key={"deck"} className={"headerLink"} href={`/pathfinder/deck`}>
+            {"The Harrow Deck"}
+          </a>
+        )}
+      </Flex>
       <StickyNotes />
     </Flex>
   );

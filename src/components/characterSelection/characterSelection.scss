@@ -1,0 +1,16 @@
+.charSelFlex {
+  padding: 2rem;
+}
+
+.charSelPortrait {
+  width: 300px;
+  height: 430px;
+  object-fit: cover;
+  box-shadow: 1px 1px 5px gray;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.charSelPortrait:hover {
+    box-shadow: 4px 4px 10px gray;
+}

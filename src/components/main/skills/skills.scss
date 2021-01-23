@@ -1,0 +1,7 @@
+@import "../../../themes.scss";
+.classSkill {
+  @include themify($themes) {
+    border-color: themed("primaryMain");
+    backgroundColor: themed("backgroundColor");
+  }
+}

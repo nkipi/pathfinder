@@ -3,7 +3,7 @@ import { harrowDeck } from "./getHarrowDeck";
 import { Card } from "../layout/card";
 import { Flex } from "../layout/flex";
 import { Property } from "../styling/property";
-import styles from "./harrowDeck.module.scss";
+import "./harrowDeck.scss";
 import Masonry from "react-masonry-css";
 import masonryStyles from "../../styles/masonry.module.scss";
 import classNames from "classnames";
@@ -20,23 +20,23 @@ export const DetailsView: React.FC = () => {
     <Flex>
       {harrowDeck.map((deck) => {
         return (
-          <Flex className={styles.deck}>
-            <Flex className={styles.title}>
+          <Flex className={"deck"}>
+            <Flex className={"harrowTitle"}>
               <Property>{deck.ability}</Property>
               <h2>{deck.name}</h2>
-              <p className={styles.description}>{deck.description}</p>
+              <p className={"harrowDesc"}>{deck.description}</p>
             </Flex>
             <Masonry
-              className={classNames(masonryStyles.masonry, styles.deckCards)}
+              className={classNames(masonryStyles.masonry, "deckCards")}
               columnClassName={masonryStyles.card}
               breakpointCols={breakpointColumnsObj}
             >
               {deck.cards.map(({ name }) => {
                 return (
-                  <Card key={name} className={styles.card}>
-                    <Flex className={styles.content}>
+                  <Card key={name} className={"harrowDetailsViewCard"}>
+                    <Flex className={"harrowContent"}>
                       <img
-                        className={styles.image}
+                        className={"harrowDetailsViewImg"}
                         alt={name}
                         src={require(`./images/${name}.jpg`).default}
                       />

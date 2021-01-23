@@ -1,6 +1,6 @@
 import React from "react";
 import { Flex } from "../layout/flex";
-import styles from "./harrowDeck.module.scss";
+import "./harrowDeck.scss";
 import { Property } from "../styling/property";
 import classNames from "classnames";
 import { Tag } from "../styling/tag";
@@ -14,15 +14,15 @@ export const Details: React.FC<{ cardName: string; className?: string }> = ({
     cardName
   );
   return (
-    <Flex className={classNames(className, styles.text)}>
+    <Flex className={classNames(className, "harrowText")}>
       <Property>{alignment}</Property>
       <h3>{name}</h3>
       <p>{description}</p>
       {keywords.map((keyword) => (
-        <Tag className={styles.tag}>{keyword}</Tag>
+        <Tag className={"harrowTag"}>{keyword}</Tag>
       ))}
       {misalignments.map((misalignment) => (
-        <Tag className={styles.misalignment}>{misalignment}</Tag>
+        <Tag className={"harrowMisalignment"}>{misalignment}</Tag>
       ))}
     </Flex>
   );

@@ -6,14 +6,14 @@ import { Helper } from "../../styling/helper";
 import { Property } from "../../styling/property";
 import { MainProps } from "../main";
 
-export const Saves: React.FC<MainProps> = ({ character }) => {
-  const { saves } = character;
-  return saves ? (
-    <Card id={"saves"}>
-      <Heading>{"Saves"}</Heading>
+export const Senses: React.FC<MainProps> = ({ character }) => {
+  const { senses } = character;
+  return senses ? (
+    <Card id={"senses"}>
+      <Heading>{"Senses"}</Heading>
       <Flex>
-        {saves.map((save) => {
-          const { name, ability, total } = save;
+        {senses.map((sense) => {
+          const { name, ability, total } = sense;
           return (
             <Card key={name}>
               <Property>{name}</Property>

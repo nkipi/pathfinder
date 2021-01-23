@@ -1,0 +1,20 @@
+@import "../../themes.scss";
+
+.linkAnchor {
+  padding: 0.2rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.linkIcon {
+  @include themify($themes) {
+    color: themed("secondaryMain");
+  }
+}
+
+.linkIcon:hover {
+  @include themify($themes) {
+    color: themed("primaryMain");
+  }
+}

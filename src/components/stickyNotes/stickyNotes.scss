@@ -1,0 +1,64 @@
+@import "../../themes.scss";
+
+.stickyNotesIcons {
+  z-index: 999;
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  width: max-content;
+}
+
+.stickyNotesIcon {
+  @include themify($themes) {
+    color: themed("tertiaryMain");
+  }
+  cursor: pointer;
+}
+
+.stickyNotesIcon .saved {
+  @include themify($themes) {
+    color: themed("secondaryMain");
+  }
+}
+
+.stickyNotesIcon .remove {
+  @include themify($themes) {
+    color: themed("primaryMain");
+  }
+}
+
+.stickynote {
+  @include themify($themes) {
+    background: themed("tertiaryMain");
+    border-color: themed("tertiaryMain");
+  }
+  border: 2px solid;
+}
+
+.stickyNotes {
+  z-index: 999;
+  position: fixed;
+  top: 50px;
+  right: 20px;
+  width: 100%;
+  transform: scale(0);
+}
+
+.stickyNotes .visible {
+  transform: scale(1);
+}
+
+:global(.note) {
+  @include themify($themes) {
+    backgroundcolor: themed("tertiaryMain") !important;
+  }
+  > *,
+  :global(.title),
+  font {
+    color: black !important;
+  }
+
+  :global(.note-body) {
+    font-size: 14px !important;
+  }
+}

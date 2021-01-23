@@ -1,0 +1,10 @@
+@import "../../themes.scss";
+
+.property {
+  font-weight: bold;
+  margin-bottom: .5rem;
+  @include themify($themes) {
+    color: themed("primaryMain");
+  }
+  text-transform: uppercase;
+}

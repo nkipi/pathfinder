@@ -1,5 +1,4 @@
 import React from "react";
-import zotha from "../../../data/zotha.json";
 import { Card } from "../../layout/card";
 import { Flex } from "../../layout/flex";
 import { Heading } from "../../styling/heading";
@@ -7,10 +6,11 @@ import { Helper } from "../../styling/helper";
 import { Link } from "../../styling/link";
 import { PaddingWrapper } from "../../styling/paddingWrapper";
 import { Property } from "../../styling/property";
+import { MainProps } from "../main";
 
-export const DailyBonuses: React.FC = () => {
-  const { dailyBonuses } = zotha;
-  return (
+export const DailyBonuses: React.FC<MainProps> = ({ character }) => {
+  const { dailyBonuses } = character;
+  return dailyBonuses ? (
     <Card id={"dailyBonuses"}>
       <Heading>{"Daily Bonuses"}</Heading>
       <Flex>
@@ -31,5 +31,5 @@ export const DailyBonuses: React.FC = () => {
         })}
       </Flex>
     </Card>
-  );
+  ) : null;
 };

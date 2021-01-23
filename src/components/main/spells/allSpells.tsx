@@ -3,9 +3,9 @@ import { Card } from "../../layout/card";
 import { Heading } from "../../styling/heading";
 import { SpellsByLevel } from "./spellsByLevel";
 import Masonry from "react-masonry-css";
-import zotha from "../../../data/zotha.json";
 import masonryStyles from "../../../styles/masonry.module.scss";
 import { Wrapper } from "../../layout/wrapper";
+import { MainProps } from "../main";
 
 const breakpointColumnsObj = {
   default: 3,
@@ -13,8 +13,10 @@ const breakpointColumnsObj = {
   700: 1,
 };
 
-export const AllSpells: React.FC = () => {
-  return (
+export const AllSpells: React.FC<MainProps> = ({character}) => {
+  const { spells } = character;
+
+  return spells ? (
     <Wrapper id={"spells"}>
     <Heading>{"Spells"}</Heading>
       <Masonry
@@ -25,12 +27,12 @@ export const AllSpells: React.FC = () => {
         {renderSpells()}
       </Masonry>
     </Wrapper>
-  );
+  ) : null;
 
   function renderSpells() {
-    const { spellInfo, spells } = zotha;
+    const { spellInfo, spells } = character;
 
-    return spellInfo.map((info, index) => {
+    return spellInfo ? spellInfo.map((info, index) => {
       return (
         <Card key={`spellInfo_${index}`}>
           <SpellsByLevel
@@ -41,6 +43,6 @@ export const AllSpells: React.FC = () => {
           />
         </Card>
       );
-    });
+    }) : null;
   }
 };

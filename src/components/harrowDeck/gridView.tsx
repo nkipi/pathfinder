@@ -1,13 +1,13 @@
 import React from "react";
 import { Flex } from "../layout/flex";
-import styles from "./harrowDeck.module.scss";
+import "./harrowDeck.scss";
 import ReactCardFlip from "react-card-flip";
 import { Drawer } from "@material-ui/core";
 import { Details } from "./details";
 
 export const GridView: React.FC<{ cards: string[] }> = ({ cards }) => {
   return (
-    <Flex className={styles.gridView}>
+    <Flex className={"harrowGridView"}>
       {cards.map((name) => {
         return <CardFlip cardName={name} />;
       })}
@@ -22,7 +22,7 @@ const CardFlip: React.FC<{ cardName: string }> = ({ cardName }) => {
     <>
       <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
         <img
-          className={styles.image}
+          className={"harrowGridImg"}
           alt={cardName}
           src={require(`./images/${cardName}.jpg`).default}
           onMouseOver={() => setIsFlipped(true)}
@@ -30,7 +30,7 @@ const CardFlip: React.FC<{ cardName: string }> = ({ cardName }) => {
           onClick={() => setShowDrawer(true)}
         />
         <img
-          className={styles.image}
+          className={"harrowGridImg"}
           alt={cardName}
           src={require(`./images/The Back.jpg`).default}
           onMouseOver={() => setIsFlipped(true)}
@@ -43,7 +43,7 @@ const CardFlip: React.FC<{ cardName: string }> = ({ cardName }) => {
         onClose={() => setShowDrawer(false)}
         anchor="right"
       >
-        <Details cardName={cardName} className={styles.drawerContent} />
+        <Details cardName={cardName} className={"harrowDrawer"} />
       </Drawer>
     </>
   );

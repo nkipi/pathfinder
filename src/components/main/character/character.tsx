@@ -1,25 +1,24 @@
 import React from "react";
-import zotha from "../../../data/zotha.json";
 import { Card } from "../../layout/card";
 import { Flex } from "../../layout/flex";
-import styles from "./character.module.scss";
-import zothaPortrait from "../../../images/zotha_dark.jpg";
+import "./character.scss";
 import { Helper } from "../../styling/helper";
 import { Property } from "../../styling/property";
 import { Heading } from "../../styling/heading";
+import { MainProps } from "../main";
 
-export const Character: React.FC = () => {
-  const { name, characterClass, level, race, alignment } = zotha.character;
+export const Character: React.FC<MainProps> = ({ character, portrait}) => {
+  const { name, characterClass, level, race, alignment } = character.character;
   return (
-    <Card className={styles.card}>
-      <Flex className={styles.flex}>
-        <img src={zothaPortrait} alt={"zotha"} className={styles.portrait} />
+    <Card className={"charCard"}>
+      <Flex className={"charFlex"}>
+        <img src={portrait} alt={"character"} className={"charPortrait"} />
         <Heading>{name}</Heading>
-        <Flex className={styles.subheading}>
+        <Flex className={"charSubheading"}>
           <Property>{`${characterClass}`}</Property>
           <Property>{`Level ${level}`}</Property>
         </Flex>
-        <Flex className={styles.subheading}>
+        <Flex className={"charSubheading"}>
           <Helper>{`${race}`}</Helper>
           <Helper>{`${alignment}`}</Helper>
         </Flex>

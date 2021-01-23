@@ -1,5 +1,4 @@
 import React from "react";
-import { Spell, SpellInfo } from "../../../interfaces/spell";
 import { Card } from "../../layout/card";
 import { Flex } from "../../layout/flex";
 import { Heading } from "../../styling/heading";
@@ -7,36 +6,30 @@ import { Helper } from "../../styling/helper";
 import { Link } from "../../styling/link";
 import { PaddingWrapper } from "../../styling/paddingWrapper";
 import { Property } from "../../styling/property";
-import "./spells.scss";
+import { MainProps } from "../main";
 
-interface Props {
-  spellInfo: SpellInfo;
-  spells: Spell[];
-}
-
-export const SpellsByLevel: React.FC<Props> = ({ spellInfo, spells }) => {
-  return (
-    <div className={"spellsWrapper"}>
-      <h6>{`${spellInfo.slots} SLOTS`}</h6>
-      <Heading>{`Spells ${spellInfo.level}`}</Heading>
-      <Flex className={"spellSmallCard"}>
-        <Property>{"DC"}</Property>
-        <h1>{spellInfo.dc}</h1>
-      </Flex>
+export const Archetype: React.FC<MainProps> = ({ character }) => {
+  const { archetype } = character;
+  return archetype ? (
+    <Card id={"archetype"}>
+      <Heading>{"Archetype"}</Heading>
       <Flex>
-        {spells.map((spell) => {
-          const { name, school, link } = spell;
+        {archetype.map((bonus) => {
+          const { source, name, bonuses, link } = bonus;
           return (
             <Card key={name}>
               <PaddingWrapper>
                 <Property>{name}</Property>
-                <Helper>{school}</Helper>
+                {bonuses.map((bonus) => {
+                  return <p key={bonus}>{bonus}</p>;
+                })}
+                <Helper>{source}</Helper>
                 {link && <Link href={link} />}
               </PaddingWrapper>
             </Card>
           );
         })}
       </Flex>
-    </div>
-  );
+    </Card>
+  ) : null;
 };

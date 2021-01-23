@@ -1,7 +1,7 @@
 import React from "react";
 import { Flex } from "../layout/flex";
 import { Heading } from "../styling/heading";
-import styles from "./harrowDeck.module.scss";
+import "./harrowDeck.scss";
 import classNames from "classnames";
 import { RiGridFill } from "react-icons/ri";
 import { MdViewList } from "react-icons/md";
@@ -23,7 +23,7 @@ export const HarrowDeck: React.FC = () => {
   );
 
   return (
-    <div id={"harrowDeck"} className={styles.wrapper}>
+    <div id={"harrowDeck"} className={"harrowWrapper theme-zotha"}>
       {renderHeader()}
       {randomCards.length > 0 ? (
         renderRandomCards()
@@ -38,21 +38,21 @@ export const HarrowDeck: React.FC = () => {
 
   function renderHeader() {
     return (
-      <Flex className={styles.heading}>
+      <Flex className={"harrowHeading"}>
         <Heading>{"Harrow Deck"}</Heading>
-        <Flex className={styles.icons}>
+        <Flex className={"harrowIcons"}>
           <MdViewList
             size={20}
             onClick={() => changeView("details")}
-            className={classNames(styles.icon, {
-              [styles.active]: isDetailsView(),
+            className={classNames("harrowIcon", {
+              ["active"]: isDetailsView(),
             })}
           />
           <RiGridFill
             size={16}
             onClick={() => changeView("grid")}
-            className={classNames(styles.icon, {
-              [styles.active]: isGridView(),
+            className={classNames("harrowIcon", {
+              ["active"]: isGridView(),
             })}
           />
         </Flex>
@@ -77,13 +77,13 @@ export const HarrowDeck: React.FC = () => {
 
   function renderInput() {
     return (
-      <Paper className={styles.input} variant={"outlined"}>
-        <Flex className={styles.inputContent}>
-          <IconButton className={styles.inputAdornment} disabled={true}>
+      <Paper className={"harrowInput"} variant={"outlined"}>
+        <Flex className={"harrowInputContent"}>
+          <IconButton className={"harrowInputAdornment"} disabled={true}>
             <GiCardBurn />
           </IconButton>
           <InputBase
-            className={styles.inputField}
+            className={"inputField"}
             placeholder="Draw random cards"
             type={"number"}
             value={cardNumber}
@@ -91,16 +91,16 @@ export const HarrowDeck: React.FC = () => {
             key={cardNumber}
           />
           <IconButton
-            className={styles.inputIcon}
+            className={"inputIcon"}
             color={"primary"}
             onClick={() => setRandomCards(drawRandomCards(cardNumber))}
             disabled={cardNumber === 0 || cardNumber === undefined}
           >
             <GiCardRandom />
           </IconButton>
-          <Divider className={styles.divider} orientation={"vertical"} />
+          <Divider className={"harrowDivider"} orientation={"vertical"} />
           <IconButton
-            className={styles.inputIcon}
+            className={"harrowInputIcon"}
             onClick={() => resetRandomDrawing()}
             disabled={cardNumber === 0 || cardNumber === undefined}
           >

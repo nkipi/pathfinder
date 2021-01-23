@@ -1,15 +1,15 @@
 import React from "react";
-import zotha from "../../../data/zotha.json";
 import { Card } from "../../layout/card";
 import { Flex } from "../../layout/flex";
 import { Wrapper } from "../../layout/wrapper";
 import { Heading } from "../../styling/heading";
 import { Helper } from "../../styling/helper";
 import { Property } from "../../styling/property";
+import { MainProps } from "../main";
 
-export const Weapons: React.FC = () => {
-  const { weapons } = zotha;
-  return (
+export const Weapons: React.FC<MainProps> = ({ character }) => {
+  const { weapons } = character;
+  return weapons ? (
     <Wrapper id={"weapons"}>
       <Heading>{"Weapons"}</Heading>
       <Flex>
@@ -18,13 +18,15 @@ export const Weapons: React.FC = () => {
           return (
             <Card key={name}>
               <Property>{name}</Property>
-              <h4>{`Attack: ${attackBonus}`}</h4>
-              <h4>{`Damage: ${damage}`}</h4>
-              <Helper>{`Critical (${critical}), ${type}, ${notes}`}</Helper>
+              {attackBonus && <h4>{`Attack: ${attackBonus}`}</h4>}
+              {damage && <h4>{`Damage: ${damage}`}</h4>}
+              {critical && <Helper>{`Critical (${critical})`}</Helper>}
+              {type && <Helper>{`Type (${type})`}</Helper>}
+              {notes && <Helper>{`${notes}`}</Helper>}
             </Card>
           );
         })}
       </Flex>
     </Wrapper>
-  );
+  ) : null;
 };

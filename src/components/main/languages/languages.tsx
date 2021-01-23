@@ -1,13 +1,13 @@
 import React from "react";
-import zotha from "../../../data/zotha.json";
 import { Card } from "../../layout/card";
 import { Flex } from "../../layout/flex";
 import { Heading } from "../../styling/heading";
 import { Property } from "../../styling/property";
+import { MainProps } from "../main";
 
-export const Languages: React.FC = () => {
-  const { languages } = zotha;
-  return (
+export const Languages: React.FC<MainProps> = ({ character }) => {
+  const { languages } = character;
+  return languages ? (
     <Card id={"languages"}>
       <Heading>{"Languages"}</Heading>
       <Flex>
@@ -20,5 +20,5 @@ export const Languages: React.FC = () => {
         })}
       </Flex>
     </Card>
-  );
+  ) : null;
 };

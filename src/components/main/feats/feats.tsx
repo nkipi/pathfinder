@@ -1,15 +1,15 @@
 import React from "react";
-import zotha from "../../../data/zotha.json";
 import { Card } from "../../layout/card";
 import { Flex } from "../../layout/flex";
 import { Heading } from "../../styling/heading";
 import { Link } from "../../styling/link";
 import { PaddingWrapper } from "../../styling/paddingWrapper";
 import { Property } from "../../styling/property";
+import { MainProps } from "../main";
 
-export const Feats: React.FC = () => {
-  const { feats } = zotha;
-  return (
+export const Feats: React.FC<MainProps> = ({ character }) => {
+  const { feats } = character;
+  return feats ? (
     <Card id={"feats"}>
       <Heading>{"Feats"}</Heading>
       <Flex>
@@ -26,5 +26,5 @@ export const Feats: React.FC = () => {
         })}
       </Flex>
     </Card>
-  );
+  ) : null;
 };

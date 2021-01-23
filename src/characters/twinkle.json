@@ -1,0 +1,334 @@
+{
+    "character": {
+        "name": "Twinkle Toes",
+        "characterClass": "Rogue",
+        "level": "3",
+        "race": "Goblin",
+        "alignment": "Chaotic Evil"
+    },
+    "abilities": [
+        {
+            "name": "str",
+            "points": "8",
+            "mod": "-1"
+        },
+        {
+            "name": "dex",
+            "points": "16",
+            "mod": "3"
+        },
+        {
+            "con": "14",
+            "name": "con",
+            "points": "14",
+            "mod": "2"
+        },
+        {
+            "name": "int",
+            "points": "9",
+            "mod": "-1"
+        },
+        {
+            "wis": "10",
+            "name": "wis",
+            "points": "14",
+            "mod": "2"
+        },
+        {
+            "name": "cha",
+            "points": "14",
+            "mod": "2"
+        }
+    ],
+    "saves": [
+        {
+            "name": "str",
+            "total": "-1"
+        },
+        {
+            "name": "dex",
+            "total": "5"
+        },
+        {
+            "name": "con",
+            "total": "2"
+        },
+        {
+            "name": "int",
+            "total": "1"
+        },
+        {
+            "name": "wis",
+            "total": "2"
+        },
+        {
+            "name": "cha",
+            "total": "2"
+        }
+    ],
+    "senses": [
+        {
+            "name": "Perception",
+            "total": "12",
+            "ability": "Passive Wis"
+        },
+        {
+            "name": "Investigation",
+            "total": "9",
+            "ability": "Passive Int"
+        },
+        {
+            "name": "Insight",
+            "total": "14",
+            "ability": "Passive Wis"
+        }
+    ],
+    "combat": {
+        "hp": "24",
+        "init": "3",
+        "speed": "30",
+        "ac": "14",
+        "prof": "2"
+    },
+    "weapons": [
+        {
+            "name": "Dagger",
+            "attackBonus": "+5",
+            "damage": "1d4 + 3",
+            "type": "S",
+            "notes": "One-handed"
+        },
+        {
+            "name": "Scissors",
+            "attackBonus": "+5",
+            "damage": "1d4 + 3",
+            "type": "S",
+            "notes": "One-handed"
+        },
+        {
+            "name": "Dagger +1",
+            "attackBonus": "+6",
+            "damage": "1d4 + 4",
+            "type": "S",
+            "notes": "One-handed"
+        },
+        {
+            "name": "Unarmed Strike",
+            "attackBonus": "+1",
+            "damage": "1 + STR"
+        }
+    ],
+    "skills": [
+        {
+            "name": "Acrobatics",
+            "classSkill": true,
+            "type": "Dex",
+            "total": "5"
+        },
+        {
+            "name": "Animal Handling",
+            "classSkill": false,
+            "type": "Wis",
+            "total": "2"
+        },
+        {
+            "name": "Arcana",
+            "classSkill": false,
+            "type": "Int",
+            "total": "-1"
+        },
+        {
+            "name": "Athletics",
+            "classSkill": false,
+            "type": "Str",
+            "total": "-1"
+        },
+        {
+            "name": "Deception",
+            "classSkill": true,
+            "type": "Cha",
+            "total": "4"
+        },
+        {
+            "name": "History",
+            "classSkill": false,
+            "type": "Int",
+            "total": "-1"
+        },
+        {
+            "name": "Insight",
+            "classSkill": true,
+            "type": "Wis",
+            "total": "4"
+        },
+        {
+            "name": "Intimidation",
+            "classSkill": true,
+            "type": "Cha",
+            "total": "4"
+        },
+        {
+            "name": "Investigation",
+            "classSkill": false,
+            "type": "Int",
+            "total": "-1"
+        },
+        {
+            "name": "Medicine",
+            "classSkill": false,
+            "type": "Wis",
+            "total": "2"
+        },
+        {
+            "name": "Nature",
+            "classSkill": false,
+            "type": "Int",
+            "total": "-1"
+        },
+        {
+            "name": "Perception",
+            "classSkill": false,
+            "type": "Wis",
+            "total": "2"
+        },
+        {
+            "name": "Performance",
+            "classSkill": true,
+            "type": "Cha",
+            "total": "6"
+        },
+        {
+            "name": "Persuasion",
+            "classSkill": false,
+            "type": "Cha",
+            "total": "2"
+        },
+        {
+            "name": "Religion",
+            "classSkill": false,
+            "type": "Int",
+            "total": "-1"
+        },
+        {
+            "name": "Sleight of Hand",
+            "classSkill": false,
+            "type": "Dex",
+            "total": "3"
+        },
+        {
+            "name": "Stealth",
+            "classSkill": true,
+            "type": "Dex",
+            "total": "7"
+        },
+        {
+            "name": "Survival",
+            "classSkill": false,
+            "type": "Wis",
+            "total": "2"
+        }
+    ],
+    "languages": [
+        "Common",
+        "Goblin",
+        "Abyssal"
+    ],
+    "specialAbilities": [
+        {
+            "name": "Darkvision",
+            "notes": "Goblins can see in the dark up to 60 feet.",
+            "type": "Racial"
+        },
+        {
+            "name": "Thieves' Cant",
+            "notes": "You know a secret mix of dialect, jargon and code that allows you to hide messages in normal convos. It takes 4 times longer to convey such messages.",
+            "type": "Rougish"
+        },
+        {
+            "name": "Rakdos Cultist",
+            "notes": "People don't want to mess with you. You can get away with minor criminal offenses (such as not paying for food or breaking down a door at a local shop) if no legal authorities witness the crime.",
+            "type": "Background"
+        }
+    ],
+    "bonusActions": [
+        {
+            "name": "Cunning Action",
+            "notes": "You can take Dash, Disengage or Hide action as bonus action",
+            "type": "Roguish"
+        },
+        {
+            "name": "Nimble Escape",
+            "notes": "You can take Disengage or Hide as bonus action",
+            "type": "Goblinish"
+        }
+    ],
+    "reactions": [
+        {
+            "name": "Attack of Opportunity"
+        }
+    ],
+    "equipment": [
+        {
+            "name": "Marvelous Pigments",
+            "type": "Woundrous Items",
+            "quantity": "1",
+            "notes": "498 sq feet left"
+        },
+        {
+            "name": "Flasks of Fire Breath",
+            "type": "Potions",
+            "quantity": "4"
+        }
+    ],
+    "dailyBonuses": [
+        {
+            "name": "Fury of the Small",
+            "bonuses": [
+                "+3 extra damage per short rest"
+            ]
+        },
+        {
+            "name": "Sneak Attack",
+            "bonuses": [
+                "+2d6 extra damage"
+            ]
+        }
+
+    ],
+    "archetype": [
+        {
+            "name": "Ear for Deceit",
+            "bonuses": [
+                "Whenever you make a Wisdom (Insight) check to determine whether a creature is lying, treat a roll of 7 or lower on the d20 as an 8."
+            ]
+        },
+        {
+            "name": "Eye for Detail",
+            "bonuses": [
+                "As a bonus action you can make a Wisdom (Perception) check to spot a hidden creature or object or to make an Intelligence (Investigation) check to uncover or decipher clues."
+            ]
+        },
+        {
+            "name": "Insightful Fighting",
+            "bonuses": [
+                "As a bonus action, you make a Wisdom (Insight) check against a creature you can see that isn’t incapacitated, contested by the target’s Charisma (Deception) check. If you succeed, you can use your Sneak Attack against that target even if you don't have advantage on the attack roll, but not if you have disadvantage on it."
+            ]
+        }
+
+    ],
+    "extras": [
+        {
+            "general": [
+                "You are a crazy little dude who likes to kill"
+            ],
+            "combat": [
+                "Use the pigments to disable enemy"
+            ],
+            "interrogations": [
+                "Always do insight",
+                "Intimidate the enemy",
+                "Even if they seem to tell the truth doesn't mean you can trust them"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+@import "../../themes.scss";
+.headerFlex {
+  position: sticky;
+  top: 0;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  z-index: 20;
+  width: auto;
+  border-bottom: 1px solid;
+  flex-wrap: nowrap;
+
+  @include themify($themes) {
+    border-color: themed("tertiaryMain");
+  }
+  margin-bottom: 1rem;
+}
+
+.navigationFlex {
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerLink {
+  @include themify($themes) {
+    color: themed("primaryMain");
+  }
+  cursor: pointer;
+  padding: 0 0.5rem;
+  text-decoration: none;
+}
+
+.headerLink:hover {
+  @include themify($themes) {
+    color: themed("secondaryMain");
+  }
+}
+
+.homeIcon {
+  margin-right: auto;
+  @include themify($themes) {
+    color: themed("primaryMain");
+  }
+}

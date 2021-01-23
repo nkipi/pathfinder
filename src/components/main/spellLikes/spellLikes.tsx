@@ -1,15 +1,15 @@
 import React from "react";
-import zotha from "../../../data/zotha.json";
 import { Card } from "../../layout/card";
 import { Flex } from "../../layout/flex";
 import { Heading } from "../../styling/heading";
 import { Link } from "../../styling/link";
 import { PaddingWrapper } from "../../styling/paddingWrapper";
 import { Property } from "../../styling/property";
+import { MainProps } from "../main";
 
-export const SpellLikes: React.FC = () => {
-  const { spellLikes } = zotha;
-  return (
+export const SpellLikes: React.FC<MainProps> = ({ character }) => {
+  const { spellLikes } = character;
+  return spellLikes ? (
     <Card id={"spellLikes"}>
       <Heading>{"Spell Likes"}</Heading>
       <Flex>
@@ -26,5 +26,5 @@ export const SpellLikes: React.FC = () => {
         })}
       </Flex>
     </Card>
-  );
+  ) : null;
 };

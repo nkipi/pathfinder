@@ -1,0 +1,50 @@
+$themes: (
+  zotha: (
+    primaryMain: #8a2be2,
+    primaryLight: #b377eb,
+    primaryDarkk: #601e9e,
+    secondaryMain: #32cd32,
+    secondaryLight: #7bdf7b,
+    secondaryDark: #238f23,
+    tertiaryMain: #ffa500,
+    tertiaryLight: #ffb394,
+    tertiaryDark: #d32f2f,
+    backgroundColor: #f7f7ff,
+  ),
+  twinkle: (
+    primaryMain: #dc143c,
+    primaryLight: #f08080,
+    primaryDarkk: #800000,
+    secondaryMain: #242424,
+    secondaryLight: #c0c0c0,
+    secondaryDark: #080800,
+    tertiaryMain: #fabb73,
+    tertiaryLight: #fcd8af,
+    tertiaryDark: #f5a03f,
+    backgroundColor: #f7f7ff,
+  ),
+);
+
+@mixin themify($themes: $themes) {
+  @each $theme, $map in $themes {
+    .theme-#{$theme} & {
+      $theme-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), "#{$key}");
+        $theme-map: map-merge(
+          $theme-map,
+          (
+            $key: $value,
+          )
+        ) !global;
+      }
+
+      @content;
+      $theme-map: null !global;
+    }
+  }
+}
+
+@function themed($key) {
+  @return map-get($theme-map, $key);
+}

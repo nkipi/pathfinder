@@ -1,0 +1,136 @@
+@import "../../themes.scss";
+.harrowWrapper {
+  padding: 2rem;
+  width: 80%;
+  margin: auto;
+
+  @media (max-width: 670px) {
+    padding: 1rem;
+    width: 90%;
+  }
+}
+
+.harrowHeading {
+  align-items: center;
+  column-gap: 0;
+  row-gap: 0;
+}
+
+.harrowIcons {
+  column-gap: 0;
+  row-gap: 0;
+  margin-left: 1rem;
+  width: max-content;
+  justify-content: center;
+  align-items: center;
+}
+
+.harrowIcon {
+  margin: 0 0.5rem 0.5rem;
+  cursor: pointer;
+}
+
+.harrowIcon .active {
+  @include themify($themes) {
+    color: themed("secondaryMain");
+  }
+}
+
+.deck {
+  flex-direction: column;
+}
+
+.harrowTitle {
+  flex-direction: column;
+  column-gap: 0;
+  row-gap: 0;
+}
+
+.harrowDesc {
+  padding: 1rem 0;
+}
+
+.deckCards {
+  margin: auto;
+}
+
+.harrowContent {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.harrowDetailsViewImg {
+  box-shadow: 1px 1px 5px gray;
+  width: 250px;
+  height: 410px;
+}
+
+.harrowText {
+  padding: 1rem 0;
+  flex-direction: column;
+  width: 200px;
+  column-gap: 0;
+  row-gap: 0;
+
+  > * {
+    margin: 0.5rem 0 !important;
+  }
+}
+
+.harrowTag {
+  @include themify($themes) {
+    background: themed("secondaryLight");
+    border: 1px solid themed("secondaryMain");
+  }
+}
+
+.harrowMisalignment {
+  @include themify($themes) {
+    background: themed("tertiaryLight");
+    border: 1px solid themed("tertiaryMain");
+  }
+}
+
+.harrowGridView {
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.harrowGridImg {
+  width: 250px;
+  box-shadow: 1px 1px 5px gray;
+  cursor: pointer;
+  margin: 0.5rem;
+}
+
+.harrowDrawer {
+  padding: 2rem;
+}
+
+.harrowInput {
+  height: 46px;
+  margin-left: auto !important;
+  margin-bottom: 0.5rem !important;
+  min-width: 320px;
+
+  @media (max-width: 765px) {
+    margin: 0 0 4rem !important;
+  }
+}
+
+.harrowInputContent {
+  column-gap: 0;
+  row-gap: 0;
+  min-width: 320px;
+}
+
+.harrowInputAdornment {
+  @include themify($themes) {
+    color: themed("secondaryMain") !important;
+  }
+}
+
+.harrowDivider {
+  margin: auto 0 !important;
+  height: 30px;
+}

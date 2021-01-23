@@ -1,5 +1,4 @@
-@import "../colors.scss";
-
+@import "../themes.scss";
 .masonry {
   display: -webkit-box; /* Not needed if autoprefixing */
   display: -ms-flexbox; /* Not needed if autoprefixing */
@@ -15,7 +14,9 @@
   margin-bottom: 2rem;
   margin-right: 2rem;
   min-width: 250px;
-  background-color: $background-color;
+  @include themify($themes) {
+    backgroundColor: themed("backgroundColor");
+  }
 
   @media (max-width: 700px) {
     margin-right: auto;

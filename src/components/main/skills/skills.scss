@@ -2,6 +2,6 @@
 .classSkill {
   @include themify($themes) {
     border-color: themed("primaryMain");
-    background-color: themed("backgroundColor");
+    background-color: themed("secondaryBgColor");
   }
 }

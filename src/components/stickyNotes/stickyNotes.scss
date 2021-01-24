@@ -3,9 +3,13 @@
 .stickyNotesIcons {
   z-index: 999;
   position: fixed;
-  top: 12px;
-  right: 12px;
+  top: 18px;
+  right: 18px;
   width: max-content;
+
+  @media (max-width: 500px) {
+    display: none;
+  }
 }
 
 .stickyNotesIcon {
@@ -15,13 +19,13 @@
   cursor: pointer;
 }
 
-.stickyNotesIcon .saved {
+.stickyNotesIcon.saved {
   @include themify($themes) {
     color: themed("secondaryMain");
   }
 }
 
-.stickyNotesIcon .remove {
+.stickyNotesIcon.remove {
   @include themify($themes) {
     color: themed("primaryMain");
   }
@@ -44,13 +48,13 @@
   transform: scale(0);
 }
 
-.stickyNotes .visible {
+.stickyNotes.visible {
   transform: scale(1);
 }
 
 :global(.note) {
   @include themify($themes) {
-    backgroundcolor: themed("tertiaryMain") !important;
+    background-color: themed("tertiaryMain") !important;
   }
   > *,
   :global(.title),

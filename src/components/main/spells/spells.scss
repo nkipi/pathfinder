@@ -18,5 +18,7 @@
 }
 
 .spellSmallCard > * {
-  color: black;
+  @include themify($themes) {
+    color: themed("textColor");
+  }
 }

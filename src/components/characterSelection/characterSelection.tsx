@@ -1,5 +1,4 @@
 import React from "react";
-import { Card } from "../layout/card";
 import zothaPortrait from "../../images/zotha_dark.jpg";
 import twinklePortrait from "../../images/twinkle.jpg";
 import { Flex } from "../layout/flex";

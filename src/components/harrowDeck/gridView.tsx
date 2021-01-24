@@ -42,6 +42,7 @@ const CardFlip: React.FC<{ cardName: string }> = ({ cardName }) => {
         open={showDrawer}
         onClose={() => setShowDrawer(false)}
         anchor="right"
+        disablePortal={true}
       >
         <Details cardName={cardName} className={"harrowDrawer"} />
       </Drawer>

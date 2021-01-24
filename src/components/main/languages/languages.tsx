@@ -14,7 +14,7 @@ export const Languages: React.FC<MainProps> = ({ character }) => {
         {languages.map((language: string) => {
           return (
             <Card key={language}>
-              <Property>{language}</Property>
+              <Property noMargin={true}>{language}</Property>
             </Card>
           );
         })}

@@ -18,8 +18,7 @@ import { Weapons } from "./weapons/weapons";
 import { Skills } from "./skills/skills";
 import { DailyBonuses } from "./dailyBonuses/dailyBonuses";
 import { Header } from "../header/header";
-import { Theme, ThemeProvider } from "@material-ui/core";
-import classNames from "classnames";
+import { Theme } from "@material-ui/core";
 
 const breakpointColumnsObj = {
   default: 3,
@@ -40,36 +39,37 @@ export interface ThemeProps {
 export const Main: React.FC<MainProps & ThemeProps> = ({
   character,
   portrait,
-  theme,
   className,
 }) => {
   return (
-    <ThemeProvider theme={theme}>
-      <div className={classNames("main", className)}>
-        <Header character={character} />
-        <Masonry
-          id={"character"}
-          className={masonryStyles.masonry}
-          columnClassName={masonryStyles.card}
-          breakpointCols={breakpointColumnsObj}
-        >
-          <Character character={character} portrait={portrait} />
-          <Abilities character={character} />
-          <Combat character={character} />
-          <Saves character={character} />
-          <Senses character={character} />
-          <DailyBonuses character={character} />
-          <Archetype character={character}/>
-          <SpellLikes character={character} />
-          <SpecialAbilitiesAndTraits character={character} />
-          <Feats character={character} />
-          <Languages character={character} />
-        </Masonry>
-        <Weapons character={character} />
-        <AllSpells character={character} />
-        <Skills character={character} />
-        <Equipment character={character} />
+    <div className={className}>
+      <div className={"theme"}>
+        <div className={"main"}>
+          <Header character={character} />
+          <Masonry
+            id={"character"}
+            className={masonryStyles.masonry}
+            columnClassName={masonryStyles.card}
+            breakpointCols={breakpointColumnsObj}
+          >
+            <Character character={character} portrait={portrait} />
+            <Abilities character={character} />
+            <Combat character={character} />
+            <Saves character={character} />
+            <Senses character={character} />
+            <DailyBonuses character={character} />
+            <Archetype character={character} />
+            <SpellLikes character={character} />
+            <SpecialAbilitiesAndTraits character={character} />
+            <Feats character={character} />
+            <Languages character={character} />
+          </Masonry>
+          <Weapons character={character} />
+          <AllSpells character={character} />
+          <Skills character={character} />
+          <Equipment character={character} />
+        </div>
       </div>
-    </ThemeProvider>
+    </div>
   );
 };

@@ -1,4 +1,5 @@
 @import "../../themes.scss";
+
 .harrowWrapper {
   padding: 2rem;
   width: 80%;
@@ -8,6 +9,12 @@
     padding: 1rem;
     width: 90%;
   }
+}
+
+.backLink {
+  font-size: x-small;
+  text-decoration: none;
+  margin-left: .5rem;
 }
 
 .harrowHeading {
@@ -30,7 +37,7 @@
   cursor: pointer;
 }
 
-.harrowIcon .active {
+.harrowIcon.active {
   @include themify($themes) {
     color: themed("secondaryMain");
   }
@@ -38,6 +45,7 @@
 
 .deck {
   flex-direction: column;
+  margin: 0 .5rem;
 }
 
 .harrowTitle {
@@ -78,16 +86,20 @@
 }
 
 .harrowTag {
+  border: 1px solid;
+
   @include themify($themes) {
-    background: themed("secondaryLight");
-    border: 1px solid themed("secondaryMain");
+    background: themed("secondaryLight") !important;
+    border-color: themed("secondaryMain") !important;
   }
 }
 
 .harrowMisalignment {
+  border: 1px solid;
+
   @include themify($themes) {
-    background: themed("tertiaryLight");
-    border: 1px solid themed("tertiaryMain");
+    background: themed("tertiaryLight") !important;
+    border-color: themed("tertiaryMain") !important;
   }
 }
 
@@ -122,6 +134,24 @@
   column-gap: 0;
   row-gap: 0;
   min-width: 320px;
+}
+
+.harrowInputContent.Mui-disabled {
+  @include themify($themes) {
+    color: themed("disabled");
+  }
+}
+
+.harrowGenIcon {
+  @include themify($themes) {
+    color: themed("primaryMain");
+  }
+}
+
+.harrowResetIcon {
+  @include themify($themes) {
+    color: themed("tertiaryDark");
+  }
 }
 
 .harrowInputAdornment {

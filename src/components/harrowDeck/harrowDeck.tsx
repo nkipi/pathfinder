@@ -24,6 +24,9 @@ export const HarrowDeck: React.FC = () => {
 
   return (
     <div id={"harrowDeck"} className={"harrowWrapper theme-zotha"}>
+      <a href={"/pathfinder/zotha"} className={"backLink"}>
+        <Helper className={"backLink"}>Back to Zotha</Helper>
+      </a>
       {renderHeader()}
       {randomCards.length > 0 ? (
         renderRandomCards()
@@ -44,16 +47,15 @@ export const HarrowDeck: React.FC = () => {
           <MdViewList
             size={20}
             onClick={() => changeView("details")}
-            className={classNames("harrowIcon", {
-              ["active"]: isDetailsView(),
-            })}
+            className={classNames(
+              "harrowIcon",
+              isDetailsView() ? "active" : ""
+            )}
           />
           <RiGridFill
             size={16}
             onClick={() => changeView("grid")}
-            className={classNames("harrowIcon", {
-              ["active"]: isGridView(),
-            })}
+            className={classNames("harrowIcon", isGridView() ? "active" : "")}
           />
         </Flex>
         {renderInput()}
@@ -91,7 +93,7 @@ export const HarrowDeck: React.FC = () => {
             key={cardNumber}
           />
           <IconButton
-            className={"inputIcon"}
+            className={classNames("harrowInputIcon", "harrowGenIcon")}
             color={"primary"}
             onClick={() => setRandomCards(drawRandomCards(cardNumber))}
             disabled={cardNumber === 0 || cardNumber === undefined}
@@ -100,7 +102,7 @@ export const HarrowDeck: React.FC = () => {
           </IconButton>
           <Divider className={"harrowDivider"} orientation={"vertical"} />
           <IconButton
-            className={"harrowInputIcon"}
+            className={classNames("harrowInputIcon", "harrowResetIcon")}
             onClick={() => resetRandomDrawing()}
             disabled={cardNumber === 0 || cardNumber === undefined}
           >

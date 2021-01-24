@@ -1,7 +1,10 @@
+@import "../../../themes.scss";
+
 .charPortrait {
   width: 100%;
   height: 430px;
   object-fit: cover;
+  margin-bottom: .5rem;
 }
 
 .charFlex {
@@ -9,9 +12,12 @@
 }
 
 .charCard {
-  background-color: white !important;
+  @include themify($themes) {
+    background-color: themed("backgroundColor");
+  }
 }
 
 .charSubheading {
   justify-content: space-between;
+  margin: 0 .5rem;
 }

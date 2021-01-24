@@ -19,7 +19,7 @@ export const SpellLikes: React.FC<MainProps> = ({ character }) => {
           return (
             <Card key={name}>
               <PaddingWrapper>
-                <Property>{name}</Property>
+                <Property noMargin={true}>{name}</Property>
                 {link && <Link href={link} />}
               </PaddingWrapper>
             </Card>

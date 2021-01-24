@@ -20,7 +20,7 @@ export const SpellsByLevel: React.FC<Props> = ({ spellInfo, spells }) => {
       <h6>{`${spellInfo.slots} SLOTS`}</h6>
       <Heading>{`Spells ${spellInfo.level}`}</Heading>
       <Flex className={"spellSmallCard"}>
-        <Property>{"DC"}</Property>
+        <Property noMargin={true}>{"DC"}</Property>
         <h1>{spellInfo.dc}</h1>
       </Flex>
       <Flex>

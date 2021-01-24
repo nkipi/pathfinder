@@ -1,8 +1,15 @@
+@import "../../themes.scss";
+
 .card {
-  border: 2px solid black;
+  border: 2px solid;
+  @include themify($themes) {
+    border-color: themed("borderColor");
+  }
   padding: 1rem;
   height: max-content;
-  background: white;
+  @include themify($themes) {
+    background-color: themed("backgroundColor");
+  }
   position: relative;
   margin: .5rem;
   min-width: 45px;

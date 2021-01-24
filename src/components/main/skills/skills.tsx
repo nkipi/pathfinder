@@ -23,10 +23,10 @@ export const Skills: React.FC<MainProps> = ({ character }) => {
           return (
             <Card
               key={name}
-              className={classNames({ ["classSkill"]: classSkill })}
+              className={classNames(classSkill ? "classSkill" : "")}
             >
               <Property>{name}</Property>
-              {type && <p>{type}</p>}
+              {type && <Helper>{type}</Helper>}
               <h1>{total}</h1>
               {ranks && (
                 <Helper>

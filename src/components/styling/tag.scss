@@ -2,7 +2,7 @@
 
 .tag {
   @include themify($themes) {
-    backgroundColor: themed("tertiaryMain");
+    background-color: themed("tertiaryMain");
   }
   padding: 0.5rem;
   font-size: 12px;

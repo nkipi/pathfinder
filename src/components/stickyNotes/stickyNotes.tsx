@@ -1,11 +1,7 @@
 import React from "react";
 import ReactStickies from "react-stickies"; //ES6
-import {
-  RiStickyNoteFill,
-  RiSave3Fill,
-  RiCloseLine,
-} from "react-icons/ri";
-import  "./stickyNotes.scss";
+import { RiStickyNoteFill, RiSave3Fill, RiCloseLine } from "react-icons/ri";
+import "./stickyNotes.scss";
 import classNames from "classnames";
 import { Flex } from "../layout/flex";
 
@@ -26,8 +22,11 @@ export const StickyNotes: React.FC = () => {
       <Flex className={"stickyNotesIcons"}>
         {areNotesVisible ? (
           <>
-          <RiSave3Fill
-              className={classNames("stickyNotesIcon", {["saved"]: areNotesSaved})}
+            <RiSave3Fill
+              className={classNames(
+                "stickyNotesIcon",
+                areNotesSaved ? "saved" : ""
+              )}
               size={24}
               onClick={() => onSave()}
             />
@@ -46,9 +45,7 @@ export const StickyNotes: React.FC = () => {
         )}
       </Flex>
       <Flex
-        className={classNames("stickyNotes", {
-          ["visible"]: areNotesVisible,
-        })}
+        className={classNames("stickyNotes", areNotesVisible ? "visible" : "")}
       >
         <ReactStickies notes={notes} onChange={(n: any) => onChange(n)} />
       </Flex>

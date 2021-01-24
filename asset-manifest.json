@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/pathfinder/static/css/main.e0fc77f6.chunk.css",
-    "main.js": "/pathfinder/static/js/main.5a66009c.chunk.js",
-    "main.js.map": "/pathfinder/static/js/main.5a66009c.chunk.js.map",
-    "runtime-main.js": "/pathfinder/static/js/runtime-main.832ec919.js",
-    "runtime-main.js.map": "/pathfinder/static/js/runtime-main.832ec919.js.map",
-    "static/js/2.4bc27f1f.chunk.js": "/pathfinder/static/js/2.4bc27f1f.chunk.js",
-    "static/js/2.4bc27f1f.chunk.js.map": "/pathfinder/static/js/2.4bc27f1f.chunk.js.map",
-    "static/js/3.b2cc1d6d.chunk.js": "/pathfinder/static/js/3.b2cc1d6d.chunk.js",
-    "static/js/3.b2cc1d6d.chunk.js.map": "/pathfinder/static/js/3.b2cc1d6d.chunk.js.map",
+    "main.css": "/pathfinder/static/css/main.4348d24d.chunk.css",
+    "main.js": "/pathfinder/static/js/main.eb5bb86d.chunk.js",
+    "main.js.map": "/pathfinder/static/js/main.eb5bb86d.chunk.js.map",
+    "runtime-main.js": "/pathfinder/static/js/runtime-main.14f831b4.js",
+    "runtime-main.js.map": "/pathfinder/static/js/runtime-main.14f831b4.js.map",
+    "static/js/2.8df1157e.chunk.js": "/pathfinder/static/js/2.8df1157e.chunk.js",
+    "static/js/2.8df1157e.chunk.js.map": "/pathfinder/static/js/2.8df1157e.chunk.js.map",
+    "static/js/3.5ddaa8ce.chunk.js": "/pathfinder/static/js/3.5ddaa8ce.chunk.js",
+    "static/js/3.5ddaa8ce.chunk.js.map": "/pathfinder/static/js/3.5ddaa8ce.chunk.js.map",
     "index.html": "/pathfinder/index.html",
-    "static/css/main.e0fc77f6.chunk.css.map": "/pathfinder/static/css/main.e0fc77f6.chunk.css.map",
-    "static/js/2.4bc27f1f.chunk.js.LICENSE.txt": "/pathfinder/static/js/2.4bc27f1f.chunk.js.LICENSE.txt",
+    "static/css/main.4348d24d.chunk.css.map": "/pathfinder/static/css/main.4348d24d.chunk.css.map",
+    "static/js/2.8df1157e.chunk.js.LICENSE.txt": "/pathfinder/static/js/2.8df1157e.chunk.js.LICENSE.txt",
     "static/media/The Avalanche.jpg": "/pathfinder/static/media/The Avalanche.f4415bc5.jpg",
     "static/media/The Back.jpg": "/pathfinder/static/media/The Back.b608676d.jpg",
     "static/media/The Bear.jpg": "/pathfinder/static/media/The Bear.f1f8aa40.jpg",
@@ -71,9 +71,9 @@
     "static/media/zotha_dark.0da06765.jpg": "/pathfinder/static/media/zotha_dark.0da06765.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.832ec919.js",
-    "static/js/2.4bc27f1f.chunk.js",
-    "static/css/main.e0fc77f6.chunk.css",
-    "static/js/main.5a66009c.chunk.js"
+    "static/js/runtime-main.14f831b4.js",
+    "static/js/2.8df1157e.chunk.js",
+    "static/css/main.4348d24d.chunk.css",
+    "static/js/main.eb5bb86d.chunk.js"
   ]
 }

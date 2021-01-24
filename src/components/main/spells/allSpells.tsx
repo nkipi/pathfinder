@@ -34,7 +34,7 @@ export const AllSpells: React.FC<MainProps> = ({character}) => {
     const { spellInfo, spells } = character;
 
     return spellInfo ? spellInfo.map((info: SpellInfo, index: number) => {
-      return (
+      return spells && (
         <Card key={`spellInfo_${index}`}>
           <SpellsByLevel
             spellInfo={info}

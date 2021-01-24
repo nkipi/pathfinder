@@ -2,7 +2,7 @@ import { Base } from "./base";
 
 export interface Skill extends Base {
     classSkill: boolean;
-    ranks: string;
+    ranks?: string;
     total: string;
     ability?: string;
     type?: string;

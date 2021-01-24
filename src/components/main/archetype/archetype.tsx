@@ -1,4 +1,5 @@
 import React from "react";
+import { Generic } from "../../../interfaces/generic";
 import { Card } from "../../layout/card";
 import { Flex } from "../../layout/flex";
 import { Heading } from "../../styling/heading";
@@ -14,7 +15,7 @@ export const Archetype: React.FC<MainProps> = ({ character }) => {
     <Card id={"archetype"}>
       <Heading>{"Archetype"}</Heading>
       <Flex>
-        {archetype.map((bonus: any) => {
+        {archetype.map((bonus: Generic) => {
           const { source, name, bonuses, link } = bonus;
           return (
             <Card key={name}>

@@ -1,4 +1,4 @@
-export interface Save {
+export interface Sense {
     name: string;
     total: string;
     base?: string;

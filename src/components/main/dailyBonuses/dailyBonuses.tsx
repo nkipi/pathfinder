@@ -1,4 +1,5 @@
 import React from "react";
+import { Generic } from "../../../interfaces/generic";
 import { Card } from "../../layout/card";
 import { Flex } from "../../layout/flex";
 import { Heading } from "../../styling/heading";
@@ -14,7 +15,7 @@ export const DailyBonuses: React.FC<MainProps> = ({ character }) => {
     <Card id={"dailyBonuses"}>
       <Heading>{"Daily Bonuses"}</Heading>
       <Flex>
-        {dailyBonuses.map((dailyBonus: any) => {
+        {dailyBonuses.map((dailyBonus: Generic) => {
           const { source, name, bonuses, link } = dailyBonus;
           return (
             <Card key={name}>

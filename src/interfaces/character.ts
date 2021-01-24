@@ -1,6 +1,6 @@
 export interface Character {
     name: string;
-    class: string;
+    characterClass: string;
     level: string;
     race: string;
     alignment: string;

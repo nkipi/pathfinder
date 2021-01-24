@@ -19,6 +19,7 @@ import { Skills } from "./skills/skills";
 import { DailyBonuses } from "./dailyBonuses/dailyBonuses";
 import { Header } from "../header/header";
 import { Theme } from "@material-ui/core";
+import { FullCharacter } from "../../interfaces/fullCharacter";
 
 const breakpointColumnsObj = {
   default: 3,
@@ -27,7 +28,7 @@ const breakpointColumnsObj = {
 };
 
 export interface MainProps {
-  character: any;
+  character: FullCharacter;
   portrait?: string;
 }
 

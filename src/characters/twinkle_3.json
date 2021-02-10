@@ -2,7 +2,7 @@
     "character": {
         "name": "Twinkle Toes",
         "characterClass": "Rogue",
-        "level": "4",
+        "level": "3",
         "race": "Goblin",
         "alignment": "Chaotic Evil"
     },
@@ -14,8 +14,8 @@
         },
         {
             "name": "dex",
-            "points": "18",
-            "mod": "4"
+            "points": "16",
+            "mod": "3"
         },
         {
             "con": "14",
@@ -47,7 +47,7 @@
         },
         {
             "name": "dex",
-            "total": "6"
+            "total": "5"
         },
         {
             "name": "con",
@@ -84,31 +84,31 @@
         }
     ],
     "combat": {
-        "hp": "31",
+        "hp": "24",
         "init": "3",
         "speed": "30",
-        "ac": "15",
+        "ac": "14",
         "prof": "2"
     },
     "weapons": [
         {
             "name": "Dagger",
-            "attackBonus": "+6",
-            "damage": "1d4 + 4",
+            "attackBonus": "+5",
+            "damage": "1d4 + 3",
             "type": "S",
             "notes": "One-handed"
         },
         {
             "name": "Scissors",
-            "attackBonus": "+6",
-            "damage": "1d4 + 4",
+            "attackBonus": "+5",
+            "damage": "1d4 + 3",
             "type": "S",
             "notes": "One-handed"
         },
         {
             "name": "Dagger +1",
-            "attackBonus": "+7",
-            "damage": "1d4 + 5",
+            "attackBonus": "+6",
+            "damage": "1d4 + 4",
             "type": "S",
             "notes": "One-handed"
         },
@@ -123,7 +123,7 @@
             "name": "Acrobatics",
             "classSkill": true,
             "type": "Dex",
-            "total": "6"
+            "total": "5"
         },
         {
             "name": "Animal Handling",
@@ -213,13 +213,13 @@
             "name": "Sleight of Hand",
             "classSkill": false,
             "type": "Dex",
-            "total": "4"
+            "total": "3"
         },
         {
             "name": "Stealth",
             "classSkill": true,
             "type": "Dex",
-            "total": "8"
+            "total": "7"
         },
         {
             "name": "Survival",
@@ -280,11 +280,6 @@
             "quantity": "1"
         },
         {
-            "name": "Fire Breath",
-            "type": "Potions",
-            "quantity": "4"
-        },
-        {
             "name": "Gold",
             "type": "Money",
             "quantity": "121,79gp"
@@ -294,7 +289,7 @@
         {
             "name": "Fury of the Small",
             "bonuses": [
-                "+4 extra damage per short rest"
+                "+3 extra damage per short rest"
             ]
         },
         {

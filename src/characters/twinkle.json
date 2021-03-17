@@ -280,6 +280,11 @@
             "quantity": "3"
         },
         {
+            "name": "Periapt of Wound Closure",
+            "type": "Amulet",
+            "quantity": "1"
+        },
+        {
             "name": "Gold",
             "type": "Money",
             "quantity": "56,79gp"

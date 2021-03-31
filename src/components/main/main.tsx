@@ -20,6 +20,7 @@ import { DailyBonuses } from "./dailyBonuses/dailyBonuses";
 import { Header } from "../header/header";
 import { Theme } from "@material-ui/core";
 import { FullCharacter } from "../../interfaces/fullCharacter";
+import { Reactions } from "./reactions/reactions";
 
 const breakpointColumnsObj = {
   default: 3,
@@ -59,6 +60,7 @@ export const Main: React.FC<MainProps & ThemeProps> = ({
             <Saves character={character} />
             <Senses character={character} />
             <DailyBonuses character={character} />
+            <Reactions character={character} />
             <Archetype character={character} />
             <SpellLikes character={character} />
             <SpecialAbilitiesAndTraits character={character} />

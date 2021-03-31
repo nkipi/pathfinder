@@ -2,7 +2,7 @@
     "character": {
         "name": "Twinkle Toes",
         "characterClass": "Rogue",
-        "level": "5",
+        "level": "4",
         "race": "Goblin",
         "alignment": "Chaotic Evil"
     },
@@ -47,7 +47,7 @@
         },
         {
             "name": "dex",
-            "total": "7"
+            "total": "6"
         },
         {
             "name": "con",
@@ -55,7 +55,7 @@
         },
         {
             "name": "int",
-            "total": "2"
+            "total": "1"
         },
         {
             "name": "wis",
@@ -79,42 +79,42 @@
         },
         {
             "name": "Insight",
-            "total": "15",
+            "total": "14",
             "ability": "Passive Wis"
         }
     ],
     "combat": {
-        "hp": "38",
+        "hp": "31",
         "init": "4",
         "speed": "30",
         "ac": "15",
-        "prof": "3"
+        "prof": "2"
     },
     "weapons": [
         {
             "name": "Dagger",
-            "attackBonus": "+7",
+            "attackBonus": "+6",
             "damage": "1d4 + 4",
             "type": "S",
             "notes": "One-handed"
         },
         {
             "name": "Scissors",
-            "attackBonus": "+7",
+            "attackBonus": "+6",
             "damage": "1d4 + 4",
             "type": "S",
             "notes": "One-handed"
         },
         {
             "name": "Dagger +1",
-            "attackBonus": "+8",
+            "attackBonus": "+7",
             "damage": "1d4 + 5",
             "type": "S",
             "notes": "One-handed"
         },
         {
             "name": "Unarmed Strike",
-            "attackBonus": "+2",
+            "attackBonus": "+1",
             "damage": "1 + STR"
         }
     ],
@@ -123,7 +123,7 @@
             "name": "Acrobatics",
             "classSkill": true,
             "type": "Dex",
-            "total": "7"
+            "total": "6"
         },
         {
             "name": "Animal Handling",
@@ -147,7 +147,7 @@
             "name": "Deception",
             "classSkill": true,
             "type": "Cha",
-            "total": "5"
+            "total": "4"
         },
         {
             "name": "History",
@@ -159,13 +159,13 @@
             "name": "Insight",
             "classSkill": true,
             "type": "Wis",
-            "total": "5"
+            "total": "4"
         },
         {
             "name": "Intimidation",
             "classSkill": true,
             "type": "Cha",
-            "total": "5"
+            "total": "4"
         },
         {
             "name": "Investigation",
@@ -195,7 +195,7 @@
             "name": "Performance",
             "classSkill": true,
             "type": "Cha",
-            "total": "8"
+            "total": "6"
         },
         {
             "name": "Persuasion",
@@ -219,7 +219,7 @@
             "name": "Stealth",
             "classSkill": true,
             "type": "Dex",
-            "total": "10"
+            "total": "8"
         },
         {
             "name": "Survival",
@@ -265,12 +265,6 @@
     "reactions": [
         {
             "name": "Attack of Opportunity"
-        },
-        {
-            "name": "Uncanny Dodge",
-            "bonuses": [
-                "When an attacker you see hits with an attack, you can use your reaction to halve the attack's damage"
-            ]
         }
     ],
     "equipment": [
@@ -300,13 +294,13 @@
         {
             "name": "Fury of the Small",
             "bonuses": [
-                "+5 extra damage per short rest"
+                "+4 extra damage per short rest"
             ]
         },
         {
             "name": "Sneak Attack",
             "bonuses": [
-                "+3d6 extra damage"
+                "+2d6 extra damage"
             ]
         },
         {
@@ -315,6 +309,7 @@
                 "You can do these actions as bonus actions"
             ]
         }
+
     ],
     "archetype": [
         {
@@ -335,6 +330,7 @@
                 "As a bonus action, you make a Wisdom (Insight) check against a creature you can see that isn’t incapacitated, contested by the target’s Charisma (Deception) check. If you succeed, you can use your Sneak Attack against that target even if you don't have advantage on the attack roll, but not if you have disadvantage on it."
             ]
         }
+
     ],
     "extras": [
         {

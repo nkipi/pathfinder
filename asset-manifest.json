@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/pathfinder/static/css/main.efd5ca32.chunk.css",
-    "main.js": "/pathfinder/static/js/main.e298a759.chunk.js",
-    "main.js.map": "/pathfinder/static/js/main.e298a759.chunk.js.map",
-    "runtime-main.js": "/pathfinder/static/js/runtime-main.14f831b4.js",
-    "runtime-main.js.map": "/pathfinder/static/js/runtime-main.14f831b4.js.map",
-    "static/js/2.8df1157e.chunk.js": "/pathfinder/static/js/2.8df1157e.chunk.js",
-    "static/js/2.8df1157e.chunk.js.map": "/pathfinder/static/js/2.8df1157e.chunk.js.map",
-    "static/js/3.5ddaa8ce.chunk.js": "/pathfinder/static/js/3.5ddaa8ce.chunk.js",
-    "static/js/3.5ddaa8ce.chunk.js.map": "/pathfinder/static/js/3.5ddaa8ce.chunk.js.map",
+    "main.css": "/pathfinder/static/css/main.1fc8374e.chunk.css",
+    "main.js": "/pathfinder/static/js/main.169a7320.chunk.js",
+    "main.js.map": "/pathfinder/static/js/main.169a7320.chunk.js.map",
+    "runtime-main.js": "/pathfinder/static/js/runtime-main.4281b2c0.js",
+    "runtime-main.js.map": "/pathfinder/static/js/runtime-main.4281b2c0.js.map",
+    "static/css/2.8066566f.chunk.css": "/pathfinder/static/css/2.8066566f.chunk.css",
+    "static/js/2.87d800ec.chunk.js": "/pathfinder/static/js/2.87d800ec.chunk.js",
+    "static/js/2.87d800ec.chunk.js.map": "/pathfinder/static/js/2.87d800ec.chunk.js.map",
+    "static/js/3.365c8ad3.chunk.js": "/pathfinder/static/js/3.365c8ad3.chunk.js",
+    "static/js/3.365c8ad3.chunk.js.map": "/pathfinder/static/js/3.365c8ad3.chunk.js.map",
     "index.html": "/pathfinder/index.html",
-    "static/css/main.efd5ca32.chunk.css.map": "/pathfinder/static/css/main.efd5ca32.chunk.css.map",
-    "static/js/2.8df1157e.chunk.js.LICENSE.txt": "/pathfinder/static/js/2.8df1157e.chunk.js.LICENSE.txt",
+    "static/css/2.8066566f.chunk.css.map": "/pathfinder/static/css/2.8066566f.chunk.css.map",
+    "static/css/main.1fc8374e.chunk.css.map": "/pathfinder/static/css/main.1fc8374e.chunk.css.map",
+    "static/js/2.87d800ec.chunk.js.LICENSE.txt": "/pathfinder/static/js/2.87d800ec.chunk.js.LICENSE.txt",
     "static/media/The Avalanche.jpg": "/pathfinder/static/media/The Avalanche.f4415bc5.jpg",
     "static/media/The Back.jpg": "/pathfinder/static/media/The Back.b608676d.jpg",
     "static/media/The Bear.jpg": "/pathfinder/static/media/The Bear.f1f8aa40.jpg",
@@ -67,13 +69,16 @@
     "static/media/The Wanderer.jpg": "/pathfinder/static/media/The Wanderer.f7c865bc.jpg",
     "static/media/The Waxworks.jpg": "/pathfinder/static/media/The Waxworks.f1f49c68.jpg",
     "static/media/The Winged Serpent.jpg": "/pathfinder/static/media/The Winged Serpent.d1e56d9d.jpg",
+    "static/media/characterSelection.scss": "/pathfinder/static/media/icons-20.cde033c5.eot",
+    "static/media/kenna.d1f7bf70.jpg": "/pathfinder/static/media/kenna.d1f7bf70.jpg",
     "static/media/twinkle.d298f102.jpg": "/pathfinder/static/media/twinkle.d298f102.jpg",
     "static/media/zotha_dark.0da06765.jpg": "/pathfinder/static/media/zotha_dark.0da06765.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.14f831b4.js",
-    "static/js/2.8df1157e.chunk.js",
-    "static/css/main.efd5ca32.chunk.css",
-    "static/js/main.e298a759.chunk.js"
+    "static/js/runtime-main.4281b2c0.js",
+    "static/css/2.8066566f.chunk.css",
+    "static/js/2.87d800ec.chunk.js",
+    "static/css/main.1fc8374e.chunk.css",
+    "static/js/main.169a7320.chunk.js"
   ]
 }

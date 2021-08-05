@@ -1,0 +1,529 @@
+{
+    "character": {
+        "name": "Kenna",
+        "characterClass": "Brawler 4 / Monk 1",
+        "level": "5",
+        "race": "Ifrit",
+        "alignment": "Chaotic Neutral"
+    },
+    "abilities": [
+        {
+            "name": "str",
+            "points": "13",
+            "mod": "1"
+        },
+        {
+            "name": "dex",
+            "points": "19",
+            "mod": "4"
+        },
+        {
+            "name": "con",
+            "points": "14",
+            "mod": "2"
+        },
+        {
+            "name": "int",
+            "points": "12",
+            "mod": "1"
+        },
+        {
+            "name": "wis",
+            "points": "10",
+            "mod": "0"
+        },
+        {
+            "name": "cha",
+            "points": "18",
+            "mod": "4"
+        }
+    ],
+    "saves": [
+        {
+            "name": "fort",
+            "base": "-",
+            "magicModifier": "-",
+            "total": "9",
+            "ability": "con"
+        },
+        {
+            "name": "ref",
+            "base": "-",
+            "magicModifier": "-",
+            "total": "11",
+            "ability": "dex"
+        },
+        {
+            "name": "will",
+            "base": "-",
+            "magicModifier": "-",
+            "miscModifier": "-",
+            "total": "2",
+            "ability": "wis"
+        }
+    ],
+    "combat": {
+        "hp": "53",
+        "init": "10",
+        "speed": "30",
+        "ac": "21",
+        "armor": "0",
+        "shield": "0",
+        "touch": "20",
+        "flatFooted": "16",
+        "bab": "5",
+        "cmb": "9",
+        "cmd": "26"
+    },
+    "weapons": [
+        {
+            "name": "Punch / Kick",
+            "attackBonus": "+10",
+            "damage": "1d8 + 3",
+            "critical": "20 / x2",
+            "type": "B",
+            "notes": ""
+        },
+        {
+            "name": "Pop Pop",
+            "attackBonus": "+8",
+            "damage": "1d8 + 3",
+            "critical": "20 / x2",
+            "type": "B",
+            "notes": ""
+        }
+    ],
+    "skills": [
+        {
+            "name": "Diplomacy",
+            "classSkill": false,
+            "ranks": "0",
+            "total": "4"
+        },
+        {
+            "name": "Heal",
+            "classSkill": false,
+            "ranks": "3",
+            "total": "3"
+        },
+        {
+            "name": "Intimidate",
+            "classSkill": true,
+            "ranks": "3",
+            "total": "10"
+        },
+        {
+            "type": "Knowledge",
+            "name": "Arcana",
+            "classSkill": false,
+            "total": "1",
+            "ranks": "0"
+        },
+        {
+            "type": "Knowledge",
+            "name": "Dungeoneering",
+            "classSkill": true,
+            "total": "1",
+            "ranks": "0"
+        },
+        {
+            "type": "Knowledge",
+            "name": "Engineering",
+            "classSkill": false,
+            "total": "1",
+            "ranks": "0"
+        },
+        {
+            "type": "Knowledge",
+            "name": "Geography",
+            "classSkill": false,
+            "total": "1",
+            "ranks": "0"
+        },
+        {
+            "type": "Knowledge",
+            "name": "History",
+            "classSkill": true,
+            "ranks": "0",
+            "total": "1"
+        },
+        {
+            "type": "Knowledge",
+            "name": "Local",
+            "classSkill": true,
+            "ranks": "1",
+            "total": "5"
+        },
+        {
+            "type": "Knowledge",
+            "name": "Nature",
+            "classSkill": false,
+            "total": "1",
+            "ranks": "0"
+        },
+        {
+            "type": "Knowledge",
+            "name": "Nobility",
+            "classSkill": false,
+            "total": "1",
+            "ranks": "0"
+        },
+        {
+            "type": "Knowledge",
+            "name": "Planes",
+            "classSkill": false,
+            "total": "1",
+            "ranks": "0"
+        },
+        {
+            "type": "Knowledge",
+            "name": "Religion",
+            "classSkill": true,
+            "ranks": "0",
+            "total": "1"
+        },
+        {
+            "name": "Profession",
+            "classSkill": true,
+            "total": "0",
+            "ranks": "0"
+        },
+        {
+            "name": "Sense Motive",
+            "classSkill": true,
+            "ranks": "0",
+            "total": "0"
+        },
+        {
+            "name": "Spellcraft",
+            "classSkill": false,
+            "ranks": "0",
+            "total": "1"
+        },
+        {
+            "name": "Acrobatics",
+            "classSkill": true,
+            "ranks": "5",
+            "total": "14"
+        },
+        {
+            "name": "Appraise",
+            "total": "1",
+            "ranks": "0"
+        },
+        {
+            "name": "Bluff",
+            "ranks": "4",
+            "total": "8"
+        },
+        {
+            "name": "Climb",
+            "classSkill": true,
+            "total": "5",
+            "ranks": "11"
+        },
+        {
+            "name": "Disguise",
+            "total": "4",
+            "ranks": "0"
+        },
+        {
+            "name": "Handle Animal",
+            "classSkill": true,
+            "ranks": "1",
+            "total": "8"
+        },
+        {
+            "name": "Perception",
+            "classSkill": true,
+            "total": "4",
+            "ranks": "1"
+        },
+        {
+            "name": "Use Magic Device",
+            "ranks": "0",
+            "total": "4"
+        },
+        {
+            "name": "Perform",
+            "type": "Dance",
+            "classSkill": true,
+            "total": "21",
+            "ranks": "5"
+        },
+        {
+            "name": "Escape Artist",
+            "classSkill": true,
+            "total": "3",
+            "ranks": "10"
+        },
+        {
+            "name": "Fly",
+            "total": "4",
+            "ranks": "0"
+        },
+        {
+            "name": "Linguistics",
+            "ranks": "0",
+            "total": "1"
+        },
+        {
+            "name": "Ride",
+            "classSkill": true,
+            "total": "4",
+            "ranks": "0"
+        },
+        {
+            "name": "Sleight of Hand",
+            "classSkill": true,
+            "total": "12",
+            "ranks": "5"
+        },
+        {
+            "name": "Disable Device",
+            "total": "0",
+            "ranks": "6"
+        },
+        {
+            "name": "Stealth",
+            "classSkill": true,
+            "total": "12",
+            "ranks": "3"
+        },
+        {
+            "name": "Survival",
+            "total": "0",
+            "ranks": "0"
+        },
+        {
+            "name": "Swim",
+            "classSkill": true,
+            "total": "1",
+            "ranks": "0"
+        }
+    ],
+    "languages": [
+        "Common",
+        "Ignan"
+    ],
+    "specialAbilities": [
+        {
+            "name": "Battle Dancer",
+            "type": "Archetype",
+            "link": "https://www.d20pfsrd.com/classes/hybrid-classes/brawler/archetypes/paizo-brawler-archetypes/battle-dancer-brawler-archetype/"
+        },
+        {
+            "name": "Flurry of Blows",
+            "type": "Monk",
+            "notes": "Attack twice in full round attack with -2 penalty"
+        },
+        {
+            "name": "Maneveur Training",
+            "type": "Brawler",
+            "notes": "+1 Feint and against being Feinted"
+        }
+    ],
+    "traits": [
+        {
+            "name": "Impatient",
+            "type": "Background",
+            "notes": "You can't delay or ready actions. -1 on d20 rolls when lowest iniative"
+        },
+        {
+            "name": "Loner",
+            "type": "Background",
+            "notes": "-1 to AC when adjacent to allies or aiding allies"
+        },
+        {
+            "name": "Savant",
+            "type": "Background",
+            "notes": "You gain a +2 trait bonus on Performa (dance) checks"
+        },
+        {
+            "name": "Heavy Hitter",
+            "type": "Background",
+            "notes": "You gain a +1 bonus with unarmed attacks"
+        },
+        {
+            "name": "Reactionary",
+            "type": "Background",
+            "notes": "You gain a +2 bonus on Initative checks"
+        },
+        {
+            "name": "Draconic Might",
+            "type": "Monk",
+            "notes": "CHA instead of WIS for monk stuff"
+        },
+        {
+            "name": "AC Bonus",
+            "type": "Monk",
+            "notes": "CHA to AC"
+        }
+    ],
+    "equipment": [
+        {
+            "name": "Amulet of Mighty Fists +1",
+            "school": "Evocation",
+            "type": "Magic Item",
+            "quantity": "1",
+            "link": "https://www.d20pfsrd.com/magic-items/wondrous-items/a-b/amulet-of-mighty-fists/",
+            "notes": ""
+        },
+        {
+            "name": "Scarf of Suggestive Dance",
+            "school": "Faint Enchantment",
+            "type": "Clothing",
+            "quantity": "1",
+            "link": "https://www.d20pfsrd.com/magic-items/wondrous-items/r-z/scarf-of-the-suggestive-dance/",
+            "notes": ""
+        },
+        {
+            "name": "Cat Burglar's Boots",
+            "school": "Transmutation",
+            "type": "Clothing",
+            "quantity": "1",
+            "link": "https://www.d20pfsrd.com/magic-items/wondrous-items/a-b/boots-cat-burglar-s/",
+            "notes": ""
+        },
+        {
+            "name": "Masterwork Thieves' Tool",
+            "school": "",
+            "type": "Magic Item",
+            "quantity": "1",
+            "link": "https://roll20.net/compendium/pathfinder/Thieves'%20Tools,%20Masterwork#content",
+            "notes": ""
+        },
+        {
+            "name": "Dancer's Garb",
+            "school": "",
+            "type": "Clothing",
+            "quantity": "1",
+            "link": "https://aonprd.com/EquipmentMiscDisplay.aspx?ItemName=Dancer%27s%20garb",
+            "notes": ""
+        },
+        {
+            "name": "Potion of Cure Light Wounds",
+            "school": "Conjuration",
+            "type": "Potion",
+            "quantity": "1",
+            "link": "https://www.d20pfsrd.com/magic/all-spells/c/cure-light-wounds/",
+            "notes": ""
+        },
+        {
+            "name": "Silk Rope",
+            "type": "Utils",
+            "quantity": "2"
+        },
+        {
+            "name": "Gold",
+            "type": "Money",
+            "quantity": "380gp"
+        }
+    ],
+    "feats": [
+        {
+            "name": "Weapon Finesse",
+            "link": "https://www.d20pfsrd.com/feats/combat-feats/weapon-finesse-combat/"
+        },
+        {
+            "name": "Combat Expertise",
+            "link": "https://www.d20pfsrd.com/feats/combat-feats/combat-expertise-combat/"
+        },
+        {
+            "name": "Power Attack",
+            "link": "https://www.d20pfsrd.com/feats/combat-feats/power-attack-combat/"
+        },
+        {
+            "name": "Agile Maneuvers",
+            "link": "https://www.d20pfsrd.com/feats/combat-feats/agile-maneuvers-combat/"
+        },
+        {
+            "name": "Improved Unarmed Strike",
+            "link": "https://www.d20pfsrd.com/feats/combat-feats/improved-unarmed-strike-combat/"
+        },
+        {
+            "name": "Stunning Fist",
+            "link": "https://www.d20pfsrd.com/feats/combat-feats/stunning-fist-combat/"
+        },
+        {
+            "name": "Improved Feint",
+            "link": "https://www.d20pfsrd.com/feats/combat-feats/improved-feint-combat/"
+        },
+        {
+            "name": "Dodge",
+            "link": "https://www.d20pfsrd.com/feats/combat-feats/dodge-combat/"
+        },
+        {
+            "name": "Mobility",
+            "link": "https://www.d20pfsrd.com/feats/combat-feats/mobility-combat/"
+        },
+        {
+            "name": "Step up",
+            "link": "https://www.d20pfsrd.com/feats/combat-feats/step-up-combat/"
+        },
+        {
+            "name": "Combat Reflexes",
+            "link": "https://www.d20pfsrd.com/feats/combat-feats/combat-reflexes-combat/"
+        },
+        {
+            "name": "Improved Initative",
+            "link": "https://www.d20pfsrd.com/feats/combat-feats/improved-initative-combat/"
+        }
+    ],
+    "dailyBonuses": [
+        {
+            "name": "Fire in the Blood",
+            "source": "Racial",
+            "bonuses": [
+                "Fast Healing 2 when hit with fire"
+            ]
+        },
+        {
+            "name": "Burning Hands",
+            "bonuses": [
+                "Fire in 15ft cone",
+                "Reflex DC 11 + CHA",
+                "SR yes",
+                "5d4 damage",
+                "1/day"
+            ],
+            "source": "Racial"
+        },
+        {
+            "name": "Stunning Fist",
+            "source": "Monk",
+            "bonuses": ["Fortitude DC 16", "declare before hit", "5/day"]
+        },
+        {
+            "name": "Martial Flexibility",
+            "source": "Brawler",
+            "bonuses": ["Move action", "1 combat feat for 1min", "5/day"]
+        },
+        {
+            "name": "Dancing Dodge (Ex)",
+            "source": "Archetype",
+            "bonuses": ["Use AoO as immediate to gain +4 dodge", "move 5ft", "2/day"]
+        },
+        {
+            "name": "Sparring Partners (Ex)",
+            "source": "Archetype",
+            "bonuses": ["Give flanking by dance, 1/day"]
+        }
+    ],
+    "extras": [
+        {
+            "general": [
+                "You are badass & you can be a bitch too"
+            ],
+            "combat": [
+                "Cast all the protection spells before combat starts",
+                "Disable the fucking spellcasters first"
+            ],
+            "interrogations": [
+                "Always do sense motive",
+                "Disable the enemy",
+                "Even if they seem to tell the truth doesn't mean you can trust them"
+            ]
+        }
+    ]
+}

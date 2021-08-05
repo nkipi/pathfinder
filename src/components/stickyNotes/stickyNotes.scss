@@ -53,16 +53,22 @@
 }
 
 :global(.note) {
-  @include themify($themes) {
-    background-color: themed("tertiaryMain") !important;
+    @include themify($themes) {
+      background-color: themed("tertiaryMain") !important;
+    }
+    > * {
+      color: black !important;
+    }
   }
-  > *,
-  :global(.title),
+
   font {
     color: black !important;
   }
 
-  :global(.note-body) {
+  .note-body {
     font-size: 14px !important;
+    > div, span {
+      color: black !important;
+    }
   }
-}
+

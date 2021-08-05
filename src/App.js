@@ -4,8 +4,10 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { createMuiTheme } from "@material-ui/core/styles";
 import zotha from "./characters/zotha.json";
 import twinkle from "./characters/twinkle.json";
+import kenna from "./characters/kenna.json";
 import zothaPortrait from "./images/zotha_dark.jpg";
 import twinklePortrait from "./images/twinkle.jpg";
+import kennaPortrait from "./images/kenna.jpg";
 import { CharacterSelection } from "./components/characterSelection/characterSelection";
 
 const zothaTheme = createMuiTheme({
@@ -54,6 +56,29 @@ const twinkleTheme = createMuiTheme({
   },
 });
 
+const kennaTheme = createMuiTheme({
+  palette: {
+    primary: {
+      light: "#EA855D",
+      main: "#D34F1B",
+      dark: "#903613",
+      contrastText: "#fff",
+    },
+    secondary: {
+      light: "#5F5FE7",
+      main: "#1B1BB1",
+      dark: "#0B0B47",
+      contrastText: "#fff",
+    },
+    tertiary: {
+      light: "#92BEC8",
+      main: "#5293A3",
+      dark: "#223D44",
+      contrastText: "#fff",
+    },
+  },
+});
+
 function App() {
   return (
     <BrowserRouter basename="/pathfinder">
@@ -73,6 +98,14 @@ function App() {
             portrait={twinklePortrait}
             theme={twinkleTheme}
             className={"theme-twinkle"}
+          />
+        </Route>
+        <Route exact path="/kenna">
+          <Main
+            character={kenna}
+            portrait={kennaPortrait}
+            theme={kennaTheme}
+            className={"theme-kenna"}
           />
         </Route>
         <Route exact path="/deck">

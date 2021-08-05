@@ -18,7 +18,6 @@
             "mod": "2"
         },
         {
-            "con": "14",
             "name": "con",
             "points": "14",
             "mod": "2"
@@ -29,7 +28,6 @@
             "mod": "1"
         },
         {
-            "wis": "10",
             "name": "wis",
             "points": "10",
             "mod": "0"
@@ -61,7 +59,7 @@
             "magicModifier": "1",
             "miscModifier": "1",
             "total": "8",
-            "ability": "char"
+            "ability": "wis"
         }
     ],
     "combat": {

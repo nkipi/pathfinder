@@ -5,6 +5,7 @@ import { Card } from "../../layout/card";
 import { Flex } from "../../layout/flex";
 import { Heading } from "../../styling/heading";
 import { Helper } from "../../styling/helper";
+import { Link } from "../../styling/link";
 import { Property } from "../../styling/property";
 import { MainProps } from "../main";
 
@@ -17,20 +18,24 @@ export const SpecialAbilitiesAndTraits: React.FC<MainProps> = ({
       <Heading>{"Special Abilities & Traits"}</Heading>
       <Flex>
         {specialAbilities.map((ability: SpecialAbility) => {
-          const { name, type } = ability;
+          const { name, type, link, notes } = ability;
           return (
             <Card key={name}>
               <Property>{name}</Property>
+              {notes && <p>{notes}</p>}
               <Helper>{type}</Helper>
+              {link && <Link href={link} />}
             </Card>
           );
         })}
         {traits && traits.map((trait: Trait) => {
-          const { name, type } = trait;
+          const { name, type, notes, link } = trait;
           return (
             <Card key={name}>
               <Property>{name}</Property>
+              {notes && <p>{notes}</p>}
               <Helper>{type}</Helper>
+              {link && <Link href={link} />}
             </Card>
           );
         })}

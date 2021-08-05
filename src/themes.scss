@@ -31,6 +31,22 @@ $themes: (
     textColor: #dadada,
     disabled: #7c7c7c,
   ),
+  kenna: (
+    primaryMain: #D34F1B,
+    primaryLight: #EA855D,
+    primaryDarkk: #903613,
+    secondaryMain: #1B1BB1,
+    secondaryLight: #5F5FE7,
+    secondaryDark: #0B0B47,
+    tertiaryMain: #5293A3,
+    tertiaryLight: #92BEC8,
+    tertiaryDark: #223D44,
+    backgroundColor: #eeeeee,
+    secondaryBgColor: #f7f7f7,
+    borderColor: #0B0B47,
+    textColor: #050523,
+    disabled: #7c7c7c,
+  )
 );
 
 @mixin themify($themes: $themes) {

@@ -21,6 +21,7 @@ export const Weapons: React.FC<MainProps> = ({ character }) => {
               <Property>{name}</Property>
               {attackBonus && <h4>{`Attack: ${attackBonus}`}</h4>}
               {damage && <h4>{`Damage: ${damage}`}</h4>}
+              <br/>
               {critical && <Helper>{`Critical (${critical})`}</Helper>}
               {type && <Helper>{`Type (${type})`}</Helper>}
               {notes && <Helper>{`${notes}`}</Helper>}

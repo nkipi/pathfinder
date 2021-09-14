@@ -219,8 +219,8 @@
         {
             "name": "Climb",
             "classSkill": true,
-            "total": "5",
-            "ranks": "11"
+            "total": "11",
+            "ranks": "5"
         },
         {
             "name": "Disguise",
@@ -254,8 +254,8 @@
         {
             "name": "Escape Artist",
             "classSkill": true,
-            "total": "3",
-            "ranks": "10"
+            "total": "10",
+            "ranks": "3"
         },
         {
             "name": "Fly",

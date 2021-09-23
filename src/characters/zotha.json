@@ -63,7 +63,7 @@
         }
     ],
     "combat": {
-        "hp": "57",
+        "hp": "59",
         "init": "2",
         "speed": "30",
         "ac": "18",
@@ -134,10 +134,10 @@
         },
         {
             "level": "0",
-            "name": "Spark",
-            "school": "Evocation",
+            "name": "Grasp",
+            "school": "Divination",
             "notes": "",
-            "link": "https://www.d20pfsrd.com/magic/all-spells/s/spark/",
+            "link": "https://www.d20pfsrd.com/magic/all-spells/g/grasp/",
             "status": ""
         },
         {
@@ -228,6 +228,22 @@
             "status": ""
         },
         {
+            "level": "1",
+            "name": "Grasping Corpse",
+            "school": "Necromancy",
+            "notes": "",
+            "link": "https://www.d20pfsrd.com/magic/all-spells/g/grasping-corpse/",
+            "status": ""
+        },
+        {
+            "level": "1",
+            "name": "Hedging Weapons",
+            "school": "Abjuration",
+            "notes": "",
+            "link": "https://www.d20pfsrd.com/magic/all-spells/h/hedging-weapons/",
+            "status": ""
+        },
+        {
             "level": "2",
             "name": "Cure Moderate Wounds",
             "school": "Conjuration",
@@ -265,6 +281,22 @@
             "school": "Necromancy",
             "notes": "",
             "link": "https://www.d20pfsrd.com/magic/all-spells/d/defending-bone/",
+            "status": ""
+        },
+        {
+            "level": "2",
+            "name": "Remove Paralysis",
+            "school": "Conjuration",
+            "notes": "",
+            "link": "https://www.d20pfsrd.com/magic/all-spells/r/remove-paralysis/",
+            "status": ""
+        },
+        {
+            "level": "2",
+            "name": "Deathwine",
+            "school": "Necromancy",
+            "notes": "",
+            "link": "https://www.d20pfsrd.com/magic/all-spells/d/deathwine/",
             "status": ""
         },
         {
@@ -313,6 +345,14 @@
             "school": "Conjuration",
             "notes": "",
             "link": "https://www.d20pfsrd.com/magic/all-spells/r/remove-blindness-deafness/",
+            "status": ""
+        },
+        {
+            "level": "3",
+            "name": "Borrow Fortune",
+            "school": "Evocation",
+            "notes": "",
+            "link": "https://www.d20pfsrd.com/magic/all-spells/b/borrow-fortune/",
             "status": ""
         },
         {
@@ -562,8 +602,18 @@
         },
         {
             "name": "Perception",
-            "misc": "6",
-            "total": "8",
+            "total": "9",
+            "ranks": "0"
+        },
+        {
+            "name": "Search",
+            "total": "0",
+            "ranks": "0"
+        },
+        {
+            "name": "Memory",
+            "misc": "",
+            "total": "1",
             "ranks": "0"
         },
         {
@@ -578,8 +628,8 @@
         },
         {
             "name": "Escape Artist",
-            "total": "2",
-            "ranks": "0"
+            "total": "4",
+            "ranks": "2"
         },
         {
             "name": "Fly",
@@ -613,8 +663,8 @@
         },
         {
             "name": "Survival",
-            "total": "0",
-            "ranks": "0"
+            "total": "3",
+            "ranks": "3"
         },
         {
             "name": "Swim",
@@ -685,62 +735,6 @@
             "quantity": "1",
             "link": "https://www.d20pfsrd.com/magic/all-spells/o/obscuring-mist/",
             "notes": "Single use"
-        },
-        {
-            "type": "Wand",
-            "name": "Vampiric Touch",
-            "school": "Necromancy",
-            "quantity": "1",
-            "link": "https://www.d20pfsrd.com/magic/all-spells/v/vampiric-touch/",
-            "notes": "33 charges"
-        },
-        {
-            "type": "Wand",
-            "name": "Ray of Enfeeblement",
-            "school": "Necromancy",
-            "quantity": "1",
-            "link": "https://www.d20pfsrd.com/magic/all-spells/r/ray-of-enfeeblement/",
-            "notes": "28 charges"
-        },
-        {
-            "type": "Wand",
-            "name": "Magic Missile",
-            "school": "Necromancy",
-            "quantity": "1",
-            "link": "https://www.d20pfsrd.com/magic/all-spells/m/magic-missile/",
-            "notes": "44 charges"
-        },
-        {
-            "type": "Wand",
-            "name": "Acid arrow",
-            "school": "Conjuration",
-            "quantity": "1",
-            "link": "https://www.d20pfsrd.com/magic/all-spells/a/acid-arrow/",
-            "notes": "23 charges"
-        },
-        {
-            "type": "Scroll",
-            "name": "Hold Moster",
-            "school": "Compulsion",
-            "quantity": "1",
-            "link": "https://www.d20pfsrd.com/magic/all-spells/h/hold-monster/",
-            "notes": "Single use"
-        },
-        {
-            "type": "Scroll",
-            "name": "Telekinesis",
-            "school": "Transmutation",
-            "quantity": "1",
-            "link": "https://www.d20pfsrd.com/magic/all-spells/t/telekinesis",
-            "notes": "Single use"
-        },
-        {
-            "type": "Headband",
-            "name": "Phylactery of Positive Healing",
-            "school": "",
-            "quantity": "1",
-            "link": "https://aonprd.com/MagicWondrousDisplay.aspx?FinalName=Phylactery%20of%20Positive%20Channeling",
-            "notes": "Not in use"
         },
         {
             "type": "Headband",
@@ -825,6 +819,11 @@
             "name": "Voice of the Grave (Su)",
             "link": "https://www.d20pfsrd.com/classes/base-classes/oracle/mysteries/paizo-oracle-mysteries/ancestor/",
             "notes": ""
+        },
+        {
+            "name": "Storm of Souls (Su)",
+            "link": "https://www.d20pfsrd.com/classes/base-classes/oracle/mysteries/paizo-oracle-mysteries/ancestor/",
+            "notes": ""
         }
     ],
     "dailyBonuses": [
@@ -833,18 +832,9 @@
             "name": "Harrowed",
             "bonuses": [
                 "+1 WILL saves agains enchantment effects",
-                "+2 bonus on a d20 roll on WIS"
+                "+2 bonus on a d20 roll on one ability"
             ],
             "link": "https://www.d20pfsrd.com/feats/general-feats/harrowed/"
-        },
-        {
-            "source": "Spirit Guide",
-            "name": "Flame",
-            "bonuses": [
-                "Flame Curse (Hex)",
-                "Touch of Flames (Su)"
-            ],
-            "link": "https://www.d20pfsrd.com/classes/hybrid-classes/shaman/spirits/flame/"
         }
     ],
     "extras": [

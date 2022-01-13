@@ -453,7 +453,7 @@
         {
             "name": "Keen Dagger",
             "attackBonus": "+10 / +5",
-            "damage": "1d4 + 2",
+            "damage": "1d4 + 1",
             "critical": "17-20 / x2",
             "type": "S",
             "notes": "One-handed / +1 Keen"
@@ -461,7 +461,7 @@
         {
             "name": "Dagger",
             "attackBonus": "+9 / +4",
-            "damage": "1d4 + 1",
+            "damage": "1d4",
             "critical": "19-20 / x2",
             "type": "S",
             "notes": "One-handed"

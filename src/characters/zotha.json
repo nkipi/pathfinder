@@ -2,7 +2,7 @@
     "character": {
         "name": "Zotha",
         "characterClass": "Oracle",
-        "level": "9",
+        "level": "10",
         "race": "Half-orc",
         "alignment": "Neutral"
     },
@@ -63,7 +63,7 @@
         }
     ],
     "combat": {
-        "hp": "59",
+        "hp": "69",
         "init": "2",
         "speed": "30",
         "ac": "18",
@@ -71,9 +71,9 @@
         "shield": "2",
         "touch": "12",
         "flatFooted": "16",
-        "bab": "6 / 1",
-        "cmb": "7",
-        "cmd": "19"
+        "bab": "7 / 2",
+        "cmb": "8",
+        "cmd": "20"
     },
     "spellInfo": [
         {
@@ -102,9 +102,15 @@
         },
         {
             "level": "4",
-            "slots": "5",
+            "slots": "6",
             "known": "3",
             "dc": "19"
+        },
+        {
+            "level": "5",
+            "slots": "4",
+            "known": "3",
+            "dc": "20"
         }
     ],
     "spells": [
@@ -170,6 +176,13 @@
             "school": "Divination",
             "notes": "",
             "link": "https://www.d20pfsrd.com/magic/all-spells/e/enhanced-diplomacy/"
+        },
+        {
+            "level": "0",
+            "name": "Guidance",
+            "school": "Divination",
+            "notes": "",
+            "link": "https://www.d20pfsrd.com/magic/all-spells/g/guidance/"
         },
         {
             "level": "1",
@@ -293,10 +306,10 @@
         },
         {
             "level": "2",
-            "name": "Deathwine",
+            "name": "Inflict Moderate Wounds",
             "school": "Necromancy",
             "notes": "",
-            "link": "https://www.d20pfsrd.com/magic/all-spells/d/deathwine/",
+            "link": "https://www.d20pfsrd.com/magic/all-spells/i/inflict-moderate-wounds/",
             "status": ""
         },
         {
@@ -402,12 +415,44 @@
             "notes": "",
             "link": "https://www.d20pfsrd.com/magic/all-spells/s/sending/",
             "status": ""
+        },
+        {
+            "level": "4",
+            "name": "Foretell Failure",
+            "school": "Divination",
+            "notes": "",
+            "link": "https://www.d20pfsrd.com/magic/all-spells/f/foretell-failure/",
+            "status": ""
+        },
+        {
+            "level": "5",
+            "name": "Cure Light Wounds, Mass",
+            "school": "Conjuration",
+            "notes": "",
+            "link": "https://www.d20pfsrd.com/magic/all-spells/c/cure-light-wounds/",
+            "status": ""
+        },
+        {
+            "level": "5",
+            "name": "Raise Dead",
+            "school": "Conjuration",
+            "notes": "",
+            "link": "https://www.d20pfsrd.com/magic/all-spells/r/raise-dead/",
+            "status": ""
+        },
+        {
+            "level": "5",
+            "name": "Telekinesis",
+            "school": "Transmutation",
+            "notes": "",
+            "link": "https://www.d20pfsrd.com/magic/all-spells/t/transmutation/",
+            "status": ""
         }
     ],
     "weapons": [
         {
             "name": "Keen Dagger",
-            "attackBonus": "+9 / +4",
+            "attackBonus": "+10 / +5",
             "damage": "1d4 + 2",
             "critical": "17-20 / x2",
             "type": "S",
@@ -415,7 +460,7 @@
         },
         {
             "name": "Dagger",
-            "attackBonus": "+8 / +3",
+            "attackBonus": "+9 / +4",
             "damage": "1d4 + 1",
             "critical": "19-20 / x2",
             "type": "S",
@@ -423,32 +468,32 @@
         },
         {
             "name": "Earth Breaker \"The Destroyer\"",
-            "attackBonus": "+7 / +2",
-            "damage": "2d6 + 1",
+            "attackBonus": "+10 / +5",
+            "damage": "2d6 + 2",
             "critical": "x3",
             "type": "B",
             "notes": "Two-handed"
         },
         {
             "name": "Heavy Flail \"Skull Hunter\"",
-            "attackBonus": "+7 / +2",
-            "damage": "1d10 + 1",
+            "attackBonus": "+10 / +5",
+            "damage": "1d10 + 2",
             "critical": "19-20 / x2",
             "type": "B",
             "notes": "Two-handed"
         },
         {
             "name": "Javelin \"Heart Piercer\"",
-            "attackBonus": "+8 / +3",
-            "damage": "1d6",
+            "attackBonus": "+11 / +6",
+            "damage": "1d6 + 1",
             "critical": "x2",
             "type": "P",
             "notes": "Ranged"
         },
         {
             "name": "Orc Hornbow \"The Phoenix\"",
-            "attackBonus": "+8 / +3",
-            "damage": "2d6 + 1",
+            "attackBonus": "+11 / +6",
+            "damage": "2d6 + 2",
             "critical": "x3",
             "type": "P",
             "notes": "Ranged"
@@ -582,8 +627,8 @@
         },
         {
             "name": "Bluff",
-            "ranks": "3",
-            "total": "8"
+            "ranks": "7",
+            "total": "12"
         },
         {
             "name": "Climb",
@@ -602,7 +647,7 @@
         },
         {
             "name": "Perception",
-            "total": "9",
+            "total": "10",
             "ranks": "0"
         },
         {
@@ -639,7 +684,8 @@
         {
             "name": "Linguistics",
             "ranks": "1",
-            "total": "2"
+            "total": "5",
+            "misc": "3"
         },
         {
             "name": "Ride",

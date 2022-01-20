@@ -829,13 +829,6 @@
             "quantity": "1",
             "link": "https://www.d20pfsrd.com/magic-items/wondrous-items/m-p/mask-medusa/",
             "notes": ""
-        },
-        {
-            "name": "Explosive Bomb",
-            "type": "Ranged Item",
-            "quantity": "1",
-            "link": "https://www.d20pfsrd.com/classes/base-classes/alchemist/discoveries/paizo-alchemist-discoveries/explosive-bomb/",
-            "notes": ""
         }
     ],
     "feats": [

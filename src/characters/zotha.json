@@ -29,8 +29,8 @@
         },
         {
             "name": "wis",
-            "points": "10",
-            "mod": "0"
+            "points": "12",
+            "mod": "+1"
         },
         {
             "name": "cha",
@@ -44,6 +44,7 @@
             "base": "3",
             "magicModifier": "1",
             "total": "6",
+            "abilitMod": "2",
             "ability": "con"
         },
         {
@@ -51,6 +52,7 @@
             "base": "3",
             "magicModifier": "1",
             "total": "6",
+            "abilitMod": "2",
             "ability": "dex"
         },
         {
@@ -58,7 +60,8 @@
             "base": "6",
             "magicModifier": "1",
             "miscModifier": "1",
-            "total": "8",
+            "total": "9",
+            "abilitMod": "1",
             "ability": "wis"
         }
     ],
@@ -503,219 +506,310 @@
         {
             "name": "Sculpture",
             "classSkill": true,
+            "classBonus": "3",
             "type": "Craft",
             "ranks": "1",
-            "total": "5"
+            "total": "5",
+            "ability": "int",
+            "abilityBonus": "1"
         },
         {
             "name": "Diplomacy",
             "classSkill": true,
+            "classBonus": "3",
             "ranks": "6",
-            "total": "14"
+            "total": "14",
+            "ability": "cha",
+            "abilityBonus": "5"
         },
         {
             "name": "Heal",
             "classSkill": true,
+            "classBonus": "3",
             "ranks": "1",
-            "total": "4"
+            "total": "5",
+            "ability": "wis",
+            "abilityBonus": "1"
         },
         {
             "name": "Intimidate",
             "classSkill": true,
+            "classBonus": "3",
             "ranks": "4",
             "total": "15",
-            "racial": "3"
+            "racial": "3",
+            "ability": "cha",
+            "abilityBonus": "5"
         },
         {
             "type": "Knowledge",
             "name": "Arcana",
             "classSkill": true,
+            "classBonus": "3",
             "total": "1",
-            "ranks": "0"
+            "ranks": "0",
+            "ability": "int",
+            "abilityBonus": "1"
         },
         {
             "type": "Knowledge",
             "name": "Dungeoneering",
             "classSkill": true,
+            "classBonus": "3",
             "total": "1",
-            "ranks": "0"
+            "ranks": "0",
+            "ability": "int",
+            "abilityBonus": "1"
         },
         {
             "type": "Knowledge",
             "name": "Engineering",
             "classSkill": true,
+            "classBonus": "3",
             "total": "5",
-            "ranks": "1"
+            "ranks": "1",
+            "ability": "int",
+            "abilityBonus": "1"
         },
         {
             "type": "Knowledge",
             "name": "Geography",
             "classSkill": true,
+            "classBonus": "3",
             "total": "1",
-            "ranks": "0"
+            "ranks": "0",
+            "ability": "int",
+            "abilityBonus": "1"
         },
         {
             "type": "Knowledge",
             "name": "History",
             "classSkill": true,
+            "classBonus": "3",
             "ranks": "1",
-            "total": "5"
+            "total": "5",
+            "ability": "int",
+            "abilityBonus": "1"
         },
         {
             "type": "Knowledge",
             "name": "Local",
             "classSkill": true,
+            "classBonus": "3",
             "ranks": "1",
-            "total": "5"
+            "total": "5",
+            "ability": "int",
+            "abilityBonus": "1"
         },
         {
             "type": "Knowledge",
             "name": "Nature",
             "classSkill": true,
+            "classBonus": "3",
             "total": "1",
-            "ranks": "0"
+            "ranks": "0",
+            "ability": "int",
+            "abilityBonus": "1"
         },
         {
             "type": "Knowledge",
             "name": "Nobility",
             "classSkill": true,
+            "classBonus": "3",
             "total": "1",
-            "ranks": "0"
+            "ranks": "0",
+            "ability": "int",
+            "abilityBonus": "1"
         },
         {
             "type": "Knowledge",
             "name": "Planes",
             "classSkill": true,
+            "classBonus": "3",
             "ranks": "0",
-            "total": "1"
+            "total": "1",
+            "ability": "int",
+            "abilityBonus": "1"
         },
         {
             "type": "Knowledge",
             "name": "Religion",
             "classSkill": true,
+            "classBonus": "3",
             "ranks": "1",
-            "total": "5"
+            "total": "5",
+            "ability": "int",
+            "abilityBonus": "1"
         },
         {
             "name": "Profession",
             "classSkill": true,
-            "total": "0",
-            "ranks": "0"
+            "classBonus": "3",
+            "total": "1",
+            "ranks": "0",
+            "ability": "int",
+            "abilityBonus": "1"
         },
         {
             "name": "Sense Motive",
             "classSkill": true,
+            "classBonus": "3",
             "ranks": "10",
-            "total": "16",
-            "racial": "2"
+            "total": "17",
+            "racial": "2",
+            "ability": "wis",
+            "abilityBonus": "1"
         },
         {
             "name": "Spellcraft",
             "classSkill": true,
+            "classBonus": "3",
             "ranks": "1",
-            "total": "5"
+            "total": "5",
+            "ability": "int",
+            "abilityBonus": "1"
         },
         {
             "name": "Acrobatics",
             "ranks": "3",
-            "total": "5"
+            "total": "5",
+            "ability": "dex",
+            "abilityBonus": "2"
         },
         {
             "name": "Appraise",
             "total": "1",
-            "ranks": "0"
+            "ranks": "0",
+            "ability": "int",
+            "abilityBonus": "1"
         },
         {
             "name": "Bluff",
             "ranks": "7",
-            "total": "12"
+            "total": "12",
+            "ability": "cha",
+            "abilityBonus": "5"
         },
         {
             "name": "Climb",
             "total": "4",
-            "ranks": "3"
+            "ranks": "3",
+            "ability": "str",
+            "abilityBonus": "1"
         },
         {
             "name": "Disguise",
             "total": "5",
-            "ranks": "0"
+            "ranks": "0",
+            "ability": "cha",
+            "abilityBonus": "5"
         },
         {
             "name": "Handle Animal",
             "ranks": "1",
-            "total": "6"
+            "total": "6",
+            "ability": "cha",
+            "abilityBonus": "5"
         },
         {
             "name": "Perception",
-            "total": "10",
-            "ranks": "0"
+            "total": "11",
+            "ranks": "0",
+            "ability": "wis",
+            "abilityBonus": "1"
         },
         {
             "name": "Search",
-            "total": "0",
-            "ranks": "0"
+            "total": "1",
+            "ranks": "0",
+            "ability": "wis",
+            "abilityBonus": "1"
         },
         {
             "name": "Memory",
             "misc": "",
             "total": "1",
-            "ranks": "0"
+            "ranks": "0",
+            "ability": "int",
+            "abilityBonus": "1"
         },
         {
             "name": "Use Magic Device",
             "ranks": "2",
-            "total": "7"
+            "total": "7",
+            "ability": "cha",
+            "abilityBonus": "5"
         },
         {
             "name": "Perform",
             "total": "5",
-            "ranks": "0"
+            "ranks": "0",
+            "ability": "cha",
+            "abilityBonus": "5"
         },
         {
             "name": "Escape Artist",
             "total": "4",
-            "ranks": "2"
+            "ranks": "2",
+            "ability": "dex",
+            "abilityBonus": "2"
         },
         {
             "name": "Fly",
             "total": "2",
-            "ranks": "0"
+            "ranks": "0",
+            "ability": "dex",
+            "abilityBonus": "2"
         },
         {
             "name": "Linguistics",
             "ranks": "1",
             "total": "5",
-            "misc": "3"
+            "misc": "3",
+            "ability": "int",
+            "abilityBonus": "1"
         },
         {
             "name": "Ride",
             "total": "2",
-            "ranks": "0"
+            "ranks": "0",
+            "ability": "dex",
+            "abilityBonus": "2"
         },
         {
             "name": "Sleight of Hand",
-            "total": "0",
-            "ranks": "0"
+            "total": "2",
+            "ranks": "0",
+            "ability": "dex",
+            "abilityBonus": "2"
         },
         {
             "name": "Disable Device",
-            "total": "0",
-            "ranks": "0"
+            "total": "2",
+            "ranks": "0",
+            "ability": "dex",
+            "abilityBonus": "2"
         },
         {
             "name": "Stealth",
             "total": "2",
-            "ranks": "0"
+            "ranks": "0",
+            "ability": "dex",
+            "abilityBonus": "2"
         },
         {
             "name": "Survival",
-            "total": "3",
-            "ranks": "3"
+            "total": "4",
+            "ranks": "3",
+            "ability": "wis",
+            "abilityBonus": "1"
         },
         {
             "name": "Swim",
             "total": "1",
-            "ranks": "0"
+            "ranks": "0",
+            "ability": "str",
+            "abilityBonus": "1"
         }
     ],
     "languages": [
@@ -759,12 +853,28 @@
             "notes": "22 charges"
         },
         {
+            "name": "Cure Light Wounds",
+            "school": "Conjuration",
+            "type": "Wand",
+            "quantity": "1",
+            "link": "https://www.d20pfsrd.com/magic/all-spells/c/cure-light-wounds/",
+            "notes": "50 charges"
+        },
+        {
             "type": "Wand",
             "name": "Cure Moderate Wounds",
             "school": "Conjuration",
             "link": "https://www.d20pfsrd.com/magic/all-spells/c/cure-moderate-wounds/",
             "quantity": "1",
             "notes": "3 charges"
+        },
+        {
+            "name": "Inflict Moderate Wounds",
+            "school": "Conjuration",
+            "type": "Wand",
+            "quantity": "1",
+            "link": "https://www.d20pfsrd.com/magic/all-spells/i/inflict-moderate-wounds/",
+            "notes": "50 charges"
         },
         {
             "type": "Potion",
@@ -783,11 +893,91 @@
             "notes": "Single use"
         },
         {
+            "type": "Scroll",
+            "name": "Breath of Life",
+            "school": "Conjuration",
+            "quantity": "1",
+            "link": "https://www.d20pfsrd.com/magic/all-spells/b/breath-of-life/",
+            "notes": "Single use"
+        },
+        {
+            "type": "Scroll",
+            "name": "Spell Resistance",
+            "school": "Abjuration",
+            "quantity": "1",
+            "link": "https://www.d20pfsrd.com/magic/all-spells/s/spell-resistance/",
+            "notes": "Single use"
+        },
+        {
+            "type": "Scroll",
+            "name": "Spell Immunity, Communal",
+            "school": "Abjuration",
+            "quantity": "1",
+            "link": "https://www.d20pfsrd.com/magic/all-spells/s/spell-immunity/",
+            "notes": "Single use"
+        },
+        {
+            "type": "Scroll",
+            "name": "Break Enchantment",
+            "school": "Abjuration",
+            "quantity": "1",
+            "link": "https://www.d20pfsrd.com/magic/all-spells/b/break-enchantment/",
+            "notes": "Single use"
+        },
+        {
+            "type": "Scroll",
+            "name": "Resist Energy, Communal",
+            "school": "Abjuration",
+            "quantity": "1",
+            "link": "https://www.d20pfsrd.com/magic/all-spells/r/resist-energy/",
+            "notes": "Single use"
+        },
+        {
+            "type": "Scroll",
+            "name": "Protection from Evil, Communal",
+            "school": "Abjuration",
+            "quantity": "1",
+            "link": "https://www.d20pfsrd.com/magic/all-spells/p/protection-from-evil/",
+            "notes": "Single use"
+        },
+        {
             "type": "Headband",
             "name": "Headband of Alluring Charisma",
             "school": "",
             "quantity": "1",
             "link": "https://www.d20pfsrd.com/magic-items/wondrous-items/h-l/headband-of-alluring-charisma/",
+            "notes": "In use"
+        },
+        {
+            "type": "Vest",
+            "name": "Mnemonic Vestment",
+            "school": "",
+            "quantity": "1",
+            "link": "https://www.d20pfsrd.com/magic-items/wondrous-items/r-z/vestment-mnemonic",
+            "notes": "In use"
+        },
+        {
+            "type": "Cloak",
+            "name": "Cloak of Elvenkind",
+            "school": "",
+            "quantity": "1",
+            "link": "https://www.d20pfsrd.com/magic-items/wondrous-items/c-d/cloak-of-elvenkind/",
+            "notes": "In use"
+        },
+        {
+            "type": "Boots",
+            "name": "Boots of the Winderlands",
+            "school": "",
+            "quantity": "1",
+            "link": "https://www.d20pfsrd.com/magic-items/wondrous-items/a-b/boots-of-the-winterlands/",
+            "notes": "In use"
+        },
+        {
+            "type": "Stone",
+            "name": "Blue Ioun Stone",
+            "school": "",
+            "quantity": "1",
+            "link": "https://www.d20pfsrd.com/magic-items/wondrous-items/h-l/ioun-stones/incandescent-blue-sphere-ioun-stone",
             "notes": "In use"
         },
         {
@@ -801,6 +991,16 @@
             "type": "Hemp",
             "name": "Rope",
             "quantity": "1"
+        },
+        {
+            "type": "Gemstone",
+            "name": "Diamond",
+            "quantity": "1"
+        },
+        {
+            "type": "Gemstone",
+            "name": "Onyx",
+            "quantity": "1000gp worth"
         },
         {
             "quantity": "1",

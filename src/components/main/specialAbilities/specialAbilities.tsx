@@ -3,6 +3,7 @@ import { SpecialAbility } from "../../../interfaces/specialAbility";
 import { Trait } from "../../../interfaces/trait";
 import { Card } from "../../layout/card";
 import { Flex } from "../../layout/flex";
+import { Wrapper } from "../../layout/wrapper";
 import { Heading } from "../../styling/heading";
 import { Helper } from "../../styling/helper";
 import { Link } from "../../styling/link";
@@ -14,7 +15,7 @@ export const SpecialAbilitiesAndTraits: React.FC<MainProps> = ({
 }) => {
   const { specialAbilities, traits } = character;
   return specialAbilities ? (
-    <Card id={"specialAbilities"}>
+    <Wrapper id={"specialAbilities"}>
       <Heading>{"Special Abilities & Traits"}</Heading>
       <Flex>
         {specialAbilities.map((ability: SpecialAbility) => {
@@ -40,6 +41,6 @@ export const SpecialAbilitiesAndTraits: React.FC<MainProps> = ({
           );
         })}
       </Flex>
-    </Card>
+    </Wrapper>
   ) : null;
 };

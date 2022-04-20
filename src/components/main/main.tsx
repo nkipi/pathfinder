@@ -57,20 +57,20 @@ export const Main: React.FC<MainProps & ThemeProps> = ({
             <Character character={character} portrait={portrait} />
             <Abilities character={character} />
             <Combat character={character} />
+            <Languages character={character} />
             <Saves character={character} />
             <Senses character={character} />
-            <DailyBonuses character={character} />
             <Reactions character={character} />
-            <Archetype character={character} />
-            <SpellLikes character={character} />
-            <SpecialAbilitiesAndTraits character={character} />
-            <Feats character={character} />
-            <Languages character={character} />
           </Masonry>
+          <Archetype character={character} />
+          <DailyBonuses character={character} />
+          <SpecialAbilitiesAndTraits character={character} />
           <Weapons character={character} />
+          <SpellLikes character={character} />
           <AllSpells character={character} />
           <Skills character={character} />
           <Equipment character={character} />
+          <Feats character={character} />
         </div>
       </div>
     </div>

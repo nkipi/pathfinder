@@ -2,6 +2,7 @@ import React from "react";
 import { SpellLikes as ISpellLikes } from "../../../interfaces/spellLikes";
 import { Card } from "../../layout/card";
 import { Flex } from "../../layout/flex";
+import { Wrapper } from "../../layout/wrapper";
 import { Heading } from "../../styling/heading";
 import { Link } from "../../styling/link";
 import { PaddingWrapper } from "../../styling/paddingWrapper";
@@ -11,7 +12,7 @@ import { MainProps } from "../main";
 export const SpellLikes: React.FC<MainProps> = ({ character }) => {
   const { spellLikes } = character;
   return spellLikes ? (
-    <Card id={"spellLikes"}>
+    <Wrapper id={"spellLikes"}>
       <Heading>{"Spell Likes"}</Heading>
       <Flex>
         {spellLikes.map((spellLike: ISpellLikes) => {
@@ -26,6 +27,6 @@ export const SpellLikes: React.FC<MainProps> = ({ character }) => {
           );
         })}
       </Flex>
-    </Card>
+    </Wrapper>
   ) : null;
 };

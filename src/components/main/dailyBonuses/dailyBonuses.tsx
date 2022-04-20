@@ -2,6 +2,7 @@ import React from "react";
 import { Generic } from "../../../interfaces/generic";
 import { Card } from "../../layout/card";
 import { Flex } from "../../layout/flex";
+import { Wrapper } from "../../layout/wrapper";
 import { Heading } from "../../styling/heading";
 import { Helper } from "../../styling/helper";
 import { Link } from "../../styling/link";
@@ -12,7 +13,7 @@ import { MainProps } from "../main";
 export const DailyBonuses: React.FC<MainProps> = ({ character }) => {
   const { dailyBonuses } = character;
   return dailyBonuses ? (
-    <Card id={"dailyBonuses"}>
+    <Wrapper id={"dailyBonuses"}>
       <Heading>{"Daily Bonuses"}</Heading>
       <Flex>
         {dailyBonuses.map((dailyBonus: Generic) => {
@@ -31,6 +32,6 @@ export const DailyBonuses: React.FC<MainProps> = ({ character }) => {
           );
         })}
       </Flex>
-    </Card>
+    </Wrapper>
   ) : null;
 };

@@ -30,7 +30,7 @@
         {
             "name": "wis",
             "points": "12",
-            "mod": "+1"
+            "mod": "1"
         },
         {
             "name": "cha",
@@ -792,8 +792,9 @@
         },
         {
             "name": "Stealth",
-            "total": "2",
+            "total": "7",
             "ranks": "0",
+            "misc": "5",
             "ability": "dex",
             "abilityBonus": "2"
         },
@@ -1070,7 +1071,7 @@
             "source": "Feat",
             "name": "Harrowed",
             "bonuses": [
-                "+1 WILL saves agains enchantment effects",
+                "+1 WILL saves against enchantment effects",
                 "+2 bonus on a d20 roll on one ability"
             ],
             "link": "https://www.d20pfsrd.com/feats/general-feats/harrowed/"
